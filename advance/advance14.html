@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html ng-app="">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/simple-grid.css" />
+  </head>
+
+  <body>
+    <nav id="navbar" style="padding:8px 15px">
+    <span id="back" onclick="window.history.back()">arrow_back</span>
+    <h3>Advance Tutorials</h3>
+  </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">PHP String Functions</h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            PHP provides various string functions to access and manipulate
+            strings. A list of important PHP string functions are given below.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">PHP STRING FUNTIONS</h3>
+          <hr />
+        </div>
+      </div>
+      <table class="alt">
+        <tbody>
+          <tr>
+            <th>Function</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td>addcslashes()</td>
+            <td>It is used to return a string with backslashes.</td>
+          </tr>
+          <tr>
+            <td>addslashes()</td>
+            <td>It is used to return a string with backslashes.</td>
+          </tr>
+          <tr>
+            <td>bin2hex()</td>
+            <td>
+              It is used to converts a string of ASCII characters to hexadecimal
+              values.
+            </td>
+          </tr>
+          <tr>
+            <td>chop()</td>
+            <td>
+              It removes whitespace or other characters from the right end of a
+              string
+            </td>
+          </tr>
+          <tr>
+            <td>chr()</td>
+            <td>
+              It is used to return a character from a specified ASCII value.
+            </td>
+          </tr>
+          <tr>
+            <td>chunk_split()</td>
+            <td>
+              It is used to split a string into a series of smaller parts.
+            </td>
+          </tr>
+          <tr>
+            <td>convert_cyr_string()</td>
+            <td>
+              It is used to convert a string from one Cyrillic character-set to
+              another.
+            </td>
+          </tr>
+          <tr>
+            <td>convert_uudecode()</td>
+            <td>It is used to decode a uuencoded string.</td>
+          </tr>
+          <tr>
+            <td>convert_uuencode()</td>
+            <td>It is used to encode a string using the uuencode algorithm.</td>
+          </tr>
+          <tr>
+            <td>count_chars()</td>
+            <td>
+              It is used to return information about characters used in a
+              string.
+            </td>
+          </tr>
+          <tr>
+            <td>crc32()</td>
+            <td>It is used to calculate a 32-bit CRC for a string.</td>
+          </tr>
+          <tr>
+            <td>crypt()</td>
+            <td>It is used to create hashing string One-way.</td>
+          </tr>
+          <tr>
+            <td>echo()</td>
+            <td>It is used for output one or more strings.</td>
+          </tr>
+          <tr>
+            <td>explode()</td>
+            <td>It is used to break a string into an array.</td>
+          </tr>
+          <tr>
+            <td>hebrev()</td>
+            <td>It is used to convert Hebrew text to visual text.</td>
+          </tr>
+          <tr>
+            <td>hebrevc()</td>
+            <td>
+              It is used to convert Hebrew text to visual text and new lines
+              (\n) into &lt;br&gt;.
+            </td>
+          </tr>
+          <tr>
+            <td>hex2bin()</td>
+            <td>
+              It is used to convert string of hexadecimal values to ASCII
+              characters.
+            </td>
+          </tr>
+          <tr>
+            <td>print()</td>
+            <td>It is used for output one or more strings.</td>
+          </tr>
+          <tr>
+            <td>fprint()</td>
+            <td>It is used to write a formatted string to a stream.</td>
+          </tr>
+          <tr>
+            <td>nl2br()</td>
+            <td>
+              It is used to insert HTML line breaks in front of each newline in
+              a string.
+            </td>
+          </tr>
+          <tr>
+            <td>number_format()</td>
+            <td>It is used to format a number with grouped thousands.</td>
+          </tr>
+          <tr>
+            <td>htmlentities()</td>
+            <td>It is used to convert character to HTML entities.</td>
+          </tr>
+          <tr>
+            <td>html_entity_decode()</td>
+            <td>It is used to convert HTML entities to characters.</td>
+          </tr>
+          <tr>
+            <td>ord()</td>
+            <td>
+              It is used to return ASCII value of the first character of a
+              string.
+            </td>
+          </tr>
+          <tr>
+            <td>parse_str()</td>
+            <td>It is used to parse a query string into variables.</td>
+          </tr>
+
+          <tr>
+            <td>Implode()</td>
+            <td>
+              It is used to return a string from the elements of an array.
+            </td>
+          </tr>
+          <tr>
+            <td>Lcfirst()</td>
+            <td>
+              It is used to convert the first character of a string to
+              lowercase.
+            </td>
+          </tr>
+          <tr>
+            <td>Join()</td>
+            <td>It is the Alias of implode() function.</td>
+          </tr>
+          <tr>
+            <td>Levenshtein()</td>
+            <td>
+              It is used to return the Levenshtein distance between two strings.
+            </td>
+          </tr>
+          <tr>
+            <td>trim()</td>
+            <td>It is used to remove whitespace.</td>
+          </tr>
+          <tr>
+            <td>ltrim()</td>
+            <td>
+              It is used to remove whitespace from the left side of a string.
+            </td>
+          </tr>
+          <tr>
+            <td>rtrim()</td>
+            <td>
+              It is used to remove whitespace from the right side of a string.
+            </td>
+          </tr>
+          <tr>
+            <td>md5()</td>
+            <td>It is used to calculate the MD5 hash of a string.</td>
+          </tr>
+          <tr>
+            <td>md5_files()</td>
+            <td>It is used to calculate MD5 hash of a file.</td>
+          </tr>
+          <tr>
+            <td>metaphone()</td>
+            <td>It is used to calculate the metaphone key of a string.</td>
+          </tr>
+          <tr>
+            <td>Soundex()</td>
+            <td>It is is used to calculate the soundex key of a string.</td>
+          </tr>
+          <tr>
+            <td>setlocale()</td>
+            <td>It is used to set locale information.</td>
+          </tr>
+          <tr>
+            <td>money_format()</td>
+            <td>
+              It is used to return a string formatted as a currency string.
+            </td>
+          </tr>
+          <tr>
+            <td>printf()</td>
+            <td>It is used to show output as a formatted string.</td>
+          </tr>
+          <tr>
+            <td>sha1()</td>
+            <td>It is used to return the SHA-1 hash of a string.</td>
+          </tr>
+          <tr>
+            <td>sscanf()</td>
+            <td>
+              It is used to parse input from a string according to a format.
+            </td>
+          </tr>
+          <tr>
+            <td>str_getcsv()</td>
+            <td>It is used to parse a CSV string into an array.</td>
+          </tr>
+          <tr>
+            <td>sha1_file()</td>
+            <td>It is used to return the SHA-1 hash of a file.</td>
+          </tr>
+          <tr>
+            <td>similar_text()</td>
+            <td>It is used to compare the similarity between two strings.</td>
+          </tr>
+          <tr>
+            <td>str_pad()</td>
+            <td>It is used to pad a string to a new length.</td>
+          </tr>
+          <tr>
+            <td>str_ireplace()</td>
+            <td>
+              It is used to replace some characters in a string
+              (case-insensitive).
+            </td>
+          </tr>
+          <tr>
+            <td>str_repeat()</td>
+            <td>It is used to repeat a string a specified number of times.</td>
+          </tr>
+          <tr>
+            <td>str_rot13()</td>
+            <td>It is used to perform the ROT13 encoding on a string.</td>
+          </tr>
+          <tr>
+            <td>str_shuffle()</td>
+            <td>It is used to randomly shuffle all characters in a string.</td>
+          </tr>
+          <tr>
+            <td>str_split()</td>
+            <td>It is used to split a string into an array.</td>
+          </tr>
+          <tr>
+            <td>str_word_count()</td>
+            <td>It is used to count the number of words in a string.</td>
+          </tr>
+          <tr>
+            <td>strcasecmp()</td>
+            <td>It is used to compare two strings.</td>
+          </tr>
+          <tr>
+            <td>strchr()</td>
+            <td>
+              It is used to find the first occurrence of a string inside another
+              string.
+            </td>
+          </tr>
+          <tr>
+            <td>stscroll()</td>
+            <td>It is locale based string comparison.</td>
+          </tr>
+          <tr>
+            <td>strcmp()</td>
+            <td>It is binary safe string comparison.</td>
+          </tr>
+          <tr>
+            <td>strcspn()</td>
+            <td>It is used to reverses a string.</td>
+          </tr>
+          <tr>
+            <td>strip_tags()</td>
+            <td>It is used to strip HTML and PHP tags from a string.</td>
+          </tr>
+          <tr>
+            <td>stripcslashes()</td>
+            <td>It is used to unquote a string quoted with addcslashes().</td>
+          </tr>
+          <tr>
+            <td>stripos()</td>
+            <td>
+              It is used to return the position of the first occurrence of a
+              string inside another string.
+            </td>
+          </tr>
+          <tr>
+            <td>strlen()</td>
+            <td>It is used to return the length of a string.</td>
+          </tr>
+          <tr>
+            <td>strnatcasecmp()</td>
+            <td>
+              It is used to compare two strings using a "natural order"
+              algorithm.
+            </td>
+          </tr>
+          <tr>
+            <td>strnatcmp()</td>
+            <td>
+              It is used to compare two strings using a "natural order"
+              algorithm.
+            </td>
+          </tr>
+          <tr>
+            <td>strncmp()</td>
+            <td>It is used to compare of the first n characters.</td>
+          </tr>
+          <tr>
+            <td>strpbrk()</td>
+            <td>
+              It is used to search a string for any of a set of characters.
+            </td>
+          </tr>
+          <tr>
+            <td>strpos()</td>
+            <td>
+              It is used to return the position of the first occurrence of a
+              string inside another string.
+            </td>
+          </tr>
+          <tr>
+            <td>strrchr()</td>
+            <td>
+              It is used to find the last occurrence of a string inside another
+              string.
+            </td>
+          </tr>
+          <tr>
+            <td>strrev()</td>
+            <td>It is used to reverse a string.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">1) PHP strtolower() function</h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            The strtolower() function returns string in lowercase letter. <br />
+            Syntax
+          </p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre style="margin: 0; line-height: 125%">
+string strtolower ( string $string ) </pre
+          >
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;"><p>Example</p></div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span>  
+ <span style="color: #19177C">$str</span><span style="color: #666666">=</span><span style="color: #BA2121">&quot;My name is KARAN&quot;</span>;  
+ <span style="color: #19177C">$str</span><span style="color: #666666">=</span>strtolower(<span style="color: #19177C">$str</span>);  
+ <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #19177C">$str</span>;  
+<span style="color: #BC7A00">?&gt;</span></pre>
+        </div>
+      </div>
+      <fieldset>
+        <legend>Output:</legend>
+        my name is karan
+      </fieldset>
+
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">2) PHP strtoupper() function</h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            The strtoupper() function returns string in uppercase letter. <br />
+            Syntax
+          </p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre style="margin: 0; line-height: 125%">
+string strtoupper ( string $string ) </pre
+          >
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;"><p>Example</p></div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span>  
+<span style="color: #19177C">$str</span><span style="color: #666666">=</span><span style="color: #BA2121">&quot;My name is KARAN&quot;</span>;  
+<span style="color: #19177C">$str</span><span style="color: #666666">=</span>strtoupper(<span style="color: #19177C">$str</span>);  
+<span style="color: #008000; font-weight: bold">echo</span> <span style="color: #19177C">$str</span>;  
+<span style="color: #BC7A00">?&gt;</span> </pre>
+        </div>
+      </div>
+      <fieldset>
+        <legend>Output:</legend>
+        MY NAME IS KARAN
+      </fieldset>
+
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">3) PHP ucfirst() function</h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            The ucfirst() function returns string converting first character
+            into uppercase. It doesn't change the case of other characters.
+            <br />
+            Syntax
+          </p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre style="margin: 0; line-height: 125%">
+string ucfirst ( string $str ) </pre
+          >
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;"><p>Example</p></div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span>  
+<span style="color: #19177C">$str</span><span style="color: #666666">=</span><span style="color: #BA2121">&quot;my name is KARAN&quot;</span>;  
+<span style="color: #19177C">$str</span><span style="color: #666666">=</span>ucfirst(<span style="color: #19177C">$str</span>);  
+<span style="color: #008000; font-weight: bold">echo</span> <span style="color: #19177C">$str</span>;  
+<span style="color: #BC7A00">?&gt;</span></pre>
+        </div>
+      </div>
+      <fieldset>
+        <legend>Output:</legend>
+        My name is KARAN
+      </fieldset>
+
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">4) PHP lcfirst() function</h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            The lcfirst() function returns string converting first character
+            into lowercase. It doesn't change the case of other characters.
+            <br />
+            Syntax
+          </p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre style="margin: 0; line-height: 125%">
+string lcfirst ( string $str )        </pre
+          >
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;"><p>Example</p></div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span>  
+ <span style="color: #19177C">$str</span><span style="color: #666666">=</span><span style="color: #BA2121">&quot;MY name IS KHAN&quot;</span>;  
+ <span style="color: #19177C">$str</span><span style="color: #666666">=</span><span style="color: #008000">lcfirst</span>(<span style="color: #19177C">$str</span>);  
+ <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #19177C">$str</span>;  
+<span style="color: #BC7A00">?&gt;</span></pre>
+        </div>
+      </div>
+      <fieldset>
+        <legend>Output:</legend>
+        mY name IS KHAN
+      </fieldset>
+
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">5) PHP ucwords() function</h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            The ucwords() function returns string converting first character of
+            each word into uppercase. <br />
+            Syntax
+          </p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre style="margin: 0; line-height: 125%">
+string ucwords ( string $str )</pre
+          >
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;"><p>Example</p></div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span>  
+ <span style="color: #19177C">$str</span><span style="color: #666666">=</span><span style="color: #BA2121">&quot;my name is Khan karan&quot;</span>;  
+ <span style="color: #19177C">$str</span><span style="color: #666666">=</span>ucwords(<span style="color: #19177C">$str</span>);  
+ <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #19177C">$str</span>;  
+<span style="color: #BC7A00">?&gt;</span></pre>
+        </div>
+      </div>
+      <fieldset>
+        <legend>Output:</legend>
+        My Name Is Khan Karan
+      </fieldset>
+
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">6) PHP strrev() function</h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            The strrev() function returns reversed string. <br />
+            Syntax
+          </p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre style="margin: 0; line-height: 125%">
+string strrev ( string $string )      </pre
+          >
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;"><p>Example</p></div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span>  
+<span style="color: #19177C">$str</span><span style="color: #666666">=</span><span style="color: #BA2121">&quot;my name is karan&quot;</span>;  
+<span style="color: #19177C">$str</span><span style="color: #666666">=</span><span style="color: #008000">strrev</span>(<span style="color: #19177C">$str</span>);  
+<span style="color: #008000; font-weight: bold">echo</span> <span style="color: #19177C">$str</span>;  
+<span style="color: #BC7A00">?&gt;</span></pre>
+        </div>
+      </div>
+      <fieldset>
+        <legend>Output:</legend>
+        narak si eman ym
+      </fieldset>
+
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">7) PHP strlen() function</h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            The strlen() function returns length of the string. <br />
+            Syntax
+          </p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre style="margin: 0; line-height: 125%">
+int strlen ( string $string ) </pre
+          >
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;"><p>Example</p></div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span>  
+<span style="color: #19177C">$str</span><span style="color: #666666">=</span><span style="color: #BA2121">&quot;my name is karan&quot;</span>;  
+<span style="color: #19177C">$str</span><span style="color: #666666">=</span><span style="color: #008000">strlen</span>(<span style="color: #19177C">$str</span>);  
+<span style="color: #008000; font-weight: bold">echo</span> <span style="color: #19177C">$str</span>;  
+<span style="color: #BC7A00">?&gt;</span></pre>
+        </div>
+      </div>
+      <fieldset>
+        <legend>Output:</legend>
+        16
+      </fieldset>
+    </div>
+  </body>
+</html>

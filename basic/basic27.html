@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html ng-app="">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/simple-grid.css" />
+  </head>
+
+  <body>
+    <nav id="navbar" style="padding:8px 15px">
+
+      <span id="back" onclick="window.history.back()">arrow_back</span>
+
+      <h3>PHP Tutorials</h3>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">PHP do while loop</h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            PHP do while loop can be used to traverse set of code like php while
+            loop. The PHP do-while loop is guaranteed to run at least once.
+            <br />
+            It executes the code at least one time always because condition is
+            checked after executing the code. <br />
+            Syntax
+          </p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span>  
+ <span style="color: #008000; font-weight: bold">do</span>{  
+  <span style="color: #408080; font-style: italic">//code to be executed  </span>
+ }<span style="color: #008000; font-weight: bold">while</span>(condition);  
+<span style="color: #BC7A00">?&gt;</span></pre>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;"><p>Example</p></div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span>  
+<span style="color: #19177C">$n</span><span style="color: #666666">=1</span>;  
+ <span style="color: #008000; font-weight: bold">do</span>{  
+  <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;</span><span style="color: #BB6688; font-weight: bold">$n</span><span style="color: #BA2121">&lt;br/&gt;&quot;</span>;  
+  <span style="color: #19177C">$n</span><span style="color: #666666">++</span>;  
+ }<span style="color: #008000; font-weight: bold">while</span>(<span style="color: #19177C">$n</span><span style="color: #666666">&lt;=10</span>);  
+<span style="color: #BC7A00">?&gt;</span></pre>
+        </div>
+      </div>
+      <fieldset>
+        <legend>Output:</legend>
+        <pre>
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+      </pre
+        >
+      </fieldset>
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">PHP Break</h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            PHP break statement breaks the execution of current for, while,
+            do-while, switch and for-each loop. If you use break inside inner
+            loop, it breaks the execution of inner loop only. <br />
+            Syntax
+          </p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre style="margin: 0; line-height: 125%">
+jump statement;  
+break;</pre
+          >
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">PHP Break: inside loop</h3>
+          <hr />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            Let's see a simple example to break the execution of for loop if
+            value of i is equal to 5.
+          </p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span>  
+ <span style="color: #008000; font-weight: bold">for</span>(<span style="color: #19177C">$i</span><span style="color: #666666">=1</span>;<span style="color: #19177C">$i</span><span style="color: #666666">&lt;=10</span>;<span style="color: #19177C">$i</span><span style="color: #666666">++</span>){   
+  <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;</span><span style="color: #BB6688; font-weight: bold">$i</span><span style="color: #BA2121"> &lt;br/&gt;&quot;</span>;  
+   <span style="color: #008000; font-weight: bold">if</span>(<span style="color: #19177C">$i</span><span style="color: #666666">==5</span>){  
+   <span style="color: #008000; font-weight: bold">break</span>;  
+  }  
+ }  
+<span style="color: #BC7A00">?&gt;</span></pre>
+        </div>
+      </div>
+      <fieldset>
+        <legend>Output:</legend>
+        <pre>
+1
+2
+3
+4
+5</pre
+        >
+      </fieldset>
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">PHP Break: inside inner loop</h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            The PHP break statement breaks the execution of inner loop only.
+          </p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span>  
+<span style="color: #008000; font-weight: bold">for</span>(<span style="color: #19177C">$i</span><span style="color: #666666">=1</span>;<span style="color: #19177C">$i</span><span style="color: #666666">&lt;=3</span>;<span style="color: #19177C">$i</span><span style="color: #666666">++</span>){  
+ <span style="color: #008000; font-weight: bold">for</span>(<span style="color: #19177C">$j</span><span style="color: #666666">=1</span>;<span style="color: #19177C">$j</span><span style="color: #666666">&lt;=3</span>;<span style="color: #19177C">$j</span><span style="color: #666666">++</span>){  
+  <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;</span><span style="color: #BB6688; font-weight: bold">$i</span><span style="color: #BA2121">   </span><span style="color: #BB6688; font-weight: bold">$j</span><span style="color: #BA2121">&lt;br/&gt;&quot;</span>;  
+  <span style="color: #008000; font-weight: bold">if</span>(<span style="color: #19177C">$i</span><span style="color: #666666">==2</span> <span style="color: #666666">&amp;&amp;</span> <span style="color: #19177C">$j</span><span style="color: #666666">==2</span>){  
+   <span style="color: #008000; font-weight: bold">break</span>;  
+  }  
+ }  
+}  
+<span style="color: #BC7A00">?&gt;</span></pre>
+        </div>
+      </div>
+      <fieldset>
+        <legend>Output:</legend>
+
+        <pre>
+1 1
+1 2
+1 3
+2 1
+2 2
+3 1
+3 2
+3 3
+        </pre>
+      </fieldset>
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">PHP Break: inside switch statement</h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>The PHP break statement breaks the flow of switch case also.</p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span>      
+ <span style="color: #19177C">$num</span><span style="color: #666666">=200</span>;      
+ <span style="color: #008000; font-weight: bold">switch</span>(<span style="color: #19177C">$num</span>){      
+  <span style="color: #008000; font-weight: bold">case</span> <span style="color: #666666">100:</span>      
+   <span style="color: #008000; font-weight: bold">echo</span>(<span style="color: #BA2121">&quot;number is equals to 100&quot;</span>);      
+   <span style="color: #008000; font-weight: bold">break</span>;      
+  <span style="color: #008000; font-weight: bold">case</span> <span style="color: #666666">200:</span>      
+   <span style="color: #008000; font-weight: bold">echo</span>(<span style="color: #BA2121">&quot;number is equal to 200&quot;</span>);      
+   <span style="color: #008000; font-weight: bold">break</span>;      
+  <span style="color: #008000; font-weight: bold">case</span> <span style="color: #666666">50:</span>      
+   <span style="color: #008000; font-weight: bold">echo</span>(<span style="color: #BA2121">&quot;number is equal to 300&quot;</span>);      
+   <span style="color: #008000; font-weight: bold">break</span>;      
+  <span style="color: #008000; font-weight: bold">default</span><span style="color: #666666">:</span>      
+   <span style="color: #008000; font-weight: bold">echo</span>(<span style="color: #BA2121">&quot;number is not equal to 100, 200 or </span>
+<span style="color: #BA2121">   500&quot;</span>);      
+ }     
+<span style="color: #BC7A00">?&gt;</span></pre>
+        </div>
+      </div>
+      <fieldset>
+        <legend>Output:</legend>
+        number is equal to 200
+      </fieldset>
+    </div>
+  </body>
+</html>

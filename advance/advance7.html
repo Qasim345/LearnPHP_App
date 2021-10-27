@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html ng-app="">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/simple-grid.css" />
+  </head>
+
+  <body>
+    <nav id="navbar" style="padding:8px 15px">
+    <span id="back" onclick="window.history.back()">arrow_back</span>
+    <h3>Advance Tutorials</h3>
+  </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">PHP Recursive Function</h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            PHP also supports recursive function call like C/C++. In such case,
+            we call current function within function. It is also known as
+            recursion. <br />
+            It is recommended to avoid recursive function call over 200
+            recursion level because it may smash the stack and may cause the
+            termination of script. <br />
+            Example 1: Printing number
+          </p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span>    
+<span style="color: #008000; font-weight: bold">function</span> <span style="color: #0000FF">display</span>(<span style="color: #19177C">$number</span>) {    
+    <span style="color: #008000; font-weight: bold">if</span>(<span style="color: #19177C">$number</span><span style="color: #666666">&lt;=5</span>){    
+     <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;</span><span style="color: #BB6688; font-weight: bold">$number</span><span style="color: #BA2121"> &lt;br/&gt;&quot;</span>;    
+     display(<span style="color: #19177C">$number</span><span style="color: #666666">+1</span>);    
+    }  
+}    
+    
+display(<span style="color: #666666">1</span>);    
+<span style="color: #BC7A00">?&gt;</span></pre>
+        </div>
+      </div>
+      <fieldset>
+        <legend>Output:</legend>
+        <pre>
+1
+2
+3
+4
+5</pre
+        >
+      </fieldset>
+
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>Example 2 : Factorial Number</p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span>    
+<span style="color: #008000; font-weight: bold">function</span> <span style="color: #0000FF">factorial</span>(<span style="color: #19177C">$n</span>)    
+{    
+    <span style="color: #008000; font-weight: bold">if</span> (<span style="color: #19177C">$n</span> <span style="color: #666666">&lt;</span> <span style="color: #666666">0</span>)    
+        <span style="color: #008000; font-weight: bold">return</span> <span style="color: #666666">-1</span>; <span style="color: #408080; font-style: italic">/*Wrong value*/</span>    
+    <span style="color: #008000; font-weight: bold">if</span> (<span style="color: #19177C">$n</span> <span style="color: #666666">==</span> <span style="color: #666666">0</span>)    
+        <span style="color: #008000; font-weight: bold">return</span> <span style="color: #666666">1</span>; <span style="color: #408080; font-style: italic">/*Terminating condition*/</span>    
+    <span style="color: #008000; font-weight: bold">return</span> (<span style="color: #19177C">$n</span> <span style="color: #666666">*</span> factorial (<span style="color: #19177C">$n</span> <span style="color: #666666">-1</span>));    
+}    
+    
+<span style="color: #008000; font-weight: bold">echo</span> factorial(<span style="color: #666666">5</span>);    
+<span style="color: #BC7A00">?&gt;</span>    </pre>
+        </div>
+      </div>
+      <fieldset>
+        <legend>Output:</legend>
+        120
+      </fieldset>
+    </div>
+  </body>
+</html>

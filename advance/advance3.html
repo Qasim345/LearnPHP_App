@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/simple-grid.css" />
+  </head>
+
+  <body>
+    <nav id="navbar" style="padding:8px 15px">
+    <span id="back" onclick="window.history.back()">arrow_back</span>
+    <h3>Advance Tutorials</h3>
+  </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">Call By Value</h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            PHP allows you to call function by value and reference both. In case
+            of PHP call by value, actual value is not modified if it is modified
+            inside the function. <br />
+            Let's understand the concept of call by value by the help of
+            examples. <br />
+            Example 1 <br />
+            In this example, variable $str is passed to the adder function where
+            it is concatenated with 'Call By Value' string. But, printing $str
+            variable results 'Hello' only. It is because changes are done in the
+            local variable $str2 only. It doesn't reflect to $str variable.
+          </p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span>  
+<span style="color: #008000; font-weight: bold">function</span> <span style="color: #0000FF">adder</span>(<span style="color: #19177C">$str2</span>)  
+{  
+    <span style="color: #19177C">$str2</span> <span style="color: #666666">.=</span> <span style="color: #BA2121">&#39;Call By Value&#39;</span>;  
+}  
+<span style="color: #19177C">$str</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;Hello &#39;</span>;  
+adder(<span style="color: #19177C">$str</span>);  
+<span style="color: #008000; font-weight: bold">echo</span> <span style="color: #19177C">$str</span>;  
+<span style="color: #BC7A00">?&gt;</span></pre>
+        </div>
+      </div>
+      <fieldset>
+        <legend>Output:</legend>
+        Hello
+      </fieldset>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            Example 2 <br />
+            Let's understand PHP call by value concept through another example.
+          </p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span>  
+<span style="color: #008000; font-weight: bold">function</span> <span style="color: #0000FF">increment</span>(<span style="color: #19177C">$i</span>)  
+{  
+    <span style="color: #19177C">$i</span><span style="color: #666666">++</span>;  
+}  
+<span style="color: #19177C">$i</span> <span style="color: #666666">=</span> <span style="color: #666666">10</span>;  
+increment(<span style="color: #19177C">$i</span>);  
+<span style="color: #008000; font-weight: bold">echo</span> <span style="color: #19177C">$i</span>;  
+<span style="color: #BC7A00">?&gt;</span></pre>
+        </div>
+      </div>
+      <fieldset>
+        <legend>Output:</legend>
+        10
+      </fieldset>
+    </div>
+  </body>
+</html>

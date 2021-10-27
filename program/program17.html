@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html ng-app="">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/simple-grid.css" />
+  </head>
+
+  <body>
+    <nav id="navbar" style="padding:8px 15px">
+    <span id="back" onclick="window.history.back()">arrow_back</span>
+    <h3>PHP Programs</h3>
+  </nav>
+    <div class="container">
+      <!--Heading-->
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">Leap Year Program</h3>
+          <hr />
+        </div>
+      </div>
+      <!--//Heading-->
+
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p><b>Program</b></p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #008000; font-weight: bold">&lt;html&gt;</span>  
+<span style="color: #008000; font-weight: bold">&lt;body&gt;</span>  
+    <span style="color: #008000; font-weight: bold">&lt;form</span> <span style="color: #7D9029">method=</span><span style="color: #BA2121">&quot;post&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>  
+        Enter the Year: <span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;text&quot;</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;year&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>  
+        <span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;submit&quot;</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;submit&quot;</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;Submit&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>  
+    <span style="color: #008000; font-weight: bold">&lt;/form&gt;</span>  
+<span style="color: #008000; font-weight: bold">&lt;/body&gt;</span>  
+<span style="color: #008000; font-weight: bold">&lt;/html&gt;</span>  
+<span style="color: #BC7A00">&lt;?php</span>   
+    <span style="color: #008000; font-weight: bold">if</span>(<span style="color: #19177C">$_POST</span>)  
+    {     
+        <span style="color: #408080; font-style: italic">//get the year  </span>
+        <span style="color: #19177C">$year</span> <span style="color: #666666">=</span> <span style="color: #19177C">$_POST</span>[<span style="color: #BA2121">&#39;year&#39;</span>];   
+        <span style="color: #408080; font-style: italic">//check if entered value is a number  </span>
+        <span style="color: #008000; font-weight: bold">if</span>(<span style="color: #666666">!</span><span style="color: #008000">is_numeric</span>(<span style="color: #19177C">$year</span>))  
+        {  
+            <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;Strings not allowed, Input should be a number&quot;</span>;  
+            <span style="color: #008000; font-weight: bold">return</span>;  
+        }   
+        <span style="color: #408080; font-style: italic">//multiple conditions to check the leap year  </span>
+        <span style="color: #008000; font-weight: bold">if</span>( (<span style="color: #666666">0</span> <span style="color: #666666">==</span> <span style="color: #19177C">$year</span> <span style="color: #666666">%</span> <span style="color: #666666">4</span>) <span style="color: #008000; font-weight: bold">and</span> (<span style="color: #666666">0</span> <span style="color: #666666">!=</span> <span style="color: #19177C">$year</span> <span style="color: #666666">%</span> <span style="color: #666666">100</span>) <span style="color: #008000; font-weight: bold">or</span> (<span style="color: #666666">0</span> <span style="color: #666666">==</span> <span style="color: #19177C">$year</span> <span style="color: #666666">%</span> <span style="color: #666666">400</span>) )  
+        {  
+            <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;</span><span style="color: #BB6688; font-weight: bold">$year</span><span style="color: #BA2121"> is a Leap Year&quot;</span>;    
+        }  
+        <span style="color: #008000; font-weight: bold">else</span>  
+        {  
+            <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;</span><span style="color: #BB6688; font-weight: bold">$year</span><span style="color: #BA2121"> is not a Leap Year&quot;</span>;    
+        }  
+    }   
+<span style="color: #BC7A00">?&gt;</span></pre>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html ng-app="">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/simple-grid.css" />
+</head>
+
+<body>
+  <nav id="navbar" style="padding:8px 15px">
+    <span id="back" onclick="window.history.back()">arrow_back</span>
+    <h3>Advance Tutorials</h3>
+  </nav>
+  <div class="container">
+    <div class="row">
+      <div class="col-12" style="margin-bottom: 0px;">
+        <h3 class="heading">PHP Delete File
+        </h3>
+        <hr />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12" style="margin-top: 0px;">
+        <p>
+        In PHP, we can delete any file using unlink() function. The unlink() function accepts one argument only: file name. It
+        is similar to UNIX C unlink() function.
+        <br>
+        PHP unlink() generates E_WARNING level error if file is not deleted. It returns TRUE if file is deleted successfully
+        otherwise FALSE.
+        <br>
+        Syntax</p>
+      </div>
+    </div>
+    <div class="coding"><!-- HTML generated using hilite.me --><div style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">bool unlink ( string $filename [, resource $context ] )  </pre></div>
+</div>
+    <div class="row">
+      <div class="col-12" style="margin-top: 0px;">
+        <p>
+          <b>
+          $filename represents the name of the file to be deleted.
+        </b>
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12" style="margin-bottom: 0px;">
+        <h3 class="heading">PHP Delete File Example</h3>
+        <hr />
+      </div>
+    </div>
+    <div class="coding">
+      <!-- HTML generated using hilite.me --><div style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #BC7A00">&lt;?php</span>      
+ <span style="color: #19177C">$status</span><span style="color: #666666">=</span><span style="color: #008000">unlink</span>(<span style="color: #BA2121">&#39;data.txt&#39;</span>);    
+ <span style="color: #008000; font-weight: bold">if</span>(<span style="color: #19177C">$status</span>){  
+  <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;File deleted successfully&quot;</span>;    
+ }<span style="color: #008000; font-weight: bold">else</span>{  
+  <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;Sorry!&quot;</span>;    
+ }  
+<span style="color: #BC7A00">?&gt;</span></pre></div>
+
+    </div>
+    <fieldset>
+      <legend>Output:</legend>File deleted successfully
+    </fieldset>
+  </div>
+</body>
+
+</html>

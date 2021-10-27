@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html ng-app="">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/simple-grid.css" />
+  </head>
+
+  <body>
+    <nav id="navbar" style="padding:8px 15px">
+
+      <span id="back" onclick="window.history.back()">arrow_back</span>
+
+      <h3>PHP Tutorials</h3>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">PHP While Loop</h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            PHP while loop can be used to traverse set of code like for loop.
+            <br />
+            It should be used if number of iteration is not known. <br />
+            Syntax
+          </p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #008000; font-weight: bold">while</span>(condition){  
+ <span style="color: #408080; font-style: italic">//code to be executed  </span>
+}</pre>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>Alternative Syntax</p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span>
+ <span style="color: #008000; font-weight: bold">while</span>(condition)<span style="color: #666666">:</span>  
+  <span style="color: #408080; font-style: italic">//code to be executed  </span>
+ <span style="color: #008000; font-weight: bold">endwhile</span>;  
+<span style="color: #BC7A00">?&gt;</span></pre>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>PHP While Loop Example</p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span>  
+ <span style="color: #19177C">$n</span><span style="color: #666666">=1</span>;  
+ <span style="color: #008000; font-weight: bold">while</span>(<span style="color: #19177C">$n</span><span style="color: #666666">&lt;=10</span>){  
+  <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;</span><span style="color: #BB6688; font-weight: bold">$n</span><span style="color: #BA2121">&lt;br/&gt;&quot;</span>;  
+  <span style="color: #19177C">$n</span><span style="color: #666666">++</span>;  
+ }  
+<span style="color: #BC7A00">?&gt;</span></pre>
+        </div>
+      </div>
+      <fieldset>
+        <legend>Output:</legend>
+        <pre>
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10</pre
+        >
+      </fieldset>
+
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>Alternative Example</p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span>  
+ <span style="color: #19177C">$n</span><span style="color: #666666">=1</span>;  
+ <span style="color: #008000; font-weight: bold">while</span>(<span style="color: #19177C">$n</span><span style="color: #666666">&lt;=10</span>)<span style="color: #666666">:</span>  
+  <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;</span><span style="color: #BB6688; font-weight: bold">$n</span><span style="color: #BA2121">&lt;br/&gt;&quot;</span>;  
+  <span style="color: #19177C">$n</span><span style="color: #666666">++</span>;  
+ <span style="color: #008000; font-weight: bold">endwhile</span>;  
+<span style="color: #BC7A00">?&gt;</span></pre>
+        </div>
+      </div>
+      <fieldset>
+        <legend>Output:</legend>
+        <pre>
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10</pre
+        >
+      </fieldset>
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">PHP Nested While Loop</h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            We can use while loop inside another while loop in PHP, it is known
+            as nested while loop. <br />
+            In case of inner or nested while loop, nested while loop is executed
+            fully for one outer while loop. If outer while loop is to be
+            executed for 3 times and nested while loop for 3 times, nested while
+            loop will be executed 9 times (3 times for 1st outer loop, 3 times
+            for 2nd outer loop and 3 times for 3rd outer loop). <br />
+            Example
+          </p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span>  
+ <span style="color: #19177C">$i</span><span style="color: #666666">=1</span>;  
+ <span style="color: #008000; font-weight: bold">while</span>(<span style="color: #19177C">$i</span><span style="color: #666666">&lt;=3</span>){  
+  <span style="color: #19177C">$j</span><span style="color: #666666">=1</span>;  
+  <span style="color: #008000; font-weight: bold">while</span>(<span style="color: #19177C">$j</span><span style="color: #666666">&lt;=3</span>){  
+   <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;</span><span style="color: #BB6688; font-weight: bold">$i</span><span style="color: #BA2121">   </span><span style="color: #BB6688; font-weight: bold">$j</span><span style="color: #BA2121">&lt;br/&gt;&quot;</span>;  
+  <span style="color: #19177C">$j</span><span style="color: #666666">++</span>;  
+  }  
+  <span style="color: #19177C">$i</span><span style="color: #666666">++</span>;  
+ }  
+<span style="color: #BC7A00">?&gt;</span></pre>
+        </div>
+      </div>
+      <fieldset>
+        <legend>Output:</legend>
+        <pre>
+1 1
+1 2
+1 3
+2 1
+2 2
+2 3
+3 1
+3 2
+3 3</pre
+        >
+      </fieldset>
+    </div>
+  </body>
+</html>

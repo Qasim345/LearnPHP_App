@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html ng-app="">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/simple-grid.css" />
+    <style type="text/css" media="all">
+      .alt{
+        border: 1px solid #ddd;
+        border-collapse: collapse;
+      }
+      .alt td{
+        border: 1px solid #ddd;
+        border-collapse: collapse;
+        padding: 5px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav id="navbar" style="padding:8px 15px">
+
+      <span id="back" onclick="window.history.back()">arrow_back</span>
+
+      <h3>PHP Tutorials</h3>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">PHP Operators</h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          PHP Operator is a symbol i.e used to perform operations on operands.
+          For example:
+          <p></p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre style="margin: 0; line-height: 125%">
+$num=10+20;//+ is the operator and 10,20 are operands</pre
+          >
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            In the above example, + is the binary + operator, 10 and 20 are
+            operands and $num is variable. <br />
+            PHP Operators can be categorized in following forms:
+          </p>
+          <ul>
+            <li>Arithmetic Operators</li>
+            <li>Comparison Operators</li>
+            <li>Bitwise Operators</li>
+            <li>Logical Operators</li>
+            <li>String Operators</li>
+            <li>Incrementing/Decrementing Operators</li>
+            <li>Array Operators</li>
+            <li>Type Operators</li>
+            <li>Execution Operators</li>
+            <li>Error Control Operators</li>
+            <li>Assignment Operators</li>
+          </ul>
+          <p>
+            We can also categorize operators on behalf of operands. They can be
+            categorized in 3 forms:
+          </p>
+          <ul>
+            <li>
+              Unary Operators: works on single operands such as ++, -- etc.
+            </li>
+            <li>
+              Binary Operators: works on two operands such as binary +, -, *, /
+              etc.
+            </li>
+            <li>Ternary Operators: works on three operands such as "?:".</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">PHP Operators Precedence</h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>Let's see the precedence of PHP operators with associativity.</p>
+        </div>
+      </div>
+      <table class="alt">
+        <tr>
+          <th>Operators</th>
+          <th>Additional Information</th>
+          <th>Associativity</th>
+        </tr>
+        <tr>
+          <td>clone new</td>
+          <td>clone and new</td>
+          <td>non-associative</td>
+        </tr>
+        <tr>
+          <td>[</td>
+          <td>array()</td>
+          <td>left</td>
+        </tr>
+        <tr>
+          <td>**</td>
+          <td>arithmetic</td>
+          <td>right</td>
+        </tr>
+        <tr>
+          <td>++ -- ~ (int) (float) (string) (array) (object) (bool) @</td>
+          <td>increment/decrement and types</td>
+          <td>right</td>
+        </tr>
+        <tr>
+          <td>instanceof</td>
+          <td>types</td>
+          <td>non-associative</td>
+        </tr>
+        <tr>
+          <td>!</td>
+          <td>logical (negation)</td>
+          <td>right</td>
+        </tr>
+        <tr>
+          <td>* / %</td>
+          <td>arithmetic</td>
+          <td>left</td>
+        </tr>
+        <tr>
+          <td>+ - .</td>
+          <td>arithmetic and string concatenation</td>
+          <td>left</td>
+        </tr>
+        <tr>
+          <td>&lt;&lt; &gt;&gt;</td>
+          <td>bitwise (shift)</td>
+          <td>left</td>
+        </tr>
+        <tr>
+          <td>&lt; &lt;= &gt; &gt;=</td>
+          <td>comparison</td>
+          <td>non-associative</td>
+        </tr>
+        <tr>
+          <td>== != === !== &lt;&gt;</td>
+          <td>comparison</td>
+          <td>non-associative</td>
+        </tr>
+        <tr>
+          <td>&amp;</td>
+          <td>bitwise AND</td>
+          <td>left</td>
+        </tr>
+        <tr>
+          <td>^</td>
+          <td>bitwise XOR</td>
+          <td>left</td>
+        </tr>
+        <tr>
+          <td>|</td>
+          <td>bitwise OR</td>
+          <td>left</td>
+        </tr>
+        <tr>
+          <td>&amp;&amp;</td>
+          <td>logical AND</td>
+          <td>left</td>
+        </tr>
+        <tr>
+          <td>||</td>
+          <td>logical OR</td>
+          <td>left</td>
+        </tr>
+        <tr>
+          <td>?:</td>
+          <td>ternary</td>
+          <td>left</td>
+        </tr>
+        <tr>
+          <td>
+            = += -= *= **= /= .= %= &amp;= |= ^= &lt;&lt;= &gt;&gt;= =&gt;
+          </td>
+          <td>assignment</td>
+          <td>right</td>
+        </tr>
+        <tr>
+          <td>and</td>
+          <td>logical</td>
+          <td>left</td>
+        </tr>
+        <tr>
+          <td>xor</td>
+          <td>logical</td>
+          <td>left</td>
+        </tr>
+        <tr>
+          <td>or</td>
+          <td>logical</td>
+          <td>left</td>
+        </tr>
+        <tr>
+          <td>,</td>
+          <td>many uses (comma)</td>
+          <td>left</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

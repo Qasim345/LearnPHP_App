@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html ng-app="">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/simple-grid.css" />
+  </head>
+
+  <body>
+    <nav id="navbar" style="padding:8px 15px">
+    <span id="back" onclick="window.history.back()">arrow_back</span>
+    <h3>Advance Tutorials</h3>
+  </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">PHP Array Functions</h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            PHP provides various array functions to access and manipulate the
+            elements of array. The important PHP array functions are given below
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">1) PHP array() function</h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            PHP array() function creates and returns an array. It allows you to
+            create indexed, associative and multidimensional arrays. <br />
+            Syntax
+          </p>
+        </div>
+      </div>
+      <div class="coding">
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre style="margin: 0; line-height: 125%">
+array array ([ mixed $... ] )</pre
+          >
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;"><p>Example</p></div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span>    
+<span style="color: #19177C">$season</span><span style="color: #666666">=</span><span style="color: #008000; font-weight: bold">array</span>(<span style="color: #BA2121">&quot;summer&quot;</span>,<span style="color: #BA2121">&quot;winter&quot;</span>,<span style="color: #BA2121">&quot;spring&quot;</span>,<span style="color: #BA2121">&quot;autumn&quot;</span>);    
+<span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;Season are: </span><span style="color: #BB6688; font-weight: bold">$season[0]</span><span style="color: #BA2121">, </span><span style="color: #BB6688; font-weight: bold">$season[1]</span><span style="color: #BA2121">, </span><span style="color: #BB6688; font-weight: bold">$season[2]</span><span style="color: #BA2121"> and </span><span style="color: #BB6688; font-weight: bold">$season[3]</span><span style="color: #BA2121">&quot;</span>;    
+<span style="color: #BC7A00">?&gt;</span> </pre>
+        </div>
+      </div>
+      <fieldset>
+        <legend>Output:</legend>
+        Season are: summer, winter, spring and autumn
+      </fieldset>
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">2) PHP array_change_key_case() function</h3>
+          <hr />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            PHP array_change_key_case() function changes the case of all key of
+            an array. <br />
+            Note: It changes case of key only. <br />
+            Syntax
+          </p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre style="margin: 0; line-height: 125%">
+array array_change_key_case ( array $array [, int $case = CASE_LOWER ] )</pre
+          >
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12"><p>Example 1 :</p></div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span>    
+       <span style="color: #19177C">$salary</span><span style="color: #666666">=</span><span style="color: #008000; font-weight: bold">array</span>(<span style="color: #BA2121">&quot;a&quot;</span><span style="color: #666666">=&gt;</span><span style="color: #BA2121">&quot;550000&quot;</span>,<span style="color: #BA2121">&quot;b&quot;</span><span style="color: #666666">=&gt;</span><span style="color: #BA2121">&quot;250000&quot;</span>,<span style="color: #BA2121">&quot;c&quot;</span><span style="color: #666666">=&gt;</span><span style="color: #BA2121">&quot;200000&quot;</span>);    
+       <span style="color: #008000">print_r</span>(<span style="color: #008000">array_change_key_case</span>(<span style="color: #19177C">$salary</span>,CASE_UPPER));   
+      <span style="color: #BC7A00">?&gt;</span></pre>
+        </div>
+      </div>
+      <fieldset>
+        <legend>Output:</legend>
+        <pre>Array ( [A] => 550000 [B] => 250000 [C] => 200000 )</pre>
+      </fieldset>
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <p>Example 2 : </p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span>    
+ <span style="color: #19177C">$salary</span><span style="color: #666666">=</span><span style="color: #008000; font-weight: bold">array</span>(<span style="color: #BA2121">&quot;A&quot;</span><span style="color: #666666">=&gt;</span><span style="color: #BA2121">&quot;550000&quot;</span>,<span style="color: #BA2121">&quot;B&quot;</span><span style="color: #666666">=&gt;</span><span style="color: #BA2121">&quot;250000&quot;</span>,<span style="color: #BA2121">&quot;C&quot;</span><span style="color: #666666">=&gt;</span><span style="color: #BA2121">&quot;200000&quot;</span>);    
+ <span style="color: #008000">print_r</span>(<span style="color: #008000">array_change_key_case</span>(<span style="color: #19177C">$salary</span>,CASE_LOWER));   
+<span style="color: #BC7A00">?&gt;</span></pre>
+        </div>
+      </div>
+      <fieldset>
+        <legend>Output:</legend>
+        Array ( [a] => 550000 [b] => 250000 [c] => 200000 )
+      </fieldset>
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">3) PHP array_chunk() function</h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            PHP array_chunk() function splits array into chunks. By using
+            array_chunk() method, you can divide array into many parts. <br />
+            Syntax
+          </p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre style="margin: 0; line-height: 125%">
+array array_chunk ( array $array , int $size [, bool $preserve_keys = false ] )      </pre
+          >
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;"><p>Example</p></div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span>    
+ <span style="color: #19177C">$salary</span><span style="color: #666666">=</span><span style="color: #008000; font-weight: bold">array</span>(<span style="color: #BA2121">&quot;Sonoo&quot;</span><span style="color: #666666">=&gt;</span><span style="color: #BA2121">&quot;550000&quot;</span>,<span style="color: #BA2121">&quot;Vimal&quot;</span><span style="color: #666666">=&gt;</span><span style="color: #BA2121">&quot;250000&quot;</span>,<span style="color: #BA2121">&quot;Ratan&quot;</span><span style="color: #666666">=&gt;</span><span style="color: #BA2121">&quot;200000&quot;</span>);    
+ <span style="color: #008000">print_r</span>(<span style="color: #008000">array_chunk</span>(<span style="color: #19177C">$salary</span>,<span style="color: #666666">2</span>));   
+<span style="color: #BC7A00">?&gt;</span></pre>
+        </div>
+      </div>
+      <fieldset>
+        <legend>Output:</legend>
+        <pre>
+Array (
+[0] => Array ( [0] => 550000 [1] => 250000 )
+[1] => Array ( [0] => 200000 )
+)     </pre
+        >
+      </fieldset>
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">4) PHP count() function</h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            PHP count() function counts all elements in an array. <br />
+            Syntax
+          </p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre style="margin: 0; line-height: 125%">
+int count ( mixed $array_or_countable [, int $mode = COUNT_NORMAL ] ) </pre
+          >
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;"><p>Example</p></div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span>    
+ <span style="color: #19177C">$season</span><span style="color: #666666">=</span><span style="color: #008000; font-weight: bold">array</span>(<span style="color: #BA2121">&quot;summer&quot;</span>,<span style="color: #BA2121">&quot;winter&quot;</span>,<span style="color: #BA2121">&quot;spring&quot;</span>,<span style="color: #BA2121">&quot;autumn&quot;</span>);    
+ <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #008000">count</span>(<span style="color: #19177C">$season</span>);    
+<span style="color: #BC7A00">?&gt;</span></pre>
+        </div>
+      </div>
+      <fieldset>
+        <legend>Output:</legend>
+        4
+      </fieldset>
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">5) PHP sort() function</h3>
+          <hr />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            PHP sort() function sorts all the elements in an array. <br />
+            Syntax
+          </p>
+        </div>
+      </div>
+
+      <div class="coding">
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre style="margin: 0; line-height: 125%">
+bool sort ( array &amp;$array [, int $sort_flags = SORT_REGULAR ] )  </pre
+          >
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;"><p>Example</p></div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span>    
+      <span style="color: #19177C">$season</span><span style="color: #666666">=</span><span style="color: #008000; font-weight: bold">array</span>(<span style="color: #BA2121">&quot;summer&quot;</span>,<span style="color: #BA2121">&quot;winter&quot;</span>,<span style="color: #BA2121">&quot;spring&quot;</span>,<span style="color: #BA2121">&quot;autumn&quot;</span>);    
+      <span style="color: #008000">sort</span>(<span style="color: #19177C">$season</span>);  
+      <span style="color: #008000; font-weight: bold">foreach</span>( <span style="color: #19177C">$season</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #19177C">$s</span> )    
+      {    
+        <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;</span><span style="color: #BB6688; font-weight: bold">$s</span><span style="color: #BA2121">&lt;br /&gt;&quot;</span>;    
+      }    
+      <span style="color: #BC7A00">?&gt;</span>   
+      </pre>
+        </div>
+      </div>
+      <fieldset>
+        <legend>Output:</legend>
+        <pre>
+autumn
+spring
+summer
+winter</pre
+        >
+      </fieldset>
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">6) PHP array_reverse() function</h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            PHP array_reverse() function returns an array containing elements in
+            reversed order. <br />
+            Syntax
+          </p>
+        </div>
+      </div>
+      <div
+        style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+      >
+        <pre style="margin: 0; line-height: 125%">
+array array_reverse ( array $array [, bool $preserve_keys = false ] ) </pre
+        >
+      </div>
+      <div class="coding"></div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;"><p>Example</p></div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span>    
+<span style="color: #19177C">$season</span><span style="color: #666666">=</span><span style="color: #008000; font-weight: bold">array</span>(<span style="color: #BA2121">&quot;summer&quot;</span>,<span style="color: #BA2121">&quot;winter&quot;</span>,<span style="color: #BA2121">&quot;spring&quot;</span>,<span style="color: #BA2121">&quot;autumn&quot;</span>);    
+<span style="color: #19177C">$reverseseason</span><span style="color: #666666">=</span><span style="color: #008000">array_reverse</span>(<span style="color: #19177C">$season</span>);  
+<span style="color: #008000; font-weight: bold">foreach</span>( <span style="color: #19177C">$reverseseason</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #19177C">$s</span> )    
+{    
+  <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;</span><span style="color: #BB6688; font-weight: bold">$s</span><span style="color: #BA2121">&lt;br /&gt;&quot;</span>;    
+}    
+<span style="color: #BC7A00">?&gt;</span></pre>
+        </div>
+      </div>
+      <fieldset>
+        <legend>Output:</legend>
+        <pre>
+autumn
+spring
+winter
+summer</pre
+        >
+      </fieldset>
+
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">7) PHP array_search() function</h3>
+          <hr />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            PHP array_search() function searches the specified value in an
+            array. It returns key if search is successful. <br />
+            Syntax
+          </p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre style="margin: 0; line-height: 125%">
+mixed array_search ( mixed $needle , array $haystack [, bool $strict = false ] ) </pre
+          >
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;"><p>Example</p></div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span>    
+<span style="color: #19177C">$season</span><span style="color: #666666">=</span><span style="color: #008000; font-weight: bold">array</span>(<span style="color: #BA2121">&quot;summer&quot;</span>,<span style="color: #BA2121">&quot;winter&quot;</span>,<span style="color: #BA2121">&quot;spring&quot;</span>,<span style="color: #BA2121">&quot;autumn&quot;</span>);    
+<span style="color: #19177C">$key</span><span style="color: #666666">=</span><span style="color: #008000">array_search</span>(<span style="color: #BA2121">&quot;spring&quot;</span>,<span style="color: #19177C">$season</span>);  
+<span style="color: #008000; font-weight: bold">echo</span> <span style="color: #19177C">$key</span>;    
+<span style="color: #BC7A00">?&gt;</span>    
+</pre>
+        </div>
+      </div>
+      <fieldset>
+        <legend>Output:</legend>
+        2
+      </fieldset>
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">8) PHP array_intersect() function
+          </h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;"><p>PHP array_intersect() function returns the intersection of two array. In other words, it returns the matching elements
+        of two array.
+        <br>
+        Syntax</p></div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;">
+          <pre style="margin: 0; line-height: 125%">array array_intersect ( array $array1 , array $array2 [, array $... ] )  </pre>
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;"><p>
+          Example
+        </p></div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;">
+          <pre style="margin: 0; line-height: 125%"><span style="color: #BC7A00">&lt;?php</span>    
+        <span style="color: #19177C">$name1</span><span style="color: #666666">=</span><span style="color: #008000; font-weight: bold">array</span>(<span style="color: #BA2121">&quot;abc&quot;</span>,<span style="color: #BA2121">&quot;pqr&quot;</span>,<span style="color: #BA2121">&quot;xyz&quot;</span>,<span style="color: #BA2121">&quot;mno&quot;</span>);    
+        <span style="color: #19177C">$name2</span><span style="color: #666666">=</span><span style="color: #008000; font-weight: bold">array</span>(<span style="color: #BA2121">&quot;def&quot;</span>,<span style="color: #BA2121">&quot;abc&quot;</span>,<span style="color: #BA2121">&quot;stu&quot;</span>,<span style="color: #BA2121">&quot;xyz&quot;</span>);    
+        <span style="color: #19177C">$name3</span><span style="color: #666666">=</span><span style="color: #008000">array_intersect</span>(<span style="color: #19177C">$name1</span>,<span style="color: #19177C">$name2</span>);  
+        <span style="color: #008000; font-weight: bold">foreach</span>( <span style="color: #19177C">$name3</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #19177C">$n</span> )    
+        {    
+          <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;</span><span style="color: #BB6688; font-weight: bold">$n</span><span style="color: #BA2121">&lt;br /&gt;&quot;</span>;    
+        }    
+<span style="color: #BC7A00">?&gt;</span>    </pre>
+        </div>
+
+</div>
+      <fieldset>
+        <legend>Output:</legend>
+<pre>abc
+xyz     </pre>
+      </fieldset>
+    </div>
+  </body>
+</html>

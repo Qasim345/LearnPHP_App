@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html ng-app="">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/simple-grid.css" />
+  </head>
+
+  <body>
+    <nav id="navbar" style="padding:8px 15px">
+
+      <span id="back" onclick="window.history.back()">arrow_back</span>
+
+      <h3>PHP Tutorials</h3>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">PHP Constants</h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            PHP constants are name or identifier that can't be changed during
+            the execution of the script. PHP constants can be defined by 2 ways:
+          </p>
+          <ol>
+            <li>Using define() function</li>
+            <li>Using const keyword</li>
+          </ol>
+          <p>
+            PHP constants follow the same PHP variable rules. For example, it
+            can be started with letter or underscore only. <br />
+            Conventionally, PHP constants should be defined in uppercase
+            letters.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">PHP constant: define()</h3>
+          <hr />
+        </div>
+        <div class="row">
+          <div class="col-12" style="margin-top: 0px;">
+            <p>Let's see the syntax of define() function in PHP.</p>
+          </div>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre style="margin: 0; line-height: 125%">
+define(name, value, case-insensitive) </pre
+          >
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <ol>
+            <li>name: specifies the constant name</li>
+            <li>value: specifies the constant value</li>
+            <li>
+              case-insensitive: Default value is false. It means it is case
+              sensitive by default.
+            </li>
+          </ol>
+          <p>
+            Let's see the example to define PHP constant using define(). <br />
+            File: constant1.php
+          </p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span>  
+ <span style="color: #008000">define</span>(<span style="color: #BA2121">&quot;MESSAGE&quot;</span>,<span style="color: #BA2121">&quot;Hello PHP Developer&quot;</span>);  
+ <span style="color: #008000; font-weight: bold">echo</span> MESSAGE;  
+<span style="color: #BC7A00">?&gt;</span></pre>
+        </div>
+      </div>
+      <fieldset>
+        <legend>Output:</legend>
+        Hello PHP Developer
+      </fieldset>
+
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>File: constant2.php</p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span>  
+ <span style="color: #008000">define</span>(<span style="color: #BA2121">&quot;MESSAGE&quot;</span>,<span style="color: #BA2121">&quot;Hello PHP Developer&quot;</span>,<span style="color: #008000; font-weight: bold">true</span>);<span style="color: #408080; font-style: italic">//not case sensitive  </span>
+ <span style="color: #008000; font-weight: bold">echo</span> MESSAGE;  
+ <span style="color: #008000; font-weight: bold">echo</span> message;  
+<span style="color: #BC7A00">?&gt;</span></pre>
+        </div>
+      </div>
+      <fieldset>
+        <legend>Output:</legend>
+        <pre>Hello PHP DeveloperHello PHP Developer</pre>
+      </fieldset>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>File: constant3.php</p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span>  
+ <span style="color: #008000">define</span>(<span style="color: #BA2121">&quot;MESSAGE&quot;</span>,<span style="color: #BA2121">&quot;Hello PHP Developer&quot;</span>,<span style="color: #008000; font-weight: bold">false</span>);<span style="color: #408080; font-style: italic">//case sensitive  </span>
+ <span style="color: #008000; font-weight: bold">echo</span> MESSAGE;  
+ <span style="color: #008000; font-weight: bold">echo</span> message;  
+<span style="color: #BC7A00">?&gt;</span></pre>
+        </div>
+      </div>
+      <fieldset>
+        <legend>Output:</legend>
+Hello PHP Developer
+Notice: Use of undefined constant message - assumed 'message'
+in C:\wamp\www\vconstant3.php on line 4
+message
+      </fieldset>
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">
+            PHP constant: const keyword
+          </h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;"><p>The const keyword defines constants at compile time. It is a language construct not a function.
+        <br>
+        It is bit faster than define().
+        <br>
+        It is always case sensitive.
+        <br>
+        File: constant4.php</p></div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;"><p></p></div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me --><div style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #BC7A00">&lt;?php</span>  
+ <span style="color: #008000; font-weight: bold">const</span> <span style="color: #880000">MESSAGE</span><span style="color: #666666">=</span><span style="color: #BA2121">&quot;Hello const by PHP Developer&quot;</span>;  
+ <span style="color: #008000; font-weight: bold">echo</span> MESSAGE;  
+<span style="color: #BC7A00">?&gt;</span></pre>
+</div>
+
+      </div>
+      <fieldset>
+        <legend>Output:</legend>
+        <pre>
+          Hello const by PHP Developer
+        </pre>
+      </fieldset>
+    </div>
+  </body>
+</html>

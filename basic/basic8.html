@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html ng-app="">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/simple-grid.css" />
+  </head>
+
+  <body>
+    <nav id="navbar" style="padding:8px 15px">
+
+      <span id="back" onclick="window.history.back()">arrow_back</span>
+
+      <h3>PHP Tutorials</h3>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">PHP $ and $$ Variables</h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;"><p>
+          The $var (single dollar) is a normal variable with the name var that stores any value like string, integer, float, etc.
+          <br>
+          The $$var (double dollar) is a reference variable that stores the value of the $variable inside it. <br>
+          To understand the difference better, let's see some examples.
+          <br>
+           Example 1
+        </p></div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me --><div style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #BC7A00">&lt;?php</span>  
+ <span style="color: #19177C">$x</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;abc&quot;</span>;  
+ <span style="color: #19177C">$$x</span> <span style="color: #666666">=</span> <span style="color: #666666">200</span>;  
+ <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #19177C">$x</span><span style="color: #666666">.</span><span style="color: #BA2121">&quot;&lt;br/&gt;&quot;</span>;  
+ <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #19177C">$$x</span><span style="color: #666666">.</span><span style="color: #BA2121">&quot;&lt;br/&gt;&quot;</span>;  
+ <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #19177C">$abc</span>;  
+<span style="color: #BC7A00">?&gt;</span></pre></div>
+
+      </div>
+      <fieldset>
+        <legend>Output:</legend>
+        abc <br>
+        200 <br>
+        200 
+      </fieldset>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;"><p>In the above example, we have assigned a value to the variable x as abc. Value of reference variable $$x is assigned as
+        200.
+        <br>
+        Now we have printed the values $x, $$x and $abc.
+      <br> Example 2
+      </p></div>
+      </div>
+
+      <div class="coding">
+        <!-- HTML generated using hilite.me --><div style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #BC7A00">&lt;?php</span>  
+ <span style="color: #19177C">$x</span><span style="color: #666666">=</span><span style="color: #BA2121">&quot;Gujarat&quot;</span>;  
+ <span style="color: #19177C">$$x</span><span style="color: #666666">=</span><span style="color: #BA2121">&quot;Gandhinagar&quot;</span>;  
+ <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #19177C">$x</span><span style="color: #666666">.</span> <span style="color: #BA2121">&quot;&lt;br&gt;&quot;</span>;  
+ <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #19177C">$$x</span><span style="color: #666666">.</span> <span style="color: #BA2121">&quot;&lt;br&gt;&quot;</span>;  
+ <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;Capital of </span><span style="color: #BB6688; font-weight: bold">$x</span><span style="color: #BA2121"> is &quot;</span> <span style="color: #666666">.</span> <span style="color: #19177C">$$x</span>;  
+<span style="color: #BC7A00">?&gt;</span> </pre>
+</div>
+
+      </div>
+      <fieldset><legend>Output:</legend>
+      Gujarat <br>
+      Gandhinagar <br>
+      Capital of Gujarat is Gandhinagar
+      </fieldset>
+    
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;"><p>In the above example, we have assigned a value to the variable x as U.P. Value of reference variable $$x is assigned as
+        Lucknow.
+        <br>
+        Now we have printed the values $x, $$x and a string.
+      <br>
+      Example 3
+      </p></div>
+      </div>
+      <div class="coding">
+<!-- HTML generated using hilite.me --><div style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #BC7A00">&lt;?php</span>  
+ <span style="color: #19177C">$name</span><span style="color: #666666">=</span><span style="color: #BA2121">&quot;Cat&quot;</span>;  
+ <span style="color: #19177C">${$name}</span><span style="color: #666666">=</span><span style="color: #BA2121">&quot;Dog&quot;</span>;  
+ <span>$</span>{<span style="color: #19177C">${$name}</span>}<span style="color: #666666">=</span><span style="color: #BA2121">&quot;Monkey&quot;</span>;  
+ <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #19177C">$name</span><span style="color: #666666">.</span> <span style="color: #BA2121">&quot;&lt;br&gt;&quot;</span>;  
+ <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #19177C">${$name}</span><span style="color: #666666">.</span> <span style="color: #BA2121">&quot;&lt;br&gt;&quot;</span>;  
+ <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #19177C">$Cat</span><span style="color: #666666">.</span> <span style="color: #BA2121">&quot;&lt;br&gt;&quot;</span>;  
+ <span style="color: #008000; font-weight: bold">echo</span> <span>$</span>{<span style="color: #19177C">${$name}</span>}<span style="color: #666666">.</span> <span style="color: #BA2121">&quot;&lt;br&gt;&quot;</span>;  
+ <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #19177C">$Dog</span><span style="color: #666666">.</span> <span style="color: #BA2121">&quot;&lt;br&gt;&quot;</span>;  
+<span style="color: #BC7A00">?&gt;</span></pre></div>
+
+      </div>
+      <fieldset><legend>Output:</legend>
+      Cat <br>
+      Dog <br>
+      Dog <br>
+      Monkey <br>
+      Monkey
+      </fieldset>
+      
+
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;"><p>In the above example, we have assigned a value to the variable name Cat. Value of reference variable ${$name} is
+        assigned as Dog and ${${$name}} as Monkey.
+        <br>
+        Now we have printed the values as $name, ${$name}, $Cat, ${${$name}} and $Dog.</p></div>
+      </div>
+    </div>
+  </body>
+</html>

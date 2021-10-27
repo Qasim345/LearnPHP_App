@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html ng-app="">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/simple-grid.css" />
+  </head>
+
+  <body>
+    <nav id="navbar" style="padding:8px 15px">
+    <span id="back" onclick="window.history.back()">arrow_back</span>
+    <h3>Advance Tutorials</h3>
+  </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">PHP Include File</h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            PHP allows you to include file so that a page content can be reused
+            many times. There are two ways to include file in PHP.
+          </p>
+          <ol>
+            <li>include</li>
+            <li>
+              require
+            </li>
+          </ol>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <h3 class="heading">Advantage</h3>
+          <hr />
+          <p>
+            <br />
+            <b>Code Reusability:</b> By the help of include and require
+            construct, we can reuse HTML code or PHP script in many PHP scripts.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">PHP include example</h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            PHP include is used to include file on the basis of given path. You
+            may use relative or absolute path of the file. Let's see a simple
+            PHP include example.
+            <br />
+            File: menu.html
+          </p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #666666">&lt;</span><span style="color: #008000; font-weight: bold">a</span> <span style="color: #008000; font-weight: bold">href</span><span style="color: #666666">=</span><span style="color: #BA2121">&quot;http://www.google.com&quot;</span><span style="color: #666666">&gt;</span><span style="color: #008000; font-weight: bold">Google</span> <span style="color: #008000; font-weight: bold">Home</span><span style="color: #666666">&lt;/</span><span style="color: #008000; font-weight: bold">a</span><span style="color: #666666">&gt;</span> <span style="color: #666666">|</span>   
+<span style="color: #666666">&lt;</span><span style="color: #008000; font-weight: bold">a</span> <span style="color: #008000; font-weight: bold">href</span><span style="color: #666666">=</span><span style="color: #BA2121">&quot;http://https://www.google.com/maps/&quot;</span><span style="color: #666666">&gt;</span><span style="color: #008000; font-weight: bold">Google</span> <span style="color: #008000; font-weight: bold">Map</span><span style="color: #666666">&lt;/</span><span style="color: #008000; font-weight: bold">a</span><span style="color: #666666">&gt;</span> <span style="color: #666666">|</span>   
+<span style="color: #666666">&lt;</span><span style="color: #008000; font-weight: bold">a</span> <span style="color: #008000; font-weight: bold">href</span><span style="color: #666666">=</span><span style="color: #BA2121">&quot;https://translate.google.com&quot;</span><span style="color: #666666">&gt;</span><span style="color: #008000; font-weight: bold">Google</span> <span style="color: #008000; font-weight: bold">Translate</span><span style="color: #666666">&lt;/</span><span style="color: #008000; font-weight: bold">a</span><span style="color: #666666">&gt;</span> <span style="color: #666666">|</span>    
+<span style="color: #666666">&lt;</span><span style="color: #008000; font-weight: bold">a</span> <span style="color: #008000; font-weight: bold">href</span><span style="color: #666666">=</span><span style="color: #BA2121">&quot;https://play.google.com/store/apps/developer?id=Code+Jupiter&quot;</span><span style="color: #666666">&gt;</span><span style="color: #008000; font-weight: bold">Code</span> <span style="color: #008000; font-weight: bold">Jupiter</span><span>&#39;</span><span style="color: #008000; font-weight: bold">s</span> <span style="color: #008000; font-weight: bold">APP</span><span style="color: #666666">&lt;/</span><span style="color: #008000; font-weight: bold">a</span><span style="color: #666666">&gt;</span> </pre>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>File: include1.php</p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span> <span style="color: #008000; font-weight: bold">include</span>(<span style="color: #BA2121">&quot;menu.html&quot;</span>); <span style="color: #BC7A00">?&gt;</span>  
+<span style="color: #666666">&lt;</span><span style="color: #008000; font-weight: bold">h1</span><span style="color: #666666">&gt;</span><span style="color: #008000; font-weight: bold">This</span> <span style="color: #008000; font-weight: bold">is</span> <span style="color: #008000; font-weight: bold">Main</span> <span style="color: #008000; font-weight: bold">Page</span><span style="color: #666666">&lt;/</span><span style="color: #008000; font-weight: bold">h1</span><span style="color: #666666">&gt;</span></pre>
+        </div>
+      </div>
+      <fieldset>
+        <legend>Output:</legend>
+        <a href="http://www.google.com">Google Home</a> |
+        <a href="http://https://www.google.com/maps/">Google Map</a> |
+        <a href="https://translate.google.com">Google Translate</a> |
+        <a href="https://play.google.com/store/apps/developer?id=Code+Jupiter"
+          >Code Jupiter's APP</a
+        >
+        <h1>This is Main Page</h1>
+      </fieldset>
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">PHP require example</h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            PHP require is similar to include. Let's see a simple PHP require
+            example.
+            <br />
+            File: menu.html
+          </p>
+        </div>
+      </div>
+
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #666666">&lt;</span><span style="color: #008000; font-weight: bold">a</span> <span style="color: #008000; font-weight: bold">href</span><span style="color: #666666">=</span><span style="color: #BA2121">&quot;http://www.google.com&quot;</span><span style="color: #666666">&gt;</span><span style="color: #008000; font-weight: bold">Google</span> <span style="color: #008000; font-weight: bold">Home</span><span style="color: #666666">&lt;/</span><span style="color: #008000; font-weight: bold">a</span><span style="color: #666666">&gt;</span> <span style="color: #666666">|</span>   
+<span style="color: #666666">&lt;</span><span style="color: #008000; font-weight: bold">a</span> <span style="color: #008000; font-weight: bold">href</span><span style="color: #666666">=</span><span style="color: #BA2121">&quot;http://https://www.google.com/maps/&quot;</span><span style="color: #666666">&gt;</span><span style="color: #008000; font-weight: bold">Google</span> <span style="color: #008000; font-weight: bold">Map</span><span style="color: #666666">&lt;/</span><span style="color: #008000; font-weight: bold">a</span><span style="color: #666666">&gt;</span> <span style="color: #666666">|</span>   
+<span style="color: #666666">&lt;</span><span style="color: #008000; font-weight: bold">a</span> <span style="color: #008000; font-weight: bold">href</span><span style="color: #666666">=</span><span style="color: #BA2121">&quot;https://translate.google.com&quot;</span><span style="color: #666666">&gt;</span><span style="color: #008000; font-weight: bold">Google</span> <span style="color: #008000; font-weight: bold">Translate</span><span style="color: #666666">&lt;/</span><span style="color: #008000; font-weight: bold">a</span><span style="color: #666666">&gt;</span> <span style="color: #666666">|</span>    
+<span style="color: #666666">&lt;</span><span style="color: #008000; font-weight: bold">a</span> <span style="color: #008000; font-weight: bold">href</span><span style="color: #666666">=</span><span style="color: #BA2121">&quot;https://play.google.com/store/apps/developer?id=Code+Jupiter&quot;</span><span style="color: #666666">&gt;</span><span style="color: #008000; font-weight: bold">Code</span> <span style="color: #008000; font-weight: bold">Jupiter</span><span>&#39;</span><span style="color: #008000; font-weight: bold">s</span> <span style="color: #008000; font-weight: bold">APP</span><span style="color: #666666">&lt;/</span><span style="color: #008000; font-weight: bold">a</span><span style="color: #666666">&gt;</span> </pre>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>File: require1.php</p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span> <span style="color: #008000; font-weight: bold">require</span>(<span style="color: #BA2121">&quot;menu.html&quot;</span>); <span style="color: #BC7A00">?&gt;</span>  
+      <span style="color: #666666">&lt;</span><span style="color: #008000; font-weight: bold">h1</span><span style="color: #666666">&gt;</span><span style="color: #008000; font-weight: bold">This</span> <span style="color: #008000; font-weight: bold">is</span> <span style="color: #008000; font-weight: bold">Main</span> <span style="color: #008000; font-weight: bold">Page</span><span style="color: #666666">&lt;/</span><span style="color: #008000; font-weight: bold">h1</span><span style="color: #666666">&gt;</span></pre>
+        </div>
+      </div>
+      <fieldset>
+        <legend>Output:</legend>
+        <a href="http://www.google.com">Google Home</a> |
+        <a href="http://https://www.google.com/maps/">Google Map</a> |
+        <a href="https://translate.google.com">Google Translate</a> |
+        <a href="https://play.google.com/store/apps/developer?id=Code+Jupiter"
+          >Code Jupiter's APP</a
+        >
+        <h1>This is Main Page</h1>
+      </fieldset>
+
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">PHP include vs PHP require</h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            If file is missing or inclusion fails, include allows the script to
+            continue but require halts the script producing a fatal
+            E_COMPILE_ERROR level error.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

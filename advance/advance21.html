@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html ng-app="">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/simple-grid.css" />
+  </head>
+
+  <body>
+    <nav id="navbar" style="padding:8px 15px">
+    <span id="back" onclick="window.history.back()">arrow_back</span>
+    <h3>Advance Tutorials</h3>
+  </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">PHP Read File</h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            PHP provides various functions to read data from file. There are
+            different functions that allow you to read all file data, read data
+            line by line and read data character by character. The available PHP
+            file read functions are given below.
+          </p>
+          <ul>
+            <li>
+              fread()
+            </li>
+            <li>
+              fgets()
+            </li>
+            <li>
+              fgetc()
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">PHP Read File - fread()</h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            The PHP fread() function is used to read data of the file. It
+            requires two arguments: file resource and file size.
+            <br />
+            Syntax
+          </p>
+        </div>
+      </div>
+      <div class="coding">
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #008000; font-weight: bold">string</span> <span style="color: #008000; font-weight: bold">fread</span> <span style="color: #666666">(</span><span style="color: #008000; font-weight: bold">resource</span> <span style="color: #008000; font-weight: bold">$</span><span style="color: #008000; font-weight: bold">handle</span> <span style="color: #666666">,</span> <span style="color: #008000; font-weight: bold">int</span> <span style="color: #008000; font-weight: bold">$</span><span style="color: #008000; font-weight: bold">length</span> <span style="color: #666666">)</span>  </pre>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            <b>$handle</b> represents file pointer that is created by fopen()
+            function.
+            <br />
+            <b>$length</b> represents length of byte to be read.
+          </p>
+        </div>
+      </div>
+      <div class="coding">
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span>    
+ <span style="color: #19177C">$filename</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;c:</span><span style="color: #BB6622; font-weight: bold">\\</span><span style="color: #BA2121">file1.txt&quot;</span>;    
+ <span style="color: #19177C">$fp</span> <span style="color: #666666">=</span> <span style="color: #008000">fopen</span>(<span style="color: #19177C">$filename</span>, <span style="color: #BA2121">&quot;r&quot;</span>);<span style="color: #408080; font-style: italic">//open file in read mode    </span>
+  
+ <span style="color: #19177C">$contents</span> <span style="color: #666666">=</span> <span style="color: #008000">fread</span>(<span style="color: #19177C">$fp</span>, <span style="color: #008000">filesize</span>(<span style="color: #19177C">$filename</span>));<span style="color: #408080; font-style: italic">//read file    </span>
+  
+ <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;&lt;pre&gt;</span><span style="color: #BB6688; font-weight: bold">$contents</span><span style="color: #BA2121">&lt;/pre&gt;&quot;</span>;<span style="color: #408080; font-style: italic">//printing data of file  </span>
+ <span style="color: #008000">fclose</span>(<span style="color: #19177C">$fp</span>);<span style="color: #408080; font-style: italic">//close file    </span>
+<span style="color: #BC7A00">?&gt;</span> </pre>
+        </div>
+      </div>
+      <fieldset>
+        <legend>Output:</legend>
+        <pre>
+this is first line
+this is another line
+this is third line</pre
+        >
+      </fieldset>
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">PHP Read File - fgets()</h3>
+          <hr />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            The PHP fgets() function is used to read single line from the file.
+            <br />
+            Syntax
+          </p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #008000; font-weight: bold">string</span> <span style="color: #008000; font-weight: bold">fgets</span> <span style="color: #666666">(</span> <span style="color: #008000; font-weight: bold">resource</span> <span style="color: #008000; font-weight: bold">$</span><span style="color: #008000; font-weight: bold">handle</span> <span style="color: #666666">[,</span> <span style="color: #008000; font-weight: bold">int</span> <span style="color: #008000; font-weight: bold">$</span><span style="color: #008000; font-weight: bold">length</span> <span style="color: #666666">]</span> <span style="color: #666666">)</span>  
+        </pre>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            Example
+          </p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span>    
+<span style="color: #19177C">$fp</span> <span style="color: #666666">=</span> <span style="color: #008000">fopen</span>(<span style="color: #BA2121">&quot;c:</span><span style="color: #BB6622; font-weight: bold">\\</span><span style="color: #BA2121">file1.txt&quot;</span>, <span style="color: #BA2121">&quot;r&quot;</span>);<span style="color: #408080; font-style: italic">//open file in read mode    </span>
+<span style="color: #008000; font-weight: bold">echo</span> <span style="color: #008000">fgets</span>(<span style="color: #19177C">$fp</span>);  
+<span style="color: #008000">fclose</span>(<span style="color: #19177C">$fp</span>);  
+<span style="color: #BC7A00">?&gt;</span>  </pre>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">
+            PHP Read File - fgetc()
+          </h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            The PHP fgetc() function is used to read single character from the
+            file. To get all data using fgetc() function, use !feof() function
+            inside the while loop.
+            <br />
+            Syntax
+          </p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre style="margin: 0; line-height: 125%">
+string fgetc ( resource $handle ) </pre
+          >
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>Example</p>
+        </div>
+      </div>
+      <div class="coding">
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span>    
+ <span style="color: #19177C">$fp</span> <span style="color: #666666">=</span> <span style="color: #008000">fopen</span>(<span style="color: #BA2121">&quot;c:</span><span style="color: #BB6622; font-weight: bold">\\</span><span style="color: #BA2121">file1.txt&quot;</span>, <span style="color: #BA2121">&quot;r&quot;</span>);<span style="color: #408080; font-style: italic">//open file in read mode    </span>
+ <span style="color: #008000; font-weight: bold">while</span>(<span style="color: #666666">!</span><span style="color: #008000">feof</span>(<span style="color: #19177C">$fp</span>)) {  
+   <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #008000">fgetc</span>(<span style="color: #19177C">$fp</span>);  
+ }  
+ <span style="color: #008000">fclose</span>(<span style="color: #19177C">$fp</span>);  
+<span style="color: #BC7A00">?&gt;</span> </pre>
+        </div>
+      </div>
+      <fieldset>
+        <legend>Output:</legend>
+        this is first line this is another line this is third line
+      </fieldset>
+    </div>
+  </body>
+</html>

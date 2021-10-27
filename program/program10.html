@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html ng-app="">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/simple-grid.css" />
+  </head>
+
+  <body>
+    <nav id="navbar" style="padding:8px 15px">
+    <span id="back" onclick="window.history.back()">arrow_back</span>
+    <h3>PHP Programs</h3>
+  </nav>
+    <div class="container">
+      <!--Heading-->
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading"></h3>
+          <hr />
+        </div>
+      </div>
+      <!--//Heading-->
+
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p><b>Program</b></p>
+        </div>
+      </div>
+      <div class="coding"><!-- HTML generated using hilite.me --><div style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #BC7A00">&lt;?php</span>  
+<span style="color: #408080; font-style: italic">/* Print fiboancci series upto 12 elements. */</span>  
+<span style="color: #19177C">$num</span> <span style="color: #666666">=</span> <span style="color: #666666">12</span>;  
+<span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;&lt;h3&gt;Fibonacci series using recursive function:&lt;/h3&gt;&quot;</span>;  
+<span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;</span><span style="color: #BB6622; font-weight: bold">\n</span><span style="color: #BA2121">&quot;</span>;  
+<span style="color: #408080; font-style: italic">/* Recursive function for fibonacci series. */</span>  
+<span style="color: #008000; font-weight: bold">function</span> <span style="color: #0000FF">series</span>(<span style="color: #19177C">$num</span>){  
+    <span style="color: #008000; font-weight: bold">if</span>(<span style="color: #19177C">$num</span> <span style="color: #666666">==</span> <span style="color: #666666">0</span>){  
+    <span style="color: #008000; font-weight: bold">return</span> <span style="color: #666666">0</span>;  
+    }<span style="color: #008000; font-weight: bold">else</span> <span style="color: #008000; font-weight: bold">if</span>( <span style="color: #19177C">$num</span> <span style="color: #666666">==</span> <span style="color: #666666">1</span>){  
+<span style="color: #008000; font-weight: bold">return</span> <span style="color: #666666">1</span>;  
+}  <span style="color: #008000; font-weight: bold">else</span> {  
+<span style="color: #008000; font-weight: bold">return</span> (series(<span style="color: #19177C">$num</span><span style="color: #666666">-1</span>) <span style="color: #666666">+</span> series(<span style="color: #19177C">$num</span><span style="color: #666666">-2</span>));  
+}   
+}  
+<span style="color: #408080; font-style: italic">/* Call Function. */</span>  
+<span style="color: #008000; font-weight: bold">for</span> (<span style="color: #19177C">$i</span> <span style="color: #666666">=</span> <span style="color: #666666">0</span>; <span style="color: #19177C">$i</span> <span style="color: #666666">&lt;</span> <span style="color: #19177C">$num</span>; <span style="color: #19177C">$i</span><span style="color: #666666">++</span>){  
+<span style="color: #008000; font-weight: bold">echo</span> series(<span style="color: #19177C">$i</span>);  
+<span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;</span><span style="color: #BB6622; font-weight: bold">\n</span><span style="color: #BA2121">&quot;</span>;  
+}  </pre></div>
+</div>
+      <fieldset>
+        <legend>Output:</legend>
+  <h3>Fibonacci series using recursive function:</h3>
+  <br>0 1 1 2 3 5 8 13 21 34 55 89
+      </fieldset>
+    </div>
+  </body>
+</html>

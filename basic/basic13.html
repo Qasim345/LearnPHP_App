@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html ng-app="">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/simple-grid.css" />
+</head>
+
+<body>
+  <nav id="navbar" style="padding:8px 15px">
+
+      <span id="back" onclick="window.history.back()">arrow_back</span>
+
+      <h3>PHP Tutorials</h3>
+    </nav>
+  <div class="container">
+    <div class="row">
+      <div class="col-12" style="margin-bottom: 0px;">
+        <h3 class="heading">PHP Comments</h3>
+        <hr />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12" style="margin-top: 0px;">
+        <p>
+          PHP comments can be used to describe any line of code so that other
+          developer can understand the code easily. It can also be used to
+          hide any code. <br />
+          PHP supports single line and multi line comments. These comments are
+          similar to C/C++ and Perl style (Unix shell style) comments.
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12" style="margin-bottom: 0px;">
+        <h3 class="heading">PHP Single Line Comments</h3>
+        <hr />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12" style="margin-top: 0px;">
+        <p>There are two ways to use single line comments in PHP.</p>
+        <ul>
+          <li>// (C++ style single line comment)</li>
+          <li># (Unix Shell style single line comment)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="coding">
+      <!-- HTML generated using hilite.me -->
+      <div style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;">
+        <pre style="margin: 0; line-height: 125%"><span style="color: #BC7A00">&lt;?php</span>  
+ <span style="color: #408080; font-style: italic">// this is C++ style single line comment  </span>
+ <span style="color: #408080; font-style: italic"># this is Unix Shell style single line comment  </span>
+ <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;Welcome to PHP single line comments&quot;</span>;  
+<span style="color: #BC7A00">?&gt;</span></pre>
+      </div>
+    </div>
+    <fieldset>
+      <legend>Output:</legend>
+      Welcome to PHP single line comments
+    </fieldset>
+    <div class="row">
+      <div class="col-12" style="margin-bottom: 0px;">
+        <h3 class="heading">PHP Multi Line Comments</h3>
+        <hr />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12" style="margin-top: 0px;">
+        <p>
+          In PHP, we can comments multiple lines also. To do so, we need to
+          enclose all lines within /* */. Let's see a simple example of PHP
+          multiple line comment.
+        </p>
+      </div>
+    </div>
+    <div class="coding">
+      <!-- HTML generated using hilite.me -->
+      <div style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;">
+        <pre style="margin: 0; line-height: 125%"><span style="color: #BC7A00">&lt;?php</span>  
+ <span style="color: #408080; font-style: italic">/* </span>
+<span style="color: #408080; font-style: italic">  Anything placed  </span>
+<span style="color: #408080; font-style: italic">  within comment </span>
+<span style="color: #408080; font-style: italic">  will not be displayed </span>
+<span style="color: #408080; font-style: italic">  on the browser; </span>
+<span style="color: #408080; font-style: italic"> */</span>  
+ <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;Welcome to PHP multi line comment&quot;</span>;  
+<span style="color: #BC7A00">?&gt;</span> </pre>
+      </div>
+    </div>
+    <fieldset>
+      <legend>Output:</legend>
+      Welcome to PHP multi line comment
+    </fieldset>
+  </div>
+</body>
+
+</html>

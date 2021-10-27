@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html ng-app="">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/simple-grid.css" />
+  </head>
+
+  <body>
+    <nav id="navbar" style="padding:8px 15px">
+    <span id="back" onclick="window.history.back()">arrow_back</span>
+    <h3>Advance Tutorials</h3>
+  </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">
+            PHP Session
+          </h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            PHP session is used to store and pass information from one page to
+            another temporarily (until user close the website).
+            <br />
+            PHP session technique is widely used in shopping websites where we
+            need to store and pass cart information e.g. username, product code,
+            product name, product price etc from one page to another.
+            <br />
+            PHP session creates unique user id for each browser to recognize the
+            user and avoid conflict between multiple browsers.
+          </p>
+        </div>
+      </div>
+      <img src="../images/httpsession.JPG" alt="" />
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">PHP session_start() function</h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            PHP session_start() function is used to start the session. It starts
+            a new or resumes existing session. It returns existing session if
+            session is created already. If session is not available, it creates
+            and returns new session.
+            <br />
+            Syntax
+          </p>
+        </div>
+      </div>
+      <div class="coding">
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #008000; font-weight: bold">bool</span> <span style="color: #008000; font-weight: bold">session_start</span> <span style="color: #666666">(</span> <span style="color: #008000; font-weight: bold">void</span> <span style="color: #666666">)</span></pre>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>Example</p>
+        </div>
+      </div>
+      <div class="coding">
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #008000; font-weight: bold">session_start</span><span style="color: #666666">();</span> </pre>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">PHP $_SESSION</h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            PHP $_SESSION is an associative array that contains all session
+            variables. It is used to set and get session variable values.
+            <br />
+            Example: Store information
+          </p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #008000; font-weight: bold">$</span><span style="color: #008000; font-weight: bold">_SESSION</span><span style="color: #666666">[</span><span style="color: #BA2121">&quot;user&quot;</span><span style="color: #666666">]</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Dhoni&quot;</span><span style="color: #666666">;</span> </pre>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>Example: Get information</p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #008000; font-weight: bold">echo</span> <span style="color: #008000; font-weight: bold">$</span><span style="color: #008000; font-weight: bold">_SESSION</span><span style="color: #666666">[</span><span style="color: #BA2121">&quot;user&quot;</span><span style="color: #666666">];</span></pre>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">
+            PHP Session Example
+          </h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            File: session1.php
+          </p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span>  
+<span style="color: #008000">session_start</span>();  
+<span style="color: #BC7A00">?&gt;</span>
+<span style="color: #666666">&lt;</span><span style="color: #008000; font-weight: bold">html</span><span style="color: #666666">&gt;</span>
+  <span style="color: #666666">&lt;</span><span style="color: #008000; font-weight: bold">body</span><span style="color: #666666">&gt;</span>
+    <span style="color: #BC7A00">&lt;?php</span>  
+      <span style="color: #19177C">$_SESSION</span>[<span style="color: #BA2121">&quot;user&quot;</span>] <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Sachin&quot;</span>;  
+      <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;Session information are set successfully.&lt;br/&gt;&quot;</span>; <span style="color: #BC7A00">?&gt;</span>
+    <span style="color: #666666">&lt;</span><span style="color: #008000; font-weight: bold">a</span> <span style="color: #008000; font-weight: bold">href</span><span style="color: #666666">=</span><span style="color: #BA2121">&quot;session2.php&quot;</span><span style="color: #666666">&gt;</span><span style="color: #008000; font-weight: bold">Visit</span> <span style="color: #008000; font-weight: bold">next</span> <span style="color: #008000; font-weight: bold">page</span><span style="color: #666666">&lt;/</span><span style="color: #008000; font-weight: bold">a</span><span style="color: #666666">&gt;</span>
+  <span style="color: #666666">&lt;/</span><span style="color: #008000; font-weight: bold">body</span><span style="color: #666666">&gt;</span>
+<span style="color: #666666">&lt;/</span><span style="color: #008000; font-weight: bold">html</span><span style="color: #666666">&gt;</span></pre>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>File: session2.php</p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span>  
+<span style="color: #008000">session_start</span>();  
+<span style="color: #BC7A00">?&gt;</span>
+<span style="color: #666666">&lt;</span><span style="color: #008000; font-weight: bold">html</span><span style="color: #666666">&gt;</span>
+  <span style="color: #666666">&lt;</span><span style="color: #008000; font-weight: bold">body</span><span style="color: #666666">&gt;</span>
+    <span style="color: #BC7A00">&lt;?php</span>  
+<span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;User is: &quot;</span><span style="color: #666666">.</span><span style="color: #19177C">$_SESSION</span>[<span style="color: #BA2121">&quot;user&quot;</span>];  
+<span style="color: #BC7A00">?&gt;</span>
+  <span style="color: #666666">&lt;/</span><span style="color: #008000; font-weight: bold">body</span><span style="color: #666666">&gt;</span>
+<span style="color: #666666">&lt;/</span><span style="color: #008000; font-weight: bold">html</span><span style="color: #666666">&gt;</span></pre>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">PHP Session Counter Example</h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>File: sessioncounter.php</p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span>  
+   <span style="color: #008000">session_start</span>();  
+  
+   <span style="color: #008000; font-weight: bold">if</span> (<span style="color: #666666">!</span><span style="color: #008000">isset</span>(<span style="color: #19177C">$_SESSION</span>[<span style="color: #BA2121">&#39;counter&#39;</span>])) {  
+      <span style="color: #19177C">$_SESSION</span>[<span style="color: #BA2121">&#39;counter&#39;</span>] <span style="color: #666666">=</span> <span style="color: #666666">1</span>;  
+   } <span style="color: #008000; font-weight: bold">else</span> {  
+      <span style="color: #19177C">$_SESSION</span>[<span style="color: #BA2121">&#39;counter&#39;</span>]<span style="color: #666666">++</span>;  
+   }  
+   <span style="color: #008000; font-weight: bold">echo</span> (<span style="color: #BA2121">&quot;Page Views: &quot;</span><span style="color: #666666">.</span><span style="color: #19177C">$_SESSION</span>[<span style="color: #BA2121">&#39;counter&#39;</span>]);  
+<span style="color: #BC7A00">?&gt;</span></pre>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">
+            PHP Destroying Session
+          </h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            PHP session_destroy() function is used to destroy all session
+            variables completely.
+            <br />
+            File: session3.php
+          </p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span>  
+<span style="color: #008000">session_start</span>();  
+<span style="color: #008000">session_destroy</span>();  
+<span style="color: #BC7A00">?&gt;</span> </pre>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

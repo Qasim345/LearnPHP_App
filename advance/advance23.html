@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html ng-app="">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/simple-grid.css" />
+  </head>
+
+  <body>
+    <nav id="navbar" style="padding:8px 15px">
+    <span id="back" onclick="window.history.back()">arrow_back</span>
+    <h3>Advance Tutorials</h3>
+  </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+                <h3 class="heading">PHP Append to File</h3>
+                <hr />
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-12" style="margin-top: 0px;">
+                <p>
+                  If you use a mode, it will not erase the data of the file. It
+                  will write the data at the end of the file. Visit the next
+                  page to see the example of appending data into file.
+                  <br />
+                  You can append data into file by using a or a+ mode in fopen()
+                  function. Let's see a simple example that appends data into
+                  data.txt file.
+                  <br />
+                  Let's see the data of file first.
+                  <br />
+                  data.txt
+                </p>
+              </div>
+            </div>
+            <fieldset>
+              welcome to php file write
+            </fieldset>
+
+            <div class="row">
+              <div class="col-12" style="margin-bottom: 0px;">
+                <h3 class="heading">PHP Append to File - fwrite()</h3>
+                <hr />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12" style="margin-top: 0px;">
+                <p>
+                  The PHP fwrite() function is used to write and append data
+                  into file.
+                  <br />
+                  Example
+                </p>
+              </div>
+            </div>
+            <div class="coding">
+              <!-- HTML generated using hilite.me -->
+              <div
+                style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+              >
+                <pre
+                  style="margin: 0; line-height: 125%"
+                ><span style="color: #BC7A00">&lt;?php</span>  
+ <span style="color: #19177C">$fp</span> <span style="color: #666666">=</span> <span style="color: #008000">fopen</span>(<span style="color: #BA2121">&#39;data.txt&#39;</span>, <span style="color: #BA2121">&#39;a&#39;</span>);<span style="color: #408080; font-style: italic">//opens file in append mode  </span>
+ <span style="color: #008000">fwrite</span>(<span style="color: #19177C">$fp</span>, <span style="color: #BA2121">&#39; this is additional text &#39;</span>);  
+ <span style="color: #008000">fwrite</span>(<span style="color: #19177C">$fp</span>, <span style="color: #BA2121">&#39;appending data&#39;</span>);  
+ <span style="color: #008000">fclose</span>(<span style="color: #19177C">$fp</span>);   
+ <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;File appended successfully&quot;</span>;  
+<span style="color: #BC7A00">?&gt;</span>  </pre>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12" style="margin-top: 0px;">
+                <p>Output: data.txt</p>
+              </div>
+            </div>
+
+            <fieldset>
+              <legend>Output:</legend>
+              welcome to php file write this is additional text appending data
+            </fieldset>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html ng-app="">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/simple-grid.css" />
+  </head>
+
+  <body>
+    <nav id="navbar" style="padding:8px 15px">
+    <span id="back" onclick="window.history.back()">arrow_back</span>
+    <h3>Advance Tutorials</h3>
+  </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">PHP MySQL Connect</h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            Since PHP 5.5, mysql_connect() extension is deprecated. Now it is
+            recommended to use one of the 2 alternatives.
+          </p>
+          <ul>
+            <li>
+              mysqli_connect()
+            </li>
+            <li>
+              PDO::__construct()
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">PHP mysqli_connect()
+          </h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <p>
+            PHP mysqli_connect() function is used to connect with MySQL database. It returns resource if connection is established
+            or null.
+            <br>
+            Syntax
+          </p>
+        </div>
+      </div>
+      <div class="coding"><!-- HTML generated using hilite.me --><div style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">resource mysqli_connect (server, username, password)  </pre></div>
+</div>
+
+<div class="row">
+  <div class="col-12" style="margin-bottom: 0px;">
+    <h3 class="heading">PHP mysqli_close()</h3>
+    <hr />
+  </div>
+</div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+          PHP mysqli_close() function is used to disconnect with MySQL database. It returns true if connection is closed or
+          false.
+          <br>
+          Syntax</p>
+        </div>
+      </div>
+      <div class="coding"><!-- HTML generated using hilite.me --><div style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">bool mysqli_close(resource $resource_link)  </pre></div>
+</div>
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">PHP MySQL Connect Example
+          </h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>Example</p>
+        </div>
+      </div>
+      <div class="coding"><!-- HTML generated using hilite.me --><div style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #BC7A00">&lt;?php</span>  
+<span style="color: #19177C">$host</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;localhost:3306&#39;</span>;  
+<span style="color: #19177C">$user</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;&#39;</span>;  
+<span style="color: #19177C">$pass</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;&#39;</span>;  
+<span style="color: #19177C">$conn</span> <span style="color: #666666">=</span> <span style="color: #008000">mysqli_connect</span>(<span style="color: #19177C">$host</span>, <span style="color: #19177C">$user</span>, <span style="color: #19177C">$pass</span>);  
+<span style="color: #008000; font-weight: bold">if</span>(<span style="color: #666666">!</span> <span style="color: #19177C">$conn</span> )  
+{  
+  <span style="color: #008000; font-weight: bold">die</span>(<span style="color: #BA2121">&#39;Could not connect: &#39;</span> <span style="color: #666666">.</span> mysqli_error());  
+}  
+<span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&#39;Connected successfully&#39;</span>;  
+mysqli_close(<span style="color: #19177C">$conn</span>);  
+<span style="color: #BC7A00">?&gt;</span> </pre></div>
+</div>
+      <fieldset>
+        <legend>Output:</legend>Connected successfully
+      </fieldset>
+    </div>
+  </body>
+</html>

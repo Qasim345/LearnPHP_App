@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html ng-app="">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/simple-grid.css" />
+  </head>
+
+  <body>
+    <nav id="navbar" style="padding:8px 15px">
+
+      <span id="back" onclick="window.history.back()">arrow_back</span>
+
+      <h3>PHP Tutorials</h3>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">PHP Variables</h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            A variable in PHP is a name of memory location that holds data. A
+            variable is a temporary storage that is used to store data
+            temporarily. <br />
+            In PHP, a variable is declared using $ sign followed by variable
+            name. <br />
+            Syntax of declaring a variable in PHP is given below:
+          </p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre style="margin: 0; line-height: 125%">$variablename=value;</pre>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">
+            PHP Variable: Declaring string, integer and float
+          </h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            Let's see the example to store string, integer and float values in
+            PHP variables. <br />
+            File: variable1.php
+          </p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span>  
+ <span style="color: #19177C">$str</span><span style="color: #666666">=</span><span style="color: #BA2121">&quot;hello string&quot;</span>;  
+ <span style="color: #19177C">$x</span><span style="color: #666666">=200</span>;  
+ <span style="color: #19177C">$y</span><span style="color: #666666">=44.6</span>;  
+ <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;string is: </span><span style="color: #BB6688; font-weight: bold">$str</span><span style="color: #BA2121"> &lt;br/&gt;&quot;</span>;  
+ <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;integer is: </span><span style="color: #BB6688; font-weight: bold">$x</span><span style="color: #BA2121"> &lt;br/&gt;&quot;</span>;  
+ <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;float is: </span><span style="color: #BB6688; font-weight: bold">$y</span><span style="color: #BA2121"> &lt;br/&gt;&quot;</span>;  
+<span style="color: #BC7A00">?&gt;</span></pre>
+        </div>
+      </div>
+      <fieldset>
+        <legend>Output:</legend>
+        string is: hello string <br />
+        integer is: 200<br />
+        float is: 44.6
+      </fieldset>
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">PHP Variable: Sum of two variables</h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>File: variable2.php</p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span>  
+ <span style="color: #19177C">$x</span><span style="color: #666666">=5</span>;  
+ <span style="color: #19177C">$y</span><span style="color: #666666">=6</span>;  
+ <span style="color: #19177C">$z</span><span style="color: #666666">=</span><span style="color: #19177C">$x</span><span style="color: #666666">+</span><span style="color: #19177C">$y</span>;  
+ <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #19177C">$z</span>;  
+<span style="color: #BC7A00">?&gt;</span></pre>
+        </div>
+      </div>
+      <fieldset>
+        <legend>Output:</legend>
+        11
+      </fieldset>
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">PHP Variable: case sensitive</h3>
+          <hr />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            In PHP, variable names are case sensitive. So variable name "color"
+            is different from Color, COLOR, COLor etc. <br />
+            File: variable3.php
+          </p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span>  
+            <span style="color: #19177C">$color</span><span style="color: #666666">=</span><span style="color: #BA2121">&quot;red&quot;</span>;  
+            <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;My car is &quot;</span> <span style="color: #666666">.</span> <span style="color: #19177C">$color</span> <span style="color: #666666">.</span> <span style="color: #BA2121">&quot;&lt;br&gt;&quot;</span>;  
+            <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;My house is &quot;</span> <span style="color: #666666">.</span> <span style="color: #19177C">$COLOR</span> <span style="color: #666666">.</span> <span style="color: #BA2121">&quot;&lt;br&gt;&quot;</span>;  
+            <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;My boat is &quot;</span> <span style="color: #666666">.</span> <span style="color: #19177C">$coLOR</span> <span style="color: #666666">.</span> <span style="color: #BA2121">&quot;&lt;br&gt;&quot;</span>;  
+        <span style="color: #BC7A00">?&gt;</span>  
+        </pre>
+        </div>
+      </div>
+      <fieldset>
+        <legend>Output:</legend>
+        My car is red <br />
+        Notice: Undefined variable: COLOR in C:\wamp\www\variable.php on line 4
+        <br />
+        My house is <br />
+        Notice: Undefined variable: coLOR in C:\wamp\www\variable.php on line 5
+        <br />
+        My boat is
+      </fieldset>
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">PHP Variable: Rules</h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            PHP variables must start with letter or underscore only. <br />
+            PHP variable can't be start with numbers and special symbols. <br />
+            File: variablevalid.php
+          </p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span>  
+ <span style="color: #19177C">$a</span><span style="color: #666666">=</span><span style="color: #BA2121">&quot;hello&quot;</span>;<span style="color: #408080; font-style: italic">//letter (valid)  </span>
+ <span style="color: #19177C">$_b</span><span style="color: #666666">=</span><span style="color: #BA2121">&quot;hello&quot;</span>;<span style="color: #408080; font-style: italic">//underscore (valid)  </span>
+ <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;</span><span style="color: #BB6688; font-weight: bold">$a</span><span style="color: #BA2121"> &lt;br/&gt; </span><span style="color: #BB6688; font-weight: bold">$_b</span><span style="color: #BA2121">&quot;</span>;  
+<span style="color: #BC7A00">?&gt;</span>  </pre>
+        </div>
+      </div>
+      <fieldset>
+        <legend>Output:</legend>
+        <pre>
+hello
+hello</pre
+        >
+      </fieldset>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>File: variableinvalid.php</p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span>  
+ <span>$</span><span style="color: #666666">4</span>c<span style="color: #666666">=</span><span style="color: #BA2121">&quot;hello&quot;</span>;<span style="color: #408080; font-style: italic">//number (invalid)  </span>
+ <span>$</span><span style="color: #666666">*</span>d<span style="color: #666666">=</span><span style="color: #BA2121">&quot;hello&quot;</span>;<span style="color: #408080; font-style: italic">//special symbol (invalid)  </span>
+ <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;$4c &lt;br/&gt; $*d&quot;</span>;  
+<span style="color: #BC7A00">?&gt;</span></pre>
+        </div>
+      </div>
+      <fieldset>
+        <legend>Output:</legend>
+        Parse error: syntax error, unexpected '4' (T_LNUMBER), expecting
+        variable (T_VARIABLE) <br />
+        or '$' in C:\wamp\www\variableinvalid.php on line 2
+      </fieldset>
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">PHP: Loosely typed language</h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            PHP is a loosely typed language, it means PHP automatically converts
+            the variable to its correct data type.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

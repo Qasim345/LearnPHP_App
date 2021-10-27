@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html ng-app="">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/simple-grid.css" />
+  </head>
+
+  <body>
+    <nav id="navbar" style="padding:8px 15px">
+    <span id="back" onclick="window.history.back()">arrow_back</span>
+    <h3>Advance Tutorials</h3>
+  </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">PHP Parameterized Function</h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            PHP Parameterized functions are the functions with parameters. You
+            can pass any number of parameters inside a function. <br />
+            These passed parameters act as variables inside your function.
+            <br />
+            They are specified inside the parentheses, after the function name.
+            <br />
+            The output depends upon the dynamic values passed as the parameters
+            into the function. <br />
+            <b> PHP Parameterized Example 1 </b><br />
+            Addition and Subtraction <br />
+            In this example, we have passed two parameters $x and $y inside two
+            functions add() and sub().
+          </p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre style="margin: 0; line-height: 125%">&lt;!DOCTYPE html&gt;  
+&lt;html&gt;  
+&lt;head&gt;  
+    &lt;title&gt;Parameter Addition and Subtraction Example&lt;/title&gt;  
+&lt;/head&gt;  
+&lt;body&gt;  
+<span style="color: #BC7A00">&lt;?php</span>  
+        <span style="color: #408080; font-style: italic">//Adding two numbers  </span>
+         <span style="color: #008000; font-weight: bold">function</span> <span style="color: #0000FF">add</span>(<span style="color: #19177C">$x</span>, <span style="color: #19177C">$y</span>) {  
+            <span style="color: #19177C">$sum</span> <span style="color: #666666">=</span> <span style="color: #19177C">$x</span> <span style="color: #666666">+</span> <span style="color: #19177C">$y</span>;  
+            <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;Sum of two numbers is = </span><span style="color: #BB6688; font-weight: bold">$sum</span><span style="color: #BA2121"> &lt;br&gt;&lt;br&gt;&quot;</span>;  
+         }   
+         add(<span style="color: #666666">467</span>, <span style="color: #666666">943</span>);  
+  
+         <span style="color: #408080; font-style: italic">//Subtracting two numbers  </span>
+         <span style="color: #008000; font-weight: bold">function</span> <span style="color: #0000FF">sub</span>(<span style="color: #19177C">$x</span>, <span style="color: #19177C">$y</span>) {  
+            <span style="color: #19177C">$diff</span> <span style="color: #666666">=</span> <span style="color: #19177C">$x</span> <span style="color: #666666">-</span> <span style="color: #19177C">$y</span>;  
+            <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;Difference between two numbers is = </span><span style="color: #BB6688; font-weight: bold">$diff</span><span style="color: #BA2121">&quot;</span>;  
+         }   
+         sub(<span style="color: #666666">943</span>, <span style="color: #666666">467</span>);  
+      <span style="color: #BC7A00">?&gt;</span>  
+&lt;/body&gt;  
+&lt;/html&gt;</pre>
+        </div>
+      </div>
+      <fieldset>
+        <legend>Output:</legend>
+        <pre>
+Sum of two numbers is = 1410
+
+Difference between two numbers is = 476</pre
+        >
+      </fieldset>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            <b> PHP Parameterized Example 2 </b> <br />
+            Addition and Subtraction with Dynamic number <br />
+            In this example, we have passed two parameters $x and $y inside two
+            functions add() and sub().
+          </p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span>  
+<span style="color: #408080; font-style: italic">//add() function with two parameter  </span>
+<span style="color: #008000; font-weight: bold">function</span> <span style="color: #0000FF">add</span>(<span style="color: #19177C">$x</span>,<span style="color: #19177C">$y</span>)    
+{  
+<span style="color: #19177C">$sum</span><span style="color: #666666">=</span><span style="color: #19177C">$x</span><span style="color: #666666">+</span><span style="color: #19177C">$y</span>;  
+<span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;Sum = </span><span style="color: #BB6688; font-weight: bold">$sum</span><span style="color: #BA2121"> &lt;br&gt;&lt;br&gt;&quot;</span>;  
+}  
+<span style="color: #408080; font-style: italic">//sub() function with two parameter  </span>
+<span style="color: #008000; font-weight: bold">function</span> <span style="color: #0000FF">sub</span>(<span style="color: #19177C">$x</span>,<span style="color: #19177C">$y</span>)    
+{  
+<span style="color: #19177C">$sub</span><span style="color: #666666">=</span><span style="color: #19177C">$x</span><span style="color: #666666">-</span><span style="color: #19177C">$y</span>;  
+<span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;Diff = </span><span style="color: #BB6688; font-weight: bold">$sub</span><span style="color: #BA2121"> &lt;br&gt;&lt;br&gt;&quot;</span>;  
+}  
+<span style="color: #408080; font-style: italic">//call function, get  two argument through input box and click on add or sub button  </span>
+<span style="color: #008000; font-weight: bold">if</span>(<span style="color: #008000">isset</span>(<span style="color: #19177C">$_POST</span>[<span style="color: #BA2121">&#39;add&#39;</span>]))  
+{  
+<span style="color: #408080; font-style: italic">//call add() function  </span>
+ add(<span style="color: #19177C">$_POST</span>[<span style="color: #BA2121">&#39;first&#39;</span>],<span style="color: #19177C">$_POST</span>[<span style="color: #BA2121">&#39;second&#39;</span>]);  
+}     
+<span style="color: #008000; font-weight: bold">if</span>(<span style="color: #008000">isset</span>(<span style="color: #19177C">$_POST</span>[<span style="color: #BA2121">&#39;sub&#39;</span>]))  
+{  
+<span style="color: #408080; font-style: italic">//call add() function  </span>
+sub(<span style="color: #19177C">$_POST</span>[<span style="color: #BA2121">&#39;first&#39;</span>],<span style="color: #19177C">$_POST</span>[<span style="color: #BA2121">&#39;second&#39;</span>]);  
+}  
+<span style="color: #BC7A00">?&gt;</span>  
+&lt;form method=&quot;post&quot;&gt;  
+Enter first number: &lt;input type=&quot;number&quot; name=&quot;first&quot;/&gt;&lt;br&gt;&lt;br&gt;  
+Enter second number: &lt;input type=&quot;number&quot; name=&quot;second&quot;/&gt;&lt;br&gt;&lt;br&gt;  
+&lt;input type=&quot;submit&quot; name=&quot;add&quot; value=&quot;ADDITION&quot;/&gt;  
+&lt;input type=&quot;submit&quot; name=&quot;sub&quot; value=&quot;SUBTRACTION&quot;/&gt;  
+&lt;/form&gt;</pre>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

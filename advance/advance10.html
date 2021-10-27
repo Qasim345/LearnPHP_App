@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html ng-app="">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/simple-grid.css" />
+  </head>
+
+  <body>
+    <nav id="navbar" style="padding:8px 15px">
+    <span id="back" onclick="window.history.back()">arrow_back</span>
+    <h3>Advance Tutorials</h3>
+  </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">PHP Associative Array</h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            PHP allows you to associate name/label with each array elements in
+            PHP using => symbol. Such way, you can easily remember the element
+            because each element is represented by label than an incremented
+            number.
+          </p>
+        </div>
+      </div>
+      <div class="coding"></div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            There are two ways to define associative array:
+
+            <u> 1st way:</u>
+          </p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre style="margin: 0; line-height: 125%">
+$salary=array(&quot;Arjun&quot;=&gt;&quot;550000&quot;,&quot;Krishna&quot;=&gt;&quot;2500000&quot;,&quot;Radha&quot;=&gt;&quot;2000000&quot;);</pre
+          >
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p><u>2nd way:</u></p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre style="margin: 0; line-height: 125%">
+$salary[&quot;Arjun&quot;]=&quot;900000&quot;;  
+$salary[&quot;Krishna&quot;]=&quot;3500000&quot;;  
+$salary[&quot;Radha&quot;]=&quot;3000000&quot;;</pre
+          >
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">Associative Array Example</h3>
+          <hr />
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span>    
+<span style="color: #19177C">$salary</span><span style="color: #666666">=</span><span style="color: #008000; font-weight: bold">array</span>(<span style="color: #BA2121">&quot;Arjun&quot;</span><span style="color: #666666">=&gt;</span><span style="color: #BA2121">&quot;550000&quot;</span>,<span style="color: #BA2121">&quot;Krishna&quot;</span><span style="color: #666666">=&gt;</span><span style="color: #BA2121">&quot;250000&quot;</span>,<span style="color: #BA2121">&quot;Radha&quot;</span><span style="color: #666666">=&gt;</span><span style="color: #BA2121">&quot;200000&quot;</span>);  
+<span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;Arjun salary: &quot;</span><span style="color: #666666">.</span><span style="color: #19177C">$salary</span>[<span style="color: #BA2121">&quot;Arjun&quot;</span>]<span style="color: #666666">.</span><span style="color: #BA2121">&quot;&lt;br/&gt;&quot;</span>;  
+<span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;Krishna salary: &quot;</span><span style="color: #666666">.</span><span style="color: #19177C">$salary</span>[<span style="color: #BA2121">&quot;Krishna&quot;</span>]<span style="color: #666666">.</span><span style="color: #BA2121">&quot;&lt;br/&gt;&quot;</span>;  
+<span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;Radha salary: &quot;</span><span style="color: #666666">.</span><span style="color: #19177C">$salary</span>[<span style="color: #BA2121">&quot;Radha&quot;</span>]<span style="color: #666666">.</span><span style="color: #BA2121">&quot;&lt;br/&gt;&quot;</span>;  
+<span style="color: #BC7A00">?&gt;</span></pre>
+        </div>
+      </div>
+      <fieldset>
+        <legend>Output:</legend>
+        <pre>
+Arjun salary: 550000
+Krishna salary: 250000
+Radha salary: 200000</pre
+        >
+      </fieldset>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;"><p></p></div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span>    
+<span style="color: #19177C">$salary</span>[<span style="color: #BA2121">&quot;Arjun&quot;</span>]<span style="color: #666666">=</span><span style="color: #BA2121">&quot;900000&quot;</span>;  
+<span style="color: #19177C">$salary</span>[<span style="color: #BA2121">&quot;Krishna&quot;</span>]<span style="color: #666666">=</span><span style="color: #BA2121">&quot;3500000&quot;</span>;  
+<span style="color: #19177C">$salary</span>[<span style="color: #BA2121">&quot;Radha&quot;</span>]<span style="color: #666666">=</span><span style="color: #BA2121">&quot;3000000&quot;</span>;
+<span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;Arjun salary: &quot;</span><span style="color: #666666">.</span><span style="color: #19177C">$salary</span>[<span style="color: #BA2121">&quot;Arjun&quot;</span>]<span style="color: #666666">.</span><span style="color: #BA2121">&quot;&lt;br/&gt;&quot;</span>;  
+<span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;Krishna salary: &quot;</span><span style="color: #666666">.</span><span style="color: #19177C">$salary</span>[<span style="color: #BA2121">&quot;Krishna&quot;</span>]<span style="color: #666666">.</span><span style="color: #BA2121">&quot;&lt;br/&gt;&quot;</span>;  
+<span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;Radha salary: &quot;</span><span style="color: #666666">.</span><span style="color: #19177C">$salary</span>[<span style="color: #BA2121">&quot;Radha&quot;</span>]<span style="color: #666666">.</span><span style="color: #BA2121">&quot;&lt;br/&gt;&quot;</span>;  
+<span style="color: #BC7A00">?&gt;</span></pre>
+        </div>
+      </div>
+      <fieldset>
+        <legend>Output:</legend>
+        <pre>
+Arjun salary: 900000
+Krishna salary: 3500000
+Radha salary: 3000000
+</pre
+        >
+      </fieldset>
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">Traversing PHP Associative Array</h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            By the help of PHP for each loop, we can easily traverse the
+            elements of PHP associative array.
+          </p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span>    
+<span style="color: #19177C">$salary</span><span style="color: #666666">=</span><span style="color: #008000; font-weight: bold">array</span>(<span style="color: #BA2121">&quot;A&quot;</span><span style="color: #666666">=&gt;</span><span style="color: #BA2121">&quot;550000&quot;</span>,<span style="color: #BA2121">&quot;B&quot;</span><span style="color: #666666">=&gt;</span><span style="color: #BA2121">&quot;250000&quot;</span>,<span style="color: #BA2121">&quot;C&quot;</span><span style="color: #666666">=&gt;</span><span style="color: #BA2121">&quot;200000&quot;</span>);  
+<span style="color: #008000; font-weight: bold">foreach</span>(<span style="color: #19177C">$salary</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #19177C">$k</span> <span style="color: #666666">=&gt;</span> <span style="color: #19177C">$v</span>) {  
+<span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;Key: &quot;</span><span style="color: #666666">.</span><span style="color: #19177C">$k</span><span style="color: #666666">.</span><span style="color: #BA2121">&quot; Value: &quot;</span><span style="color: #666666">.</span><span style="color: #19177C">$v</span><span style="color: #666666">.</span><span style="color: #BA2121">&quot;&lt;br/&gt;&quot;</span>;  
+}  
+<span style="color: #BC7A00">?&gt;</span></pre>
+        </div>
+      </div>
+      <fieldset>
+        <legend>Output:</legend>
+        <pre>
+Key: A Value: 550000
+Key: B Value: 250000
+Key: C Value: 200000
+</pre
+        >
+      </fieldset>
+    </div>
+  </body>
+</html>

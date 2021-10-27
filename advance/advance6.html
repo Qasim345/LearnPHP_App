@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html ng-app="">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/simple-grid.css" />
+  </head>
+
+  <body>
+    <nav id="navbar" style="padding:8px 15px">
+    <span id="back" onclick="window.history.back()">arrow_back</span>
+    <h3>Advance Tutorials</h3>
+  </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">PHP Variable Length Argument Function</h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            PHP supports variable length argument function. It means you can
+            pass 0, 1 or n number of arguments in function. To do so, you need
+            to use 3 ellipses (dots) before the argument name. <br />
+            The 3 dot concept is implemented for variable length argument since
+            PHP 5.6. <br />
+            Let's see a simple example of PHP variable length argument function.
+          </p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span>  
+<span style="color: #008000; font-weight: bold">function</span> <span style="color: #0000FF">add</span>(<span style="color: #666666">...</span><span style="color: #19177C">$numbers</span>) {  
+    <span style="color: #19177C">$sum</span> <span style="color: #666666">=</span> <span style="color: #666666">0</span>;  
+    <span style="color: #008000; font-weight: bold">foreach</span> (<span style="color: #19177C">$numbers</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #19177C">$n</span>) {  
+        <span style="color: #19177C">$sum</span> <span style="color: #666666">+=</span> <span style="color: #19177C">$n</span>;  
+    }  
+    <span style="color: #008000; font-weight: bold">return</span> <span style="color: #19177C">$sum</span>;  
+}  
+  
+<span style="color: #008000; font-weight: bold">echo</span> add(<span style="color: #666666">1</span>, <span style="color: #666666">2</span>, <span style="color: #666666">3</span>, <span style="color: #666666">4</span>);  
+<span style="color: #BC7A00">?&gt;</span></pre>
+        </div>
+      </div>
+      <fieldset><legend>Output:</legend>
+      10</fieldset>
+      </div>
+  </body>
+</html>

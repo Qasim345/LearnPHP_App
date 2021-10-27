@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html ng-app="">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/simple-grid.css" />
+  </head>
+
+  <body>
+    <nav id="navbar" style="padding:8px 15px">
+    <span id="back" onclick="window.history.back()">arrow_back</span>
+    <h3>Advance Tutorials</h3>
+  </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">PHP Default Argument Values Function</h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            PHP allows you to define C++ style default argument values. In such
+            case, if you don't pass any value to the function, it will use
+            default argument value. <br />
+            Let' see the simple example of using PHP default arguments in
+            function. <br />
+            Example 1
+          </p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span>  
+<span style="color: #008000; font-weight: bold">function</span> <span style="color: #0000FF">sayHello</span>(<span style="color: #19177C">$name</span><span style="color: #666666">=</span><span style="color: #BA2121">&quot;Krishna&quot;</span>){  
+<span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;Hello </span><span style="color: #BB6688; font-weight: bold">$name</span><span style="color: #BA2121">&lt;br/&gt;&quot;</span>;  
+}  
+sayHello(<span style="color: #BA2121">&quot;Arjun&quot;</span>);  
+sayHello();<span style="color: #408080; font-style: italic">//passing no value  </span>
+sayHello(<span style="color: #BA2121">&quot;Radha&quot;</span>);  
+<span style="color: #BC7A00">?&gt;</span></pre>
+        </div>
+      </div>
+      <fieldset>
+        <legend>Output:</legend>
+        <pre>
+Hello Arjun
+Hello Krishna
+Hello Radha</pre
+        >
+      </fieldset>
+
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;"><p>Example 2</p></div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span>  
+  <span style="color: #008000; font-weight: bold">function</span> <span style="color: #0000FF">add</span>(<span style="color: #19177C">$n1</span><span style="color: #666666">=10</span>,<span style="color: #19177C">$n2</span><span style="color: #666666">=10</span>){  
+    <span style="color: #19177C">$n3</span><span style="color: #666666">=</span><span style="color: #19177C">$n1</span><span style="color: #666666">+</span><span style="color: #19177C">$n2</span>;  
+    <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;Addition is: </span><span style="color: #BB6688; font-weight: bold">$n3</span><span style="color: #BA2121">&lt;br/&gt;&quot;</span>;  
+  }  
+add();  
+add(<span style="color: #666666">20</span>);  
+add(<span style="color: #666666">40</span>,<span style="color: #666666">40</span>);  
+<span style="color: #BC7A00">?&gt;</span></pre>
+        </div>
+      </div>
+      <fieldset>
+        <legend>Output:</legend>
+        <pre>
+Addition is: 20
+Addition is: 30
+Addition is: 80</pre
+        >
+      </fieldset>
+    </div>
+  </body>
+</html>

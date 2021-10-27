@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html ng-app="">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/simple-grid.css" />
+  </head>
+
+  <body>
+    <nav id="navbar" style="padding:8px 15px">
+
+      <span id="back" onclick="window.history.back()">arrow_back</span>
+
+      <h3>PHP Tutorials</h3>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">PHP is_null() function</h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            By using the is_null function, we can check whether the variable is
+            NULL or not. This function was introduced in PHP 4.0.4. <br />
+            SYNATX:
+          </p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre style="margin: 0; line-height: 125%">
+bool is_null ( mixed $var )</pre
+          >
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;"><p>Parameter</p></div>
+      </div>
+      <table class="alt">
+        <tr>
+          <th>Parameter</th>
+          <th>Description</th>
+          <th>Is compulsory</th>
+        </tr>
+        <tr>
+          <td>var</td>
+          <td>The variable being evaluated.</td>
+          <td>compulsory</td>
+        </tr>
+      </table>
+
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">Return Type:</h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            The PHP is_null() function returns true if var is null, otherwise
+            false.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">Important Note:</h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            We can unset the variable value by using the unset function. <br />
+            Example 1
+          </p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span>  
+    <span style="color: #19177C">$var1</span> <span style="color: #666666">=</span> <span style="color: #008000; font-weight: bold">TRUE</span>;  
+    <span style="color: #008000; font-weight: bold">if</span> (<span style="color: #008000">is_null</span>(<span style="color: #19177C">$var1</span>))  
+        {  
+            <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&#39;Variable is  NULL&#39;</span>;  
+        }  
+        <span style="color: #008000; font-weight: bold">else</span>  
+        {  
+            <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&#39;Variable is not NULL&#39;</span>;  
+        }  
+<span style="color: #BC7A00">?&gt;</span></pre>
+        </div>
+      </div>
+      <fieldset>
+        <legend>Output:</legend>
+        Variable is not NULL
+      </fieldset>
+
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;"><p>Example 2</p></div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span>  
+    <span style="color: #19177C">$x</span><span style="color: #666666">=</span> <span style="color: #666666">100</span>;  
+    <span style="color: #008000">unset</span>(<span style="color: #19177C">$x</span>);  
+    <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #008000">is_null</span>(<span style="color: #19177C">$x</span>);  
+<span style="color: #BC7A00">?&gt;</span></pre>
+        </div>
+      </div>
+      <fieldset>
+        <legend>Output:</legend>
+        1
+      </fieldset>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;"><p>Example 3</p></div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span>    
+    <span style="color: #19177C">$x</span> <span style="color: #666666">=</span> <span style="color: #008000; font-weight: bold">NULL</span>;   
+    <span style="color: #19177C">$y</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;</span><span style="color: #BB6622; font-weight: bold">\0</span><span style="color: #BA2121">&quot;</span>;  
+    <span style="color: #008000">is_null</span>(<span style="color: #19177C">$x</span>) <span style="color: #666666">?</span> <span style="color: #008000">print_r</span>(<span style="color: #BA2121">&quot;True</span><span style="color: #BB6622; font-weight: bold">\n</span><span style="color: #BA2121">&quot;</span>) <span style="color: #666666">:</span> <span style="color: #008000">print_r</span>(<span style="color: #BA2121">&quot;False</span><span style="color: #BB6622; font-weight: bold">\n</span><span style="color: #BA2121">&quot;</span>);  
+    <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;&lt;br/&gt;&quot;</span>;  
+    <span style="color: #008000">is_null</span>(<span style="color: #19177C">$y</span>) <span style="color: #666666">?</span> <span style="color: #008000">print_r</span>(<span style="color: #BA2121">&quot;True</span><span style="color: #BB6622; font-weight: bold">\n</span><span style="color: #BA2121">&quot;</span>) <span style="color: #666666">:</span> <span style="color: #008000">print_r</span>(<span style="color: #BA2121">&quot;False</span><span style="color: #BB6622; font-weight: bold">\n</span><span style="color: #BA2121">&quot;</span>);  
+<span style="color: #BC7A00">?&gt;</span></pre>
+        </div>
+      </div>
+      <fieldset>
+        <legend>Output:</legend>
+        True <br />
+        False
+      </fieldset>
+    </div>
+  </body>
+</html>

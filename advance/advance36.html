@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html ng-app="">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/simple-grid.css" />
+  </head>
+
+  <body>
+    <nav id="navbar" style="padding:8px 15px">
+    <span id="back" onclick="window.history.back()">arrow_back</span>
+    <h3>Advance Tutorials</h3>
+  </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">PHP JSON</h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            PHP allows us to encode and decode JSON by the help of json_encode()
+            and json_decode functions.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">1) PHP json_encode</h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            The json_encode() function returns the JSON representation of a
+            value. In other words, it converts PHP variable (containing array)
+            into JSON. <br />
+            <b>Syntax:</b>
+          </p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre style="margin: 0; line-height: 125%">
+string json_encode ( mixed $value [, int $options = 0 [, int $depth = 512 ]] )  </pre
+          >
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">PHP json_encode example 1</h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>Let's see the example to encode JSON.</p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span>  
+<span style="color: #19177C">$arr</span> <span style="color: #666666">=</span> <span style="color: #008000; font-weight: bold">array</span>(<span style="color: #BA2121">&#39;a&#39;</span> <span style="color: #666666">=&gt;</span> <span style="color: #666666">1</span>, <span style="color: #BA2121">&#39;b&#39;</span> <span style="color: #666666">=&gt;</span> <span style="color: #666666">2</span>, <span style="color: #BA2121">&#39;c&#39;</span> <span style="color: #666666">=&gt;</span> <span style="color: #666666">3</span>, <span style="color: #BA2121">&#39;d&#39;</span> <span style="color: #666666">=&gt;</span> <span style="color: #666666">4</span>, <span style="color: #BA2121">&#39;e&#39;</span> <span style="color: #666666">=&gt;</span> <span style="color: #666666">5</span>);  
+<span style="color: #008000; font-weight: bold">echo</span> <span style="color: #008000">json_encode</span>(<span style="color: #19177C">$arr</span>);  
+<span style="color: #BC7A00">?&gt;</span>  </pre>
+        </div>
+      </div>
+      <fieldset>
+        <legend>Output:</legend>
+        {"a":1,"b":2,"c":3,"d":4,"e":5}
+      </fieldset>
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">PHP json_encode example 2</h3>
+          <hr />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>Let's see the example to encode JSON.</p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span>  
+<span style="color: #19177C">$arr2</span> <span style="color: #666666">=</span> <span style="color: #008000; font-weight: bold">array</span>(<span style="color: #BA2121">&#39;firstName&#39;</span> <span style="color: #666666">=&gt;</span> <span style="color: #BA2121">&#39;Code&#39;</span>, <span style="color: #BA2121">&#39;lastName&#39;</span> <span style="color: #666666">=&gt;</span> <span style="color: #BA2121">&#39;Jupiter&#39;</span>, <span style="color: #BA2121">&#39;email&#39;</span> <span style="color: #666666">=&gt;</span> <span style="color: #BA2121">&#39;codejupiter3327@gmail.com&#39;</span>);    
+<span style="color: #008000; font-weight: bold">echo</span> <span style="color: #008000">json_encode</span>(<span style="color: #19177C">$arr2</span>);  
+<span style="color: #BC7A00">?&gt;</span></pre>
+        </div>
+      </div>
+      <fieldset>
+        <legend>Output:</legend>
+        {
+         "firstName":"Code",
+         "lastName":"Jupiter",
+         "email":"codejupiter3327@gmail.com"}
+      </fieldset>
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">2) PHP json_decode</h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            The json_decode() function decodes the JSON string. In other words,
+            it converts JSON string into a PHP variable.
+            <br />
+            Syntax:
+          </p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre style="margin: 0; line-height: 125%">
+mixed json_decode ( string $json [, bool $assoc = false [, int $depth = 512 [, int $options = 0 ]]] )  </pre
+          >
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">PHP json_decode example 1</h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>Let's see the example to decode JSON string.</p>
+        </div>
+      </div>
+      <div class="coding"><!-- HTML generated using hilite.me -->
+      <div style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;">
+        <pre style="margin: 0; line-height: 125%"><span style="color: #BC7A00">&lt;?php</span>  
+      <span style="color: #19177C">$json</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;{&quot;a&quot;:1,&quot;b&quot;:2,&quot;c&quot;:3,&quot;d&quot;:4,&quot;e&quot;:5}&#39;</span>;  
+      <span style="color: #008000">var_dump</span>(<span style="color: #008000">json_decode</span>(<span style="color: #19177C">$json</span>, <span style="color: #008000; font-weight: bold">true</span>));<span style="color: #408080; font-style: italic">//true means returned object will be converted into associative array  </span>
+      <span style="color: #BC7A00">?&gt;</span>  
+      </pre>
+      </div>
+</div>
+      <fieldset>
+        <legend>Output:</legend>
+<pre>array(5) {
+["a"] => int(1)
+["b"] => int(2)
+["c"] => int(3)
+["d"] => int(4)
+["e"] => int(5)
+}</pre>
+      </fieldset>
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">PHP json_decode example 2
+          </h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>Let's see the example to decode JSON string.</p>
+        </div>
+      </div>
+      <div class="coding">
+        <div style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #BC7A00">&lt;?php</span>
+<span style="color: #19177C">$json2</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;{&quot;firstName&quot; : &quot;Code&quot;, &quot;lastName&quot; : &quot;Jupiter&quot;, &quot;email&quot; : &quot;codejupiter3327@gmail.com&quot;}&#39;</span>;    
+<span style="color: #008000">var_dump</span>(<span style="color: #008000">json_decode</span>(<span style="color: #19177C">$json2</span>, <span style="color: #008000; font-weight: bold">true</span>));  
+<span style="color: #BC7A00">?&gt;</span>  </pre></div>
+
+      </div>
+
+      <fieldset>
+        <legend>Output:</legend>
+array(3) { <br>
+["firstName"]=>"Code" <br>
+["lastName"]=>"Jupiter" <br>
+["email"]=>"codejupiter3327@gmail.com" <br>
+}</fieldset>
+    </div>
+  </body>
+</html>

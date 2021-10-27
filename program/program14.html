@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html ng-app="">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/simple-grid.css" />
+  </head>
+
+  <body>
+    <nav id="navbar" style="padding:8px 15px">
+    <span id="back" onclick="window.history.back()">arrow_back</span>
+    <h3>PHP Programs</h3>
+  </nav>
+    <div class="container">
+      <!--Heading-->
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">Swapping two numbers</h3>
+          <hr />
+        </div>
+      </div>
+      <!--//Heading-->
+
+      <!--content-->
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            There are two methods for swapping:
+          </p>
+          <ul>
+            <li>By using third variable.</li>
+            <li>Without using third variable.</li>
+          </ul>
+          <p><b>Swapping Using Third Variable</b></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p><b>Program</b></p>
+        </div>
+      </div>
+      <div class="coding"><!-- HTML generated using hilite.me --><div style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #BC7A00">&lt;?php</span>  
+<span style="color: #19177C">$a</span> <span style="color: #666666">=</span> <span style="color: #666666">45</span>;  
+<span style="color: #19177C">$b</span> <span style="color: #666666">=</span> <span style="color: #666666">78</span>;  
+<span style="color: #408080; font-style: italic">// Swapping Logic  </span>
+<span style="color: #19177C">$third</span> <span style="color: #666666">=</span> <span style="color: #19177C">$a</span>;  
+<span style="color: #19177C">$a</span> <span style="color: #666666">=</span> <span style="color: #19177C">$b</span>;  
+<span style="color: #19177C">$b</span> <span style="color: #666666">=</span> <span style="color: #19177C">$third</span>;  
+<span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;After swapping:&lt;br&gt;&lt;br&gt;&quot;</span>;  
+<span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;a =&quot;</span><span style="color: #666666">.</span><span style="color: #19177C">$a</span><span style="color: #666666">.</span><span style="color: #BA2121">&quot;  b=&quot;</span><span style="color: #666666">.</span><span style="color: #19177C">$b</span>;  
+<span style="color: #BC7A00">?&gt;</span></pre></div>
+</div>
+      <fieldset>
+        <legend>Output:</legend>
+        After swapping:<br>
+        a=78 b=45
+      </fieldset>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p><b>
+            Swapping Without using Third Variable
+          </b></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p><b>Program</b></p>
+        </div>
+      </div>
+      <div class="coding"><!-- HTML generated using hilite.me --><div style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #BC7A00">&lt;?php</span>  
+<span style="color: #19177C">$a</span><span style="color: #666666">=23</span>;  
+<span style="color: #19177C">$b</span><span style="color: #666666">=45</span>;  
+<span style="color: #408080; font-style: italic">//using arithmetic operation  </span>
+<span style="color: #19177C">$a</span><span style="color: #666666">=</span><span style="color: #19177C">$a</span><span style="color: #666666">+</span><span style="color: #19177C">$b</span>;  
+<span style="color: #19177C">$b</span><span style="color: #666666">=</span><span style="color: #19177C">$a</span><span style="color: #666666">-</span><span style="color: #19177C">$b</span>;  
+<span style="color: #19177C">$a</span><span style="color: #666666">=</span><span style="color: #19177C">$a</span><span style="color: #666666">-</span><span style="color: #19177C">$b</span>;  
+<span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;Value of a: </span><span style="color: #BB6688; font-weight: bold">$a</span><span style="color: #BA2121">&lt;/br&gt;&quot;</span>;  
+<span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;Value of b: </span><span style="color: #BB6688; font-weight: bold">$b</span><span style="color: #BA2121">&lt;/br&gt;&quot;</span>;  
+<span style="color: #BC7A00">?&gt;</span>  
+</pre></div>
+</div>
+      <fieldset>
+        <legend>Output:</legend>
+        Value of a:  45</br>
+        Value of b: 23
+      </fieldset>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html ng-app="">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/simple-grid.css" />
+  </head>
+
+  <body>
+    <nav id="navbar" style="padding:8px 15px">
+
+      <span id="back" onclick="window.history.back()">arrow_back</span>
+
+      <h3>PHP Tutorials</h3>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">Compound Types</h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>There are 2 compound data types in PHP.</p>
+          <ul>
+            <li>Array</li>
+            <li>Object</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">Array:</h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            The array is a collection of heterogeneous (dissimilar) data types.
+            PHP is a loosely typed language that?s why we can store any type of
+            values in arrays. <br />
+            Normal variable can store single value, array can store multiple
+            values. <br />
+            The array contains a number of elements, and each element is a
+            combination of element key and element value.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">SYNTAX OF ARRAY DECLARATION:</h3>
+        </div>
+      </div>
+      <div class="coding">
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre style="margin: 0; line-height: 125%">
+Variable_name = array (element1, element2, element3, element4......)</pre
+          >
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;"><p>Example 1</p></div>
+      </div>
+      <div class="coding">
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span>  
+    <span style="color: #19177C">$arr</span><span style="color: #666666">=</span> <span style="color: #008000; font-weight: bold">array</span>(<span style="color: #666666">10</span>,<span style="color: #666666">20</span>,<span style="color: #666666">30</span>);  
+    <span style="color: #008000">print_r</span>(<span style="color: #19177C">$arr</span>);  
+<span style="color: #BC7A00">?&gt;</span></pre>
+        </div>
+      </div>
+      <fieldset>
+        <legend>Output:</legend>
+        Array ( [0] => 10 [1] => 20 [2] => 30 )
+      </fieldset>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;"><p>Example 2</p></div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span>  
+    <span style="color: #19177C">$arr</span><span style="color: #666666">=</span> <span style="color: #008000; font-weight: bold">array</span>(<span style="color: #666666">10</span>,<span style="color: #BA2121">&#39;Hitesh&#39;</span>,<span style="color: #666666">30</span>);  
+    <span style="color: #008000">print_r</span>(<span style="color: #19177C">$arr</span>);  
+<span style="color: #BC7A00">?&gt;</span></pre>
+        </div>
+      </div>
+      <fieldset>
+        <legend>Output:</legend>
+        Array ( [0] => 10 [1] => Hitesh [2] => 30 )
+      </fieldset>
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">Object:</h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            An object is a data type which accumulates data and information on
+            how to process that data. An object is a specific instance of a
+            class which delivers as templates for objects.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">SYNTAX:</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            At first, we must declare a class of object. A class is a structure
+            which consists of properties and methods. Classes are specified with
+            the class keyword. We specify the data type in the object class, and
+            then we use the data type in instances of that class. <br />
+            Example 1
+          </p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span> <span style="color: #008000; font-weight: bold">class</span> <span style="color: #0000FF; font-weight: bold">vehicle</span>  
+    {  
+        <span style="color: #008000; font-weight: bold">function</span> <span style="color: #0000FF">car</span>()  
+        {           
+        <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;Display tata motors&quot;</span>;  
+        }  
+    }  
+    <span style="color: #19177C">$obj1</span> <span style="color: #666666">=</span> <span style="color: #008000; font-weight: bold">new</span> vehicle;  
+    <span style="color: #19177C">$obj1</span><span style="color: #666666">-&gt;</span><span style="color: #7D9029">car</span>();   
+<span style="color: #BC7A00">?&gt;</span>  </pre>
+        </div>
+      </div>
+      <fieldset>
+        <legend>Output:</legend>
+        Display tata motors
+      </fieldset>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;"><p>Example 2</p></div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span>  
+    <span style="color: #008000; font-weight: bold">class</span> <span style="color: #0000FF; font-weight: bold">student</span>   
+    {  
+            <span style="color: #008000; font-weight: bold">function</span> <span style="color: #0000FF">student</span>()   
+        {  
+                <span style="color: #19177C">$this</span><span style="color: #666666">-&gt;</span><span style="color: #7D9029">jsk</span> <span style="color: #666666">=</span> <span style="color: #666666">100</span>;  
+            }  
+    }     
+    <span style="color: #19177C">$obj</span> <span style="color: #666666">=</span> <span style="color: #008000; font-weight: bold">new</span> student();  
+    <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #19177C">$obj</span><span style="color: #666666">-&gt;</span><span style="color: #7D9029">jsk</span>;  
+<span style="color: #BC7A00">?&gt;</span></pre>
+        </div>
+      </div>
+      <fieldset>
+        <legend>Output:</legend>
+        100
+      </fieldset>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;"><p>
+Example 3
+        </p></div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;">
+          <pre style="margin: 0; line-height: 125%"><span style="color: #BC7A00">&lt;?php</span>  
+          <span style="color: #008000; font-weight: bold">class</span> <span style="color: #0000FF; font-weight: bold">greeting</span>  
+          {  
+          <span style="color: #008000; font-weight: bold">public</span> <span style="color: #19177C">$str</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Hello Developer&quot;</span>;  
+              <span style="color: #008000; font-weight: bold">function</span> <span style="color: #0000FF">show_greeting</span>()  
+              {  
+                      <span style="color: #008000; font-weight: bold">return</span> <span style="color: #19177C">$this</span><span style="color: #666666">-&gt;</span><span style="color: #7D9029">str</span>;  
+                  }  
+          }  
+          <span style="color: #19177C">$obj</span> <span style="color: #666666">=</span> <span style="color: #008000; font-weight: bold">new</span> greeting;  
+          <span style="color: #008000">var_dump</span>(<span style="color: #19177C">$obj</span>);  
+      <span style="color: #BC7A00">?&gt;</span>  </pre>
+        </div>
+      <fieldset>
+        <legend>Output:</legend>
+        object(greeting)[1] <br>
+        public 'str' => string 'Hello Developer' (length=15)
+      </fieldset>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html ng-app="">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/simple-grid.css" />
+  </head>
+
+  <body>
+    <nav id="navbar" style="padding:8px 15px">
+
+      <span id="back" onclick="window.history.back()">arrow_back</span>
+
+      <h3>PHP Tutorials</h3>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">Special Types</h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>There are 2 special data types in PHP</p>
+          <ul>
+            <li>Resource</li>
+            <li>Null</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">Resource Data type:</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            It refers the external resources like database connection, FTP
+            connection, file pointers, etc. In simple terms, a resource is a
+            special variable which carrying a reference to an external resource.
+            <br />
+            Example 1
+          </p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span>  
+    <span style="color: #19177C">$conn</span> <span style="color: #666666">=</span> <span style="color: #008000">ftp_connect</span>(<span style="color: #BA2121">&quot;127.0.0.1&quot;</span>) <span style="color: #008000; font-weight: bold">or</span> <span style="color: #008000; font-weight: bold">die</span>(<span style="color: #BA2121">&quot;Could not connect&quot;</span>);  
+    <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #008000">get_resource_type</span>(<span style="color: #19177C">$conn</span>);  
+<span style="color: #BC7A00">?&gt;</span></pre>
+        </div>
+      </div>
+      <fieldset>
+        <legend>Output:</legend>
+        FTP Buffer
+      </fieldset>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;"><p>Example 2</p></div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span>  
+    <span style="color: #19177C">$conn</span><span style="color: #666666">=</span> <span style="color: #008000">ftp_connect</span>(<span style="color: #BA2121">&quot;127.0.0.1&quot;</span>) <span style="color: #008000; font-weight: bold">or</span> <span style="color: #008000; font-weight: bold">die</span>(<span style="color: #BA2121">&quot;could not connect&quot;</span>);  
+    <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #19177C">$conn</span>;  
+<span style="color: #BC7A00">?&gt;</span>  </pre>
+        </div>
+      </div>
+      <fieldset>
+        <legend>Output:</legend>
+        Resource id #2
+      </fieldset>
+
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;"><p>Example 3</p></div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span>  
+    <span style="color: #19177C">$handle</span> <span style="color: #666666">=</span> <span style="color: #008000">fopen</span>(<span style="color: #BA2121">&quot;code.txt&quot;</span>, <span style="color: #BA2121">&quot;r&quot;</span>);  
+    <span style="color: #008000">var_dump</span>(<span style="color: #19177C">$handle</span>);  
+    <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;&lt;br&gt;&quot;</span>;  
+    <span style="color: #19177C">$conn</span><span style="color: #666666">=</span> <span style="color: #008000">ftp_connect</span>(<span style="color: #BA2121">&quot;127.0.0.1&quot;</span>) <span style="color: #008000; font-weight: bold">or</span> <span style="color: #008000; font-weight: bold">die</span>(<span style="color: #BA2121">&quot;could not connect&quot;</span>);  
+    <span style="color: #008000">var_dump</span>(<span style="color: #19177C">$conn</span>);  
+<span style="color: #BC7A00">?&gt;</span></pre>
+        </div>
+      </div>
+      <fieldset>
+        <legend>Output:</legend>
+        resource(3, stream) <br />
+        resource(4, FTP Buffer)
+      </fieldset>
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">Null Data Type:</h3>
+          <hr />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            A variable of type Null is a variable without any data. In PHP, null
+            is not a value, and we can consider it as a null variable based on 3
+            condition.
+          </p>
+          <ol>
+            <li>If the variable is not set with any value.</li>
+            <li>If the variable is set with a null value.</li>
+            <li>If the value of the variable is unset.</li>
+          </ol>
+          <p>Example 1</p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me --><div style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #BC7A00">&lt;?php</span>    
+    <span style="color: #19177C">$empty</span><span style="color: #666666">=</span><span style="color: #008000; font-weight: bold">null</span>;  
+    <span style="color: #008000">var_dump</span>(<span style="color: #19177C">$empty</span>);  
+<span style="color: #BC7A00">?&gt;</span></pre>
+</div>
+      </div>
+      <fieldset>
+        <legend>Output:</legend>
+      null
+      </fieldset>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;"><p>Example 2</p></div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me --><div style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #BC7A00">&lt;?php</span>  
+    <span style="color: #19177C">$a1</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot; &quot;</span>;  
+    <span style="color: #008000">var_dump</span>(<span style="color: #19177C">$a1</span>);  
+    <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;&lt;br /&gt;&quot;</span>;  
+    <span style="color: #19177C">$a2</span> <span style="color: #666666">=</span> <span style="color: #008000; font-weight: bold">null</span>;  
+    <span style="color: #008000">var_dump</span>(<span style="color: #19177C">$a2</span>);  
+<span style="color: #BC7A00">?&gt;</span></pre></div>
+
+      </div>
+      <fieldset>
+        <legend>Output:</legend>
+        string ' ' (length=1)
+        <br>
+        null
+      </fieldset>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>Example 3</p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me --><div style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #BC7A00">&lt;?php</span>  
+    <span style="color: #19177C">$x</span> <span style="color: #666666">=</span> <span style="color: #008000; font-weight: bold">NULL</span>;  
+    <span style="color: #008000">var_dump</span>(<span style="color: #19177C">$x</span>);  
+    <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;&lt;br&gt;&quot;</span>;  
+    <span style="color: #19177C">$y</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Hello Developer!&quot;</span>;  
+    <span style="color: #19177C">$y</span> <span style="color: #666666">=</span> <span style="color: #008000; font-weight: bold">NULL</span>;  
+    <span style="color: #008000">var_dump</span>(<span style="color: #19177C">$y</span>);  
+<span style="color: #BC7A00">?&gt;</span></pre></div>
+      </div>
+      <fieldset>
+        <legend>Output:</legend>
+        null
+        <br>
+        null
+      </fieldset>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html ng-app="">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/simple-grid.css" />
+  </head>
+
+  <body>
+    <nav id="navbar" style="padding:8px 15px">
+    <span id="back" onclick="window.history.back()">arrow_back</span>
+    <h3>Advance Tutorials</h3>
+  </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">PHP File Handling</h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            PHP File System allows us to create file, read file line by line,
+            read file character by character, write file, append file, delete
+            file and close file.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">PHP Open File - fopen()</h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            PHP fopen() function is used to open file or URL and returns
+            resource. The fopen() function accepts two arguments: $filename and
+            $mode. The $filename represents the file to be opended and $mode
+            represents the file mode for example read-only, read-write,
+            write-only etc.
+            <br />
+            Syntax
+          </p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #008000; font-weight: bold">resource</span> <span style="color: #008000; font-weight: bold">fopen</span> <span style="color: #666666">(</span> <span style="color: #008000; font-weight: bold">string</span> <span style=" color: #008000; font-weight: bold">$</span><span style="color: #008000; font-weight: bold">filename</span> <span style="color: #666666">,</span> <span style="color: #008000; font-weight: bold">string</span> <span style=" color: #008000; font-weight: bold">$</span><span style="color: #008000; font-weight: bold">mode</span> <span style="color: #666666">[,</span> <span style="color: #008000; font-weight: bold">bool</span> <span style=" color: #008000; font-weight: bold">$</span><span style="color: #008000; font-weight: bold">use_include_path</span> <span style="color: #666666">=</span> <span style="color: #008000; font-weight: bold">false</span> <span style="color: #666666">[,</span> <span style="color: #008000; font-weight: bold">resource</span> <span style=" color: #008000; font-weight: bold">$</span><span style="color: #008000; font-weight: bold">context</span> <span style="color: #666666">]]</span> <span style="color: #666666">)</span>  </pre>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>Example</p>
+        </div>
+      </div>
+
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span>  
+<span style="color: #19177C">$handle</span> <span style="color: #666666">=</span> <span style="color: #008000">fopen</span>(<span style="color: #BA2121">&quot;c:</span><span style="color: #BB6622; font-weight: bold">\\</span><span style="color: #BA2121">folder</span><span style="color: #BB6622; font-weight: bold">\\</span><span style="color: #BA2121">file.txt&quot;</span>, <span style="color: #BA2121">&quot;r&quot;</span>);  
+<span style="color: #BC7A00">?&gt;</span></pre>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">PHP Open File Mode</h3>
+          <hr />
+        </div>
+      </div>
+      <table class="alt">
+        <tbody>
+          <tr>
+            <th>Mode</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td>r</td>
+            <td>Opens file in <strong>read-only</strong> mode. It places the file pointer at the beginning of the file.</td>
+          </tr>
+          <tr>
+            <td>r+</td>
+            <td>Opens file in <strong>read-write</strong> mode. It places the file pointer at the beginning of the file.</td>
+          </tr>
+          <tr>
+            <td>w</td>
+            <td>Opens file in <strong>write-only</strong> mode. It places the file pointer to the beginning of the file and
+              truncates the file to zero length. If file is not found, it creates a new file.</td>
+          </tr>
+          <tr>
+            <td>w+</td>
+            <td>Opens file in <strong>read-write</strong> mode. It places the file pointer to the beginning of the file and
+              truncates the file to zero length. If file is not found, it creates a new file.</td>
+          </tr>
+          <tr>
+            <td>a</td>
+            <td>Opens file in <strong>write-only</strong> mode. It places the file pointer to the end of the file. If file is
+              not found, it creates a new file.</td>
+          </tr>
+          <tr>
+            <td>a+</td>
+            <td>Opens file in <strong>read-write</strong> mode. It places the file pointer to the end of the file. If file is
+              not found, it creates a new file.</td>
+          </tr>
+          <tr>
+            <td>x</td>
+            <td>Creates and opens file in <strong>write-only</strong> mode. It places the file pointer at the beginning of
+              the file. If file is found, fopen() function returns FALSE.</td>
+          </tr>
+          <tr>
+            <td>x+</td>
+            <td>It is same as x but it creates and opens file in <strong>read-write</strong> mode.</td>
+          </tr>
+          <tr>
+            <td>c</td>
+            <td>Opens file in <strong>write-only</strong> mode. If the file does not exist, it is created. If it exists, it
+              is neither truncated (as opposed to 'w'), nor the call to this function fails (as is the case with 'x'). The
+              file pointer is positioned on the beginning of the file</td>
+          </tr>
+          <tr>
+            <td>c+</td>
+            <td>It is same as c but it opens file in <strong>read-write</strong> mode.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

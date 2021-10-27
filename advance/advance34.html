@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html ng-app="">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/simple-grid.css" />
+  </head>
+
+  <body>
+    <nav id="navbar" style="padding:8px 15px">
+    <span id="back" onclick="window.history.back()">arrow_back</span>
+    <h3>Advance Tutorials</h3>
+  </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">PHP MySQL Select Query</h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            PHP mysql_query() function is used to execute select query. Since
+            PHP 5.5, mysql_query() function is deprecated. Now it is recommended
+            to use one of the 2 alternatives.
+          </p>
+          <ul>
+            <li>
+              mysqli_query()
+            </li>
+            <li>
+              PDO::__query()
+            </li>
+          </ul>
+          <p>There are two other MySQLi functions used in select query.</p>
+          <ul>
+            <li>
+              mysqli_num_rows(mysqli_result $result): returns number of rows.
+            </li>
+            <li>
+              mysqli_fetch_assoc(mysqli_result $result): returns row as an
+              associative array. Each key of the array represents the column
+              name of the table. It return NULL if there are no more rows.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">PHP MySQLi Select Query Example</h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>Example</p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span>  
+<span style="color: #19177C">$host</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;localhost:3306&#39;</span>;  
+<span style="color: #19177C">$user</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;&#39;</span>;  
+<span style="color: #19177C">$pass</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;&#39;</span>;  
+<span style="color: #19177C">$dbname</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;test&#39;</span>;  
+<span style="color: #19177C">$conn</span> <span style="color: #666666">=</span> <span style="color: #008000">mysqli_connect</span>(<span style="color: #19177C">$host</span>, <span style="color: #19177C">$user</span>, <span style="color: #19177C">$pass</span>,<span style="color: #19177C">$dbname</span>);  
+<span style="color: #008000; font-weight: bold">if</span>(<span style="color: #666666">!</span><span style="color: #19177C">$conn</span>){  
+  <span style="color: #008000; font-weight: bold">die</span>(<span style="color: #BA2121">&#39;Could not connect: &#39;</span><span style="color: #666666">.</span>mysqli_connect_error());  
+}  
+<span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&#39;Connected successfully&lt;br/&gt;&#39;</span>;  
+  
+<span style="color: #19177C">$sql</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;SELECT * FROM emp&#39;</span>;  
+<span style="color: #19177C">$retval</span><span style="color: #666666">=</span>mysqli_query(<span style="color: #19177C">$conn</span>, <span style="color: #19177C">$sql</span>);  
+  
+<span style="color: #008000; font-weight: bold">if</span>(mysqli_num_rows(<span style="color: #19177C">$retval</span>) <span style="color: #666666">&gt;</span> <span style="color: #666666">0</span>){  
+ <span style="color: #008000; font-weight: bold">while</span>(<span style="color: #19177C">$row</span> <span style="color: #666666">=</span> mysqli_fetch_assoc(<span style="color: #19177C">$retval</span>)){  
+    <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;EMP ID :</span><span style="color: #BB6688; font-weight: bold">{</span><span style="color: #19177C">$row</span>[<span style="color: #BA2121">&#39;id&#39;</span>]<span style="color: #BB6688; font-weight: bold">}</span><span style="color: #BA2121">  &lt;br&gt; &quot;</span><span style="color: #666666">.</span>  
+         <span style="color: #BA2121">&quot;EMP NAME : </span><span style="color: #BB6688; font-weight: bold">{</span><span style="color: #19177C">$row</span>[<span style="color: #BA2121">&#39;name&#39;</span>]<span style="color: #BB6688; font-weight: bold">}</span><span style="color: #BA2121"> &lt;br&gt; &quot;</span><span style="color: #666666">.</span>  
+         <span style="color: #BA2121">&quot;EMP SALARY : </span><span style="color: #BB6688; font-weight: bold">{</span><span style="color: #19177C">$row</span>[<span style="color: #BA2121">&#39;salary&#39;</span>]<span style="color: #BB6688; font-weight: bold">}</span><span style="color: #BA2121"> &lt;br&gt; &quot;</span><span style="color: #666666">.</span>  
+         <span style="color: #BA2121">&quot;--------------------&lt;br&gt;&quot;</span>;  
+ } <span style="color: #408080; font-style: italic">//end of while  </span>
+}<span style="color: #008000; font-weight: bold">else</span>{  
+<span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;0 results&quot;</span>;  
+}  
+mysqli_close(<span style="color: #19177C">$conn</span>);  
+<span style="color: #BC7A00">?&gt;</span></pre>
+        </div>
+      </div>
+      <fieldset>
+        <legend>Output:</legend>
+        <pre>
+Connected successfully
+EMP ID :1
+EMP NAME : Krishna
+EMP SALARY : 9000
+--------------------
+EMP ID :2
+EMP NAME : Madhav
+EMP SALARY : 40000
+--------------------
+EMP ID :3
+EMP NAME : Kishan
+EMP SALARY : 90000
+--------------------
+      </pre
+        >
+      </fieldset>
+    </div>
+  </body>
+</html>

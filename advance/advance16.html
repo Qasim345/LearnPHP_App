@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html ng-app="">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/simple-grid.css" />
+  <style>
+    .dp-highlighter .string {
+      color: #00f;
+      background-color: inherit;
+    }
+  </style>
+  </head>
+  <body>
+    <nav id="navbar" style="padding:8px 15px">
+    <span id="back" onclick="window.history.back()">arrow_back</span>
+    <h3>Advance Tutorials</h3>
+  </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">PHP Form Handling</h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            We can create and use forms in PHP. To get form data, we need to use
+            PHP superglobals $_GET and $_POST. The form request may be get or
+            post. To retrieve data from get request, we need to use $_GET, for
+            post request $_POST.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">
+            PHP Get Form
+          </h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            Get request is the default form request. The data passed through get
+            request is visible on the URL browser so it is not secured. You can
+            send limited amount of data through get request.
+            <br />
+            Let's see a simple example to receive data from get request in PHP.
+            <br />
+            File: form1.html
+          </p>
+        </div>
+      </div>
+      <div class="coding">
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre style="margin: 0; line-height: 125%">
+<span><span>&lt;form&nbsp;action=</span><span class="string">"welcome.php"</span><span>&nbsp;method=</span><span
+class="string">"get"</span><span>&gt;&nbsp;&nbsp;</span></span>
+<span>Name:&nbsp;&lt;input&nbsp;type=<span class="string">"text"</span><span>&nbsp;name=</span><span
+class="string">"name"</span><span>/&gt;&nbsp;&nbsp;</span></span>
+<span>&lt;input&nbsp;type=<span class="string">"submit"</span><span>&nbsp;value=</span><span
+class="string">"visit"</span><span>/&gt;&nbsp;&nbsp;</span></span>
+<span>&lt;/form&gt;&nbsp;&nbsp;</span></pre>
+          <textarea name="code" class="php" style="display: none;">
+&lt;form action="welcome.php" method="get"&gt;
+Name: &lt;input type="text" name="name"/&gt;
+&lt;input type="submit" value="visit"/&gt;
+&lt;/form&gt;
+</textarea
+          >
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>File: welcome.php</p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span>  
+<span style="color: #19177C">$name</span><span style="color: #666666">=</span><span style="color: #19177C">$_GET</span>[<span style="color: #BA2121">&quot;name&quot;</span>];<span style="color: #408080; font-style: italic">//receiving name field value in $name variable  </span>
+<span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;Welcome, </span><span style="color: #BB6688; font-weight: bold">$name</span><span style="color: #BA2121">&quot;</span>;  
+<span style="color: #BC7A00">?&gt;</span></pre>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">PHP Post Form</h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            Post request is widely used to submit form that have large amount of
+            data such as file upload, image upload, login form, registration
+            form etc.
+            <br />
+            The data passed through post request is not visible on the URL
+            browser so it is secured. You can send large amount of data through
+            post request.
+            <br />
+            Let's see a simple example to receive data from post request in PHP.
+            <br />
+            File: form1.html
+          </p>
+        </div>
+      </div>
+      <div class="coding">
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre><span
+><span>&lt;form&nbsp;action=</span><span class="string">"login.php"</span
+><span>&nbsp;method=</span><span class="string">"post"</span
+><span>&gt;&nbsp;&nbsp;&nbsp;</span></span
+>
+<span>&lt;table&gt;&nbsp;&nbsp;&nbsp;</span>
+<span
+>&lt;tr&gt;&lt;td&gt;Name:&lt;/td&gt;&lt;td&gt;&nbsp;&lt;input&nbsp;type=<span
+class="string"
+>"text"</span
+><span>&nbsp;name=</span><span class="string">"name"</span
+><span>/&gt;&lt;/td&gt;&lt;/tr&gt;&nbsp;&nbsp;</span></span
+>
+<span
+>&lt;tr&gt;&lt;td&gt;Password:&lt;/td&gt;&lt;td&gt;&nbsp;&lt;input&nbsp;type=<span
+class="string"
+>"password"</span
+><span>&nbsp;name=</span><span class="string">"password"</span
+><span>/&gt;&lt;/td&gt;&lt;/tr&gt;&nbsp;&nbsp;&nbsp;</span></span
+>
+<span
+>&lt;tr&gt;&lt;td&nbsp;colspan=<span class="string">"2"</span
+><span>&gt;&lt;input&nbsp;type=</span><span class="string">"submit"</span
+><span>&nbsp;value=</span><span class="string">"login"</span
+><span>/&gt;&nbsp;&nbsp;&lt;/td&gt;&lt;/tr&gt;&nbsp;&nbsp;</span></span
+>
+<span>&lt;/table&gt;&nbsp;&nbsp;</span>
+<span>&lt;/form&gt;&nbsp;&nbsp;&nbsp;</span>
+<textarea name="code" class="php" style="display: none;">
+&lt;form action="login.php" method="post"&gt; 
+&lt;table&gt; 
+&lt;tr&gt;&lt;td&gt;Name:&lt;/td&gt;&lt;td&gt; &lt;input type="text" name="name"/&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Password:&lt;/td&gt;&lt;td&gt; &lt;input type="password" name="password"/&gt;&lt;/td&gt;&lt;/tr&gt; 
+&lt;tr&gt;&lt;td colspan="2"&gt;&lt;input type="submit" value="login"/&gt;  &lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/form&gt;</textarea></pre>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>File: login.php</p>
+        </div>
+      </div>
+      <div class="coding">
+        <div style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #BC7A00">&lt;?php</span>  
+<span style="color: #19177C">$name</span><span style="color: #666666">=</span><span style="color: #19177C">$_POST</span>[<span style="color: #BA2121">&quot;name&quot;</span>];<span style="color: #408080; font-style: italic">//receiving name field value in $name variable  </span>
+<span style="color: #19177C">$password</span><span style="color: #666666">=</span><span style="color: #19177C">$_POST</span>[<span style="color: #BA2121">&quot;password&quot;</span>];<span style="color: #408080; font-style: italic">//receiving password field value in $password variable  </span>
+  
+<span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;Welcome: </span><span style="color: #BB6688; font-weight: bold">$name</span><span style="color: #BA2121">, your password is: </span><span style="color: #BB6688; font-weight: bold">$password</span><span style="color: #BA2121">&quot;</span>;  
+<span style="color: #BC7A00">?&gt;</span></pre></div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/simple-grid.css" />
+  </head>
+
+  <body>
+    <nav id="navbar" style="padding:8px 15px">
+
+      <span id="back" onclick="window.history.back()">arrow_back</span>
+
+      <h3>PHP Tutorials</h3>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">PHP is_float Function</h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            By using this function, we can check that the input value is float
+            or not. This function was introduced in PHP 4.0. <br />
+            <b> Syntax </b>
+          </p>
+        </div>
+      </div>
+      <div class="coding">
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre style="margin: 0; line-height: 125%">
+bool is_float ( mixed $var )</pre
+          >
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;"><b>Parameters</b></div>
+      </div>
+      <table class="alt">
+        <tr>
+          <th>Parameter</th>
+          <th>Description</th>
+          <th>Is compulsory</th>
+        </tr>
+        <tr>
+          <td>var</td>
+          <td>The variable being evaluated.</td>
+          <td>compulsory</td>
+        </tr>
+      </table>
+
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            Return type: <br />
+            The is_float() function returns TRUE if the var_name is float,
+            otherwise false. <br /><br />
+            Example 1
+          </p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span>  
+    <span style="color: #19177C">$x</span><span style="color: #666666">=123.41</span>;  
+    <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #008000">is_float</span>(<span style="color: #19177C">$x</span>);  
+<span style="color: #BC7A00">?&gt;</span></pre>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;"><p>Example 2</p></div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span>  
+    <span style="color: #19177C">$a</span><span style="color: #666666">=123.41</span>;  
+    <span style="color: #19177C">$b</span><span style="color: #666666">=12</span>;  
+    <span style="color: #008000">var_dump</span> (<span style="color: #008000">is_float</span>(<span style="color: #19177C">$a</span>));  
+    <span style="color: #008000">var_dump</span> (<span style="color: #008000">is_float</span>(<span style="color: #19177C">$b</span>));  
+<span style="color: #BC7A00">?&gt;</span></pre>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12"><p>Example 3</p></div>
+      </div>
+      <div class="coding">
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span>  
+          <span style="color: #19177C">$var_name</span><span style="color: #666666">=126.56</span>;  
+          <span style="color: #008000; font-weight: bold">if</span> (<span style="color: #008000">is_float</span>(<span style="color: #19177C">$var_name</span>))  
+          <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&#39;This is a float value.&lt;br&gt;&#39;</span>;  
+          <span style="color: #008000; font-weight: bold">else</span>  
+          <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&#39;This is not a float value.&lt;br&gt;&#39;</span>;  
+          <span style="color: #008000">var_dump</span>(<span style="color: #008000">is_float</span>(<span style="color: #BA2121">&#39;javatpoint&#39;</span>));  
+          <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&#39;&lt;br&gt;&#39;</span>;  
+          <span style="color: #008000">var_dump</span>(<span style="color: #008000">is_float</span>(<span style="color: #666666">85</span>));  
+      <span style="color: #BC7A00">?&gt;</span>  
+      </pre>
+        </div>
+      </div>
+      <fieldset>
+        <legend>Output:</legend>
+        <pre>
+This is a float value.
+boolean false
+boolean false</pre>
+      </fieldset>
+    </div>
+  </body>
+</html>

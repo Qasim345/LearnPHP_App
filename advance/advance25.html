@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html ng-app="">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/simple-grid.css" />
+  </head>
+
+  <body>
+    <nav id="navbar" style="padding:8px 15px">
+    <span id="back" onclick="window.history.back()">arrow_back</span>
+    <h3>Advance Tutorials</h3>
+  </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">PHP File Upload</h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            PHP allows you to upload single and multiple files through few lines
+            of code only.
+            <br />
+            PHP file upload features allows you to upload binary and text files
+            both. Moreover, you can have the full control over the file to be
+            uploaded through PHP authentication and file operation functions.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">PHP $_FILES</h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            The PHP global $_FILES contains all the information of file. By the
+            help of $_FILES global, we can get file name, file type, file size,
+            temp file name and errors associated with file.
+            <br />
+            Here, we are assuming that file name is filename.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">
+            $_FILES['filename']['name']
+          </h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            returns file name.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">
+            $_FILES['filename']['type']
+          </h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>returns MIME type of the file.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">
+            $_FILES['filename']['size']
+          </h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>returns size of the file (in bytes).</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">
+            $_FILES['filename']['tmp_name']
+          </h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            returns temporary file name of the file which was stored on the
+            server.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">
+            $_FILES['filename']['error']
+          </h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>returns error code associated with this file.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">move_uploaded_file() function</h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            The move_uploaded_file() function moves the uploaded file to a new
+            location. The move_uploaded_file() function checks internally if the
+            file is uploaded thorough the POST request. It moves the file if it
+            is uploaded through the POST request.
+            <br />
+            Syntax
+          </p>
+        </div>
+      </div>
+      <div class="coding">
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre style="margin: 0; line-height: 125%">
+bool move_uploaded_file ( string $filename , string $destination )  </pre
+          >
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">PHP File Upload Example</h3>
+          <hr />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>File: uploadform.html</p>
+        </div>
+      </div>
+      <div class="coding">
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre>
+<span><span>&lt;form&nbsp;action=</span><span class="string">"uploader.php"</span><span>&nbsp;method=</span><span class="string">"post"</span><span>&nbsp;enctype=</span><span
+class="string">"multipart/form-data"</span><span>&gt;&nbsp;&nbsp;</span></span>
+<span>&nbsp;&nbsp;&nbsp;&nbsp;Select&nbsp;File:&nbsp;&nbsp;</span>
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&lt;input&nbsp;type=<span class="string">"file"</span><span>&nbsp;name=</span><span class="string">"fileToUpload"</span><span>/&gt;&nbsp;&nbsp;</span></span>
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&lt;input&nbsp;type=<span class="string">"submit"</span><span>&nbsp;value=</span><span
+class="string">"Upload&nbsp;Image"</span><span>&nbsp;name=</span><span class="string">"submit"</span><span>/&gt;&nbsp;&nbsp;</span></span>
+<span>&lt;/form&gt;&nbsp;&nbsp;</span>
+&lt;form action="uploader.php" method="post" enctype="multipart/form-data"&gt;
+Select File:
+&lt;input type="file" name="fileToUpload"/&gt;
+&lt;input type="submit" value="Upload Image" name="submit"/&gt;
+&lt;/form&gt; </pre>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>File: uploader.php</p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span>  
+<span style="color: #19177C">$target_path</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;e:/&quot;</span>;  
+<span style="color: #19177C">$target_path</span> <span style="color: #666666">=</span> <span style="color: #19177C">$target_path</span><span style="color: #666666">.</span><span style="color: #008000">basename</span>( <span style="color: #19177C">$_FILES</span>[<span style="color: #BA2121">&#39;fileToUpload&#39;</span>][<span style="color: #BA2121">&#39;name&#39;</span>]);   
+  
+<span style="color: #008000; font-weight: bold">if</span>(<span style="color: #008000">move_uploaded_file</span>(<span style="color: #19177C">$_FILES</span>[<span style="color: #BA2121">&#39;fileToUpload&#39;</span>][<span style="color: #BA2121">&#39;tmp_name&#39;</span>], <span style="color: #19177C">$target_path</span>)) {  
+    <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;File uploaded successfully!&quot;</span>;  
+} <span style="color: #008000; font-weight: bold">else</span>{  
+    <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;Sorry, file not uploaded, please try again!&quot;</span>;  
+}  
+<span style="color: #BC7A00">?&gt;</span></pre>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

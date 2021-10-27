@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html ng-app="">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/simple-grid.css" />
+  </head>
+
+  <body>
+    <nav id="navbar" style="padding:8px 15px">
+    <span id="back" onclick="window.history.back()">arrow_back</span>
+    <h3>PHP Programs</h3>
+  </nav>
+    <div class="container">
+      <!--Heading-->
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">Area of Rectangle</h3>
+          <hr />
+        </div>
+      </div>
+      <!--//Heading-->
+
+      <!--content-->
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            <b>Logic:</b>
+          </p>
+          <ul>
+            <li>Take two variables.
+            </li>
+            <li>Multiply both of them.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p><b>Program</b></p>
+        </div>
+      </div>
+      <div class="coding"><!-- HTML generated using hilite.me --><div style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;html&gt;</span>  
+<span style="color: #008000; font-weight: bold">&lt;body&gt;</span>  
+<span style="color: #008000; font-weight: bold">&lt;form</span> <span style="color: #7D9029">method =</span><span style="color: #BA2121">&quot;post&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>   
+Width: <span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;number&quot;</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;width&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>   
+<span style="color: #008000; font-weight: bold">&lt;br&gt;&lt;br&gt;</span>   
+Length: <span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;number&quot;</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;length&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span> <span style="color: #008000; font-weight: bold">&lt;br&gt;</span>   
+<span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">type =</span><span style="color: #BA2121">&quot;submit&quot;</span> <span style="color: #7D9029">name =</span><span style="color: #BA2121">&quot;submit&quot;</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;Calculate&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>   
+<span style="color: #008000; font-weight: bold">&lt;/form&gt;</span>   
+<span style="color: #008000; font-weight: bold">&lt;/body&gt;</span>   
+<span style="color: #008000; font-weight: bold">&lt;/html&gt;</span>  
+<span style="color: #BC7A00">&lt;?php</span>   
+<span style="color: #008000; font-weight: bold">if</span>(<span style="color: #008000">isset</span>(<span style="color: #19177C">$_POST</span>[<span style="color: #BA2121">&#39;submit&#39;</span>]))  
+    {   
+<span style="color: #19177C">$width</span> <span style="color: #666666">=</span> <span style="color: #19177C">$_POST</span>[<span style="color: #BA2121">&#39;width&#39;</span>];   
+<span style="color: #19177C">$length</span> <span style="color: #666666">=</span> <span style="color: #19177C">$_POST</span>[<span style="color: #BA2121">&#39;length&#39;</span>];   
+<span style="color: #19177C">$area</span> <span style="color: #666666">=</span> <span style="color: #19177C">$width</span><span style="color: #666666">*</span><span style="color: #19177C">$length</span>;   
+<span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;The area of a rectangle with </span><span style="color: #BB6688; font-weight: bold">$width</span><span style="color: #BA2121"> x </span><span style="color: #BB6688; font-weight: bold">$length</span><span style="color: #BA2121"> is </span><span style="color: #BB6688; font-weight: bold">$area</span><span style="color: #BA2121">&quot;</span>;   
+}   
+<span style="color: #BC7A00">?&gt;</span> </pre></div>
+</div>
+    </div>
+  </body>
+</html>

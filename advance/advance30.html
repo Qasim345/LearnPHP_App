@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html ng-app="">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/simple-grid.css" />
+  </head>
+  <body>
+    <nav id="navbar" style="padding:8px 15px">
+    <span id="back" onclick="window.history.back()">arrow_back</span>
+    <h3>Advance Tutorials</h3>
+  </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">PHP MySQL Create Table</h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            PHP mysql_query() function is used to create table. Since PHP 5.5,
+            mysql_query() function is deprecated. Now it is recommended to use
+            one of the 2 alternatives.
+          </p>
+          <ul>
+            <li>
+              mysqli_query()
+            </li>
+            <li>
+              PDO::__query()
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">PHP MySQLi Create Table Example
+          </h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>Example</p>
+        </div>
+      </div>
+      <div class="coding">
+        <div style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #BC7A00">&lt;?php</span>  
+<span style="color: #19177C">$host</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;localhost:3306&#39;</span>;  
+<span style="color: #19177C">$user</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;&#39;</span>;  
+<span style="color: #19177C">$pass</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;&#39;</span>;  
+<span style="color: #19177C">$dbname</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;test&#39;</span>;  
+  
+<span style="color: #19177C">$conn</span> <span style="color: #666666">=</span> <span style="color: #008000">mysqli_connect</span>(<span style="color: #19177C">$host</span>, <span style="color: #19177C">$user</span>, <span style="color: #19177C">$pass</span>,<span style="color: #19177C">$dbname</span>);  
+<span style="color: #008000; font-weight: bold">if</span>(<span style="color: #666666">!</span><span style="color: #19177C">$conn</span>){  
+  <span style="color: #008000; font-weight: bold">die</span>(<span style="color: #BA2121">&#39;Could not connect: &#39;</span><span style="color: #666666">.</span>mysqli_connect_error());  
+}  
+<span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&#39;Connected successfully&lt;br/&gt;&#39;</span>;  
+  
+<span style="color: #19177C">$sql</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;create table emp5(id INT AUTO_INCREMENT,name VARCHAR(20) NOT NULL,  </span>
+<span style="color: #BA2121">emp_salary INT NOT NULL,primary key (id))&quot;</span>;  
+<span style="color: #008000; font-weight: bold">if</span>(mysqli_query(<span style="color: #19177C">$conn</span>, <span style="color: #19177C">$sql</span>)){  
+ <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;Table emp5 created successfully&quot;</span>;  
+}<span style="color: #008000; font-weight: bold">else</span>{  
+<span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;Could not create table: &quot;</span><span style="color: #666666">.</span> mysqli_error(<span style="color: #19177C">$conn</span>);  
+}  
+  
+mysqli_close(<span style="color: #19177C">$conn</span>);  
+<span style="color: #BC7A00">?&gt;</span>  </pre></div>
+
+      </div>
+      <fieldset>
+        <legend>Output:</legend>Connected successfully <br>
+        Table emp5 created successfully
+      </fieldset>
+      </div>
+  </body>
+</html>

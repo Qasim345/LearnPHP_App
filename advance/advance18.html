@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html ng-app="">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/simple-grid.css" />
+  </head>
+
+  <body>
+    <nav id="navbar" style="padding:8px 15px">
+    <span id="back" onclick="window.history.back()">arrow_back</span>
+    <h3>Advance Tutorials</h3>
+  </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">PHP Cookie</h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            PHP cookie is a small piece of information which is stored at client
+            browser. It is used to recognize the user.
+            <br />
+            Cookie is created at server side and saved to client browser. Each
+            time when client sends request to the server, cookie is embedded
+            with request. Such way, cookie can be received at the server side.
+          </p>
+        </div>
+      </div>
+      <img src="../images/cookie.png" alt="cookie" />
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            In short, cookie can be created, sent and received at server end.
+          </p>
+          <p><b>Note:</b> PHP Cookie must be used before &lt;html&gt; tag.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">PHP setcookie() function</h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            PHP setcookie() function is used to set cookie with HTTP response.
+            Once cookie is set, you can access it by $_COOKIE superglobal
+            variable.
+            <br />
+            Syntax
+          </p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #008000; font-weight: bold">bool</span> <span style="color: #008000; font-weight: bold">setcookie</span> <span style="color: #666666">(</span> <span style="color: #008000; font-weight: bold">string</span> <span  >$</span><span style="color: #008000; font-weight: bold">name</span> <span style="color: #666666">[,</span> <span style="color: #008000; font-weight: bold">string</span> <span  >$</span><span style="color: #008000; font-weight: bold">value</span> <span style="color: #666666">[,</span> <span style="color: #008000; font-weight: bold">int</span> <span  >$</span><span style="color: #008000; font-weight: bold">expire</span> <span style="color: #666666">=</span> <span style="color: #008000; font-weight: bold">0</span> <span style="color: #666666">[,</span> <span style="color: #008000; font-weight: bold">string</span> <span  >$</span><span style="color: #008000; font-weight: bold">path</span>   
+<span style="color: #666666">[,</span> <span style="color: #008000; font-weight: bold">string</span> <span  >$</span><span style="color: #008000; font-weight: bold">domain</span> <span style="color: #666666">[,</span> <span style="color: #008000; font-weight: bold">bool</span> <span  >$</span><span style="color: #008000; font-weight: bold">secure</span> <span style="color: #666666">=</span> <span style="color: #008000; font-weight: bold">false</span> <span style="color: #666666">[,</span> <span style="color: #008000; font-weight: bold">bool</span> <span  >$</span><span style="color: #008000; font-weight: bold">httponly</span> <span style="color: #666666">=</span> <span style="color: #008000; font-weight: bold">false</span> <span style="color: #666666">]]]]]]</span> <span style="color: #666666">)</span></pre>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <p>Example</p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #008000; font-weight: bold">setcookie</span><span style="color: #666666">(</span><span style="color: #BA2121">&quot;CookieName&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;CookieValue&quot;</span><span style="color: #666666">);</span><span style="color: #408080; font-style: italic">/* defining name and value only*/</span>  
+<span style="color: #008000; font-weight: bold">setcookie</span><span style="color: #666666">(</span><span style="color: #BA2121">&quot;CookieName&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;CookieValue&quot;</span><span style="color: #666666">,</span> <span style="color: #008000; font-weight: bold">time</span><span style="color: #666666">()+</span><span style="color: #008000; font-weight: bold">1</span><span style="color: #666666">*</span><span style="color: #008000; font-weight: bold">60</span><span style="color: #666666">*</span><span style="color: #008000; font-weight: bold">60</span><span style="color: #666666">);//</span><span style="color: #008000; font-weight: bold">using</span> <span style="color: #008000; font-weight: bold">expiry</span> <span style="color: #008000; font-weight: bold">in</span> <span style="color: #008000; font-weight: bold">1</span> <span style="color: #008000; font-weight: bold">hour</span><span style="color: #666666">(</span><span style="color: #008000; font-weight: bold">1</span><span style="color: #666666">*</span><span style="color: #008000; font-weight: bold">60</span><span style="color: #666666">*</span><span style="color: #008000; font-weight: bold">60</span> <span style="color: #008000; font-weight: bold">seconds</span> <span style="color: #008000; font-weight: bold">or</span> <span style="color: #008000; font-weight: bold">3600</span> <span style="color: #008000; font-weight: bold">seconds</span><span style="color: #666666">)</span>  
+<span style="color: #008000; font-weight: bold">setcookie</span><span style="color: #666666">(</span><span style="color: #BA2121">&quot;CookieName&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;CookieValue&quot;</span><span style="color: #666666">,</span> <span style="color: #008000; font-weight: bold">time</span><span style="color: #666666">()+</span><span style="color: #008000; font-weight: bold">1</span><span style="color: #666666">*</span><span style="color: #008000; font-weight: bold">60</span><span style="color: #666666">*</span><span style="color: #008000; font-weight: bold">60</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;/mypath/&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;mydomain.com&quot;</span><span style="color: #666666">,</span> <span style="color: #008000; font-weight: bold">1</span><span style="color: #666666">);</span> </pre>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">
+            PHP $_COOKIE 
+          </h3>
+          <hr />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>PHP $_COOKIE superglobal variable is used to get
+          cookie. 
+          <br>
+          Example</p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;">
+          <pre style="margin: 0; line-height: 125%"><span style="color: #008000">$</span><span style="color: #008000; font-weight: bold">value</span><span style="color: #666666">=</span><span style="color: #008000">$</span><span style="color: #008000; font-weight: bold">_COOKIE</span><span style="color: #666666">[</span><span style="color: #BA2121">&quot;CookieName&quot;</span><span style="color: #666666">];//</span><span style="color: #008000; font-weight: bold">returns</span> <span style="color: #008000; font-weight: bold">cookie</span> <span style="color: #008000; font-weight: bold">value</span>  
+        </pre>
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">PHP Cookie Example
+          </h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>File: cookie1.php</p>
+        </div>
+      </div>
+      <div class="coding"><!-- HTML generated using hilite.me --><div style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #BC7A00">&lt;?php</span>  
+ setcookie(<span style="color: #BA2121">&quot;user&quot;</span>, <span style="color: #BA2121">&quot;Code Jupiter&quot;</span>);  
+<span style="color: #BC7A00">?&gt;</span>  
+<span style="color: #666666">&lt;</span><span style="color: #008000; font-weight: bold">html</span><span style="color: #666666">&gt;</span>  
+ <span style="color: #666666">&lt;</span><span style="color: #008000; font-weight: bold">body</span><span style="color: #666666">&gt;</span>  
+  <span style="color: #BC7A00">&lt;?php</span>  
+   <span style="color: #008000; font-weight: bold">if</span>(<span style="color: #666666">!</span><span style="color: #008000">isset</span>(<span style="color: #19177C">$_COOKIE</span>[<span style="color: #BA2121">&quot;user&quot;</span>])) {  
+     <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;Sorry, cookie is not found!&quot;</span>;  
+   } <span style="color: #008000; font-weight: bold">else</span> {  
+     <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;&lt;br/&gt;Cookie Value: &quot;</span> <span style="color: #666666">.</span> <span style="color: #19177C">$_COOKIE</span>[<span style="color: #BA2121">&quot;user&quot;</span>];  
+     }  
+<span style="color: #BC7A00">?&gt;</span>  
+ <span style="color: #666666">&lt;/</span><span style="color: #008000; font-weight: bold">body</span><span style="color: #666666">&gt;</span>  
+<span style="color: #666666">&lt;/</span><span style="color: #008000; font-weight: bold">html</span><span style="color: #666666">&gt;</span></pre></div>
+</div>
+      <fieldset>
+        <legend>Output:</legend>Sorry, cookie is not found!
+      </fieldset>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>Firstly cookie is not set. But, if you refresh the page, you will see cookie is set now.          
+          </p>
+        </div>
+      </div>
+      <fieldset>
+        <legend>Output:</legend>
+        Cookie Value: Code Jupiter
+      </fieldset>
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">PHP Delete Cookie
+          </h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>If you set the expiration date in past, cookie will be deleted.
+          <br>
+          File: cookie1.php</p>
+        </div>
+      </div>
+      <div class="coding"><!-- HTML generated using hilite.me --><div style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #BC7A00">&lt;?php</span>  
+ <span style="color: #408080; font-style: italic">// set the expiration date to one hour ago </span>
+ setcookie (<span style="color: #BA2121">&quot;CookieName&quot;</span>, <span style="color: #BA2121">&quot;&quot;</span>, <span style="color: #008000">time</span>() <span style="color: #666666">-</span> <span style="color: #666666">3600</span>);
+<span style="color: #BC7A00">?&gt;</span>  </pre></div>
+</div>
+    </div>
+  </body>
+</html>

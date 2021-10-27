@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html ng-app="">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/simple-grid.css" />
+  </head>
+
+  <body>
+    <nav id="navbar" style="padding:8px 15px">
+    <span id="back" onclick="window.history.back()">arrow_back</span>
+    <h3>PHP Programs</h3>
+  </nav>
+    <div class="container">
+      <!--Heading-->
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">Even Odd Program</h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            <b>Logic:</b>
+          </p>
+          <ul>
+            <li>Take a number.</li>
+            <li>
+              Divide it by 2.
+            </li>
+            <li>If the remainder is 0, print number is even.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p><b>Program</b></p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span>  
+<span style="color: #19177C">$number</span><span style="color: #666666">=1233456</span>;  
+<span style="color: #008000; font-weight: bold">if</span>(<span style="color: #19177C">$number</span><span style="color: #666666">%2==0</span>)  
+{  
+ <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;</span><span style="color: #BB6688; font-weight: bold">$number</span><span style="color: #BA2121"> is Even Number&quot;</span>;   
+}  
+<span style="color: #008000; font-weight: bold">else</span>  
+{  
+ <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;</span><span style="color: #BB6688; font-weight: bold">$number</span><span style="color: #BA2121"> is Odd Number&quot;</span>;  
+}   
+<span style="color: #BC7A00">?&gt;</span>  </pre>
+        </div>
+      </div>
+      <fieldset>
+        <legend>Output:</legend>
+        1233456 is Even Number
+      </fieldset>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html ng-app="">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/simple-grid.css" />
+  </head>
+
+  <body>
+    <nav id="navbar" style="padding:8px 15px">
+    <span id="back" onclick="window.history.back()">arrow_back</span>
+    <h3>Advance Tutorials</h3>
+  </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">PHP Indexed Array</h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            PHP indexed array is an array which is represented by an index
+            number by default. All elements of array are represented by an index
+            number which starts from 0. <br />
+            PHP indexed array can store numbers, strings or any object. PHP
+            indexed array is also known as numeric array. <br />
+            <br>
+            There are two ways to define indexed array: <br />
+            <u>1st way:</u>
+          </p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre style="margin: 0; line-height: 125%">
+$size=array(&quot;Big&quot;,&quot;Medium&quot;,&quot;Short&quot;);</pre
+          >
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;"><p><u>2nd way:</u></p></div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre style="margin: 0; line-height: 125%">
+$size[0]=&quot;Big&quot;;  
+$size[1]=&quot;Medium&quot;;  
+$size[2]=&quot;Short&quot;;</pre
+          >
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">PHP Indexed Array Example</h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;"><p>Example 1</p></div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span>  
+<span style="color: #19177C">$size</span><span style="color: #666666">=</span><span style="color: #008000; font-weight: bold">array</span>(<span style="color: #BA2121">&quot;Big&quot;</span>,<span style="color: #BA2121">&quot;Medium&quot;</span>,<span style="color: #BA2121">&quot;Short&quot;</span>);  
+<span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;Size: </span><span style="color: #BB6688; font-weight: bold">$size[0]</span><span style="color: #BA2121">, </span><span style="color: #BB6688; font-weight: bold">$size[1]</span><span style="color: #BA2121"> and </span><span style="color: #BB6688; font-weight: bold">$size[2]</span><span style="color: #BA2121">&quot;</span>;  
+<span style="color: #BC7A00">?&gt;</span></pre>
+        </div>
+      </div>
+      <fieldset>
+        <legend>Output:</legend>
+        Size: Big, Medium and Short
+      </fieldset>
+
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;"><p>Example 2</p></div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span>  
+<span style="color: #19177C">$size</span>[<span style="color: #666666">0</span>]<span style="color: #666666">=</span><span style="color: #BA2121">&quot;Big&quot;</span>;  
+<span style="color: #19177C">$size</span>[<span style="color: #666666">1</span>]<span style="color: #666666">=</span><span style="color: #BA2121">&quot;Medium&quot;</span>;  
+<span style="color: #19177C">$size</span>[<span style="color: #666666">2</span>]<span style="color: #666666">=</span><span style="color: #BA2121">&quot;Short&quot;</span>;  
+<span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;Size: </span><span style="color: #BB6688; font-weight: bold">$size[0]</span><span style="color: #BA2121">, </span><span style="color: #BB6688; font-weight: bold">$size[1]</span><span style="color: #BA2121"> and </span><span style="color: #BB6688; font-weight: bold">$size[2]</span><span style="color: #BA2121">&quot;</span>;  
+<span style="color: #BC7A00">?&gt;</span></pre>
+        </div>
+      </div>
+      <fieldset>
+        <legend>Output:</legend>
+        Size: Big, Medium and Short
+      </fieldset>
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">Traversing PHP Indexed Array</h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            We can easily traverse array in PHP using foreach loop. Let's see a
+            simple example to traverse all the elements of PHP array.
+          </p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span>  
+<span style="color: #19177C">$size</span><span style="color: #666666">=</span><span style="color: #008000; font-weight: bold">array</span>(<span style="color: #BA2121">&quot;Big&quot;</span>,<span style="color: #BA2121">&quot;Medium&quot;</span>,<span style="color: #BA2121">&quot;Short&quot;</span>);  
+<span style="color: #008000; font-weight: bold">foreach</span>( <span style="color: #19177C">$size</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #19177C">$s</span> )  
+{  
+  <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;Size is: </span><span style="color: #BB6688; font-weight: bold">$s</span><span style="color: #BA2121">&lt;br /&gt;&quot;</span>;  
+}  
+<span style="color: #BC7A00">?&gt;</span></pre>
+        </div>
+      </div>
+      <fieldset>
+        <legend>Output:</legend>
+        <pre>
+Size is: Big
+Size is: Medium
+Size is: Short</pre>
+      </fieldset>
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">Count Length of PHP Indexed Array
+          </h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+          PHP provides count() function which returns length of an array.
+          </p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me --><div style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #BC7A00">&lt;?php</span>  
+<span style="color: #19177C">$size</span><span style="color: #666666">=</span><span style="color: #008000; font-weight: bold">array</span>(<span style="color: #BA2121">&quot;Big&quot;</span>,<span style="color: #BA2121">&quot;Medium&quot;</span>,<span style="color: #BA2121">&quot;Short&quot;</span>);  
+<span style="color: #008000; font-weight: bold">echo</span> <span style="color: #008000">count</span>(<span style="color: #19177C">$size</span>);  
+<span style="color: #BC7A00">?&gt;</span></pre></div>
+
+      </div>
+      <fieldset>
+        <legend>Output:</legend>3
+      </fieldset>
+    </div>
+  </body>
+</html>

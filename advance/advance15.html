@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html ng-app="">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/simple-grid.css" />
+  </head>
+
+  <body>
+    <nav id="navbar" style="padding:8px 15px">
+    <span id="back" onclick="window.history.back()">arrow_back</span>
+    <h3>Advance Tutorials</h3>
+  </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">PHP Math</h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            PHP provides many predefined math constants and functions that can
+            be used to perform mathematical operations.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">
+            PHP Math: abs() function
+          </h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            The abs() function returns absolute value of given number. It
+            returns an integer value but if you pass floating point value, it
+            returns a float value.
+            <br />
+            Syntax
+          </p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre style="margin: 0; line-height: 125%">
+number abs ( mixed $number )</pre
+          >
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            Example
+          </p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span>  
+ <span style="color: #008000; font-weight: bold">echo</span> (<span style="color: #008000">abs</span>(<span style="color: #666666">-7</span>)<span style="color: #666666">.</span><span style="color: #BA2121">&quot;&lt;br/&gt;&quot;</span>); <span style="color: #408080; font-style: italic">// 7 (integer)  </span>
+ <span style="color: #008000; font-weight: bold">echo</span> (<span style="color: #008000">abs</span>(<span style="color: #666666">7</span>)<span style="color: #666666">.</span><span style="color: #BA2121">&quot;&lt;br/&gt;&quot;</span>); <span style="color: #408080; font-style: italic">//7 (integer)  </span>
+ <span style="color: #008000; font-weight: bold">echo</span> (<span style="color: #008000">abs</span>(<span style="color: #666666">-7.2</span>)<span style="color: #666666">.</span><span style="color: #BA2121">&quot;&lt;br/&gt;&quot;</span>); <span style="color: #408080; font-style: italic">//7.2 (float/double)  </span>
+<span style="color: #BC7A00">?&gt;</span></pre>
+        </div>
+      </div>
+      <fieldset>
+        <legend>Output:</legend>
+        <pre>
+7
+7
+7.2</pre
+        >
+      </fieldset>
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">PHP Math: ceil() function</h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            The ceil() function rounds fractions up.
+            <br />
+            Syntax
+          </p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre style="margin: 0; line-height: 125%">
+float ceil ( float $value )</pre
+          >
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>Example</p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span>  
+ <span style="color: #008000; font-weight: bold">echo</span> (<span style="color: #008000">ceil</span>(<span style="color: #666666">3.3</span>)<span style="color: #666666">.</span><span style="color: #BA2121">&quot;&lt;br/&gt;&quot;</span>);<span style="color: #408080; font-style: italic">// 4  </span>
+ <span style="color: #008000; font-weight: bold">echo</span> (<span style="color: #008000">ceil</span>(<span style="color: #666666">7.333</span>)<span style="color: #666666">.</span><span style="color: #BA2121">&quot;&lt;br/&gt;&quot;</span>);<span style="color: #408080; font-style: italic">// 8  </span>
+ <span style="color: #008000; font-weight: bold">echo</span> (<span style="color: #008000">ceil</span>(<span style="color: #666666">-4.8</span>)<span style="color: #666666">.</span><span style="color: #BA2121">&quot;&lt;br/&gt;&quot;</span>);<span style="color: #408080; font-style: italic">// -4  </span>
+<span style="color: #BC7A00">?&gt;</span></pre>
+        </div>
+      </div>
+      <fieldset>
+        <legend>Output:</legend>
+        <pre>
+4
+8
+-4</pre
+        >
+      </fieldset>
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">
+            PHP Math: floor() function
+          </h3>
+          <hr />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            The floor() function rounds fractions down.
+            <br />
+            Syntax
+          </p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre style="margin: 0; line-height: 125%">
+float floor ( float $value )</pre
+          >
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>Example</p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span>  
+  <span style="color: #008000; font-weight: bold">echo</span> (floor(<span style="color: #666666">3.3</span>)<span style="color: #666666">.</span><span style="color: #BA2121">&quot;&lt;br/&gt;&quot;</span>);<span style="color: #408080; font-style: italic">// 3  </span>
+  <span style="color: #008000; font-weight: bold">echo</span> (floor(<span style="color: #666666">7.333</span>)<span style="color: #666666">.</span><span style="color: #BA2121">&quot;&lt;br/&gt;&quot;</span>);<span style="color: #408080; font-style: italic">// 7  </span>
+  <span style="color: #008000; font-weight: bold">echo</span> (floor(<span style="color: #666666">-4.8</span>)<span style="color: #666666">.</span><span style="color: #BA2121">&quot;&lt;br/&gt;&quot;</span>);<span style="color: #408080; font-style: italic">// -5  </span>
+<span style="color: #BC7A00">?&gt;</span> </pre>
+        </div>
+      </div>
+      <fieldset>
+        <legend>Output:</legend>
+        <pre>
+3
+7
+-5
+</pre
+        >
+      </fieldset>
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">
+            PHP Math: sqrt() function
+          </h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            The sqrt() function returns square root of given argument.
+            <br />
+            Syntax
+          </p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre style="margin: 0; line-height: 125%">
+float sqrt ( float $arg )</pre
+          >
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            Example
+          </p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span>  
+ <span style="color: #008000; font-weight: bold">echo</span> (sqrt(<span style="color: #666666">16</span>)<span style="color: #666666">.</span><span style="color: #BA2121">&quot;&lt;br/&gt;&quot;</span>);<span style="color: #408080; font-style: italic">// 4  </span>
+ <span style="color: #008000; font-weight: bold">echo</span> (sqrt(<span style="color: #666666">25</span>)<span style="color: #666666">.</span><span style="color: #BA2121">&quot;&lt;br/&gt;&quot;</span>);<span style="color: #408080; font-style: italic">// 5  </span>
+ <span style="color: #008000; font-weight: bold">echo</span> (sqrt(<span style="color: #666666">7</span>)<span style="color: #666666">.</span><span style="color: #BA2121">&quot;&lt;br/&gt;&quot;</span>);<span style="color: #408080; font-style: italic">// 2.6457513110646  </span>
+<span style="color: #BC7A00">?&gt;</span> </pre>
+        </div>
+      </div>
+      <fieldset>
+        <legend>Output:</legend>
+        <pre>
+4
+5
+2.6457513110646</pre
+        >
+      </fieldset>
+
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">PHP Math: decbin() function
+          </h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>The decbin() function converts decimal number into binary. It returns binary number as a string.
+          <br>
+          Syntax</p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;">
+          <pre style="margin: 0; line-height: 125%">string decbin ( int $number )    </pre>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            Example
+          </p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me --><div style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #BC7A00">&lt;?php</span>  
+ <span style="color: #008000; font-weight: bold">echo</span> (<span style="color: #008000">decbin</span>(<span style="color: #666666">2</span>)<span style="color: #666666">.</span><span style="color: #BA2121">&quot;&lt;br/&gt;&quot;</span>);<span style="color: #408080; font-style: italic">// 10  </span>
+ <span style="color: #008000; font-weight: bold">echo</span> (<span style="color: #008000">decbin</span>(<span style="color: #666666">10</span>)<span style="color: #666666">.</span><span style="color: #BA2121">&quot;&lt;br/&gt;&quot;</span>);<span style="color: #408080; font-style: italic">// 1010  </span>
+ <span style="color: #008000; font-weight: bold">echo</span> (<span style="color: #008000">decbin</span>(<span style="color: #666666">22</span>)<span style="color: #666666">.</span><span style="color: #BA2121">&quot;&lt;br/&gt;&quot;</span>);<span style="color: #408080; font-style: italic">// 10110  </span>
+<span style="color: #BC7A00">?&gt;</span></pre></div>
+
+      </div>
+      <fieldset>
+        <legend>Output:</legend>
+<pre>10
+1010
+10110</pre>
+      </fieldset>
+
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">PHP Math: dechex() function
+          </h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>The dechex() function converts decimal number into hexadecimal. It returns hexadecimal representation of given number
+          as a string.
+          <br>
+          Syntax</p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me --><div style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">string dechex ( int $number ) </pre></div>
+
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            Example
+          </p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me --><div style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #BC7A00">&lt;?php</span>  
+<span style="color: #008000; font-weight: bold">echo</span> (<span style="color: #008000">dechex</span>(<span style="color: #666666">2</span>)<span style="color: #666666">.</span><span style="color: #BA2121">&quot;&lt;br/&gt;&quot;</span>);<span style="color: #408080; font-style: italic">// 2  </span>
+<span style="color: #008000; font-weight: bold">echo</span> (<span style="color: #008000">dechex</span>(<span style="color: #666666">10</span>)<span style="color: #666666">.</span><span style="color: #BA2121">&quot;&lt;br/&gt;&quot;</span>);<span style="color: #408080; font-style: italic">// a  </span>
+<span style="color: #008000; font-weight: bold">echo</span> (<span style="color: #008000">dechex</span>(<span style="color: #666666">22</span>)<span style="color: #666666">.</span><span style="color: #BA2121">&quot;&lt;br/&gt;&quot;</span>);<span style="color: #408080; font-style: italic">// 16  </span>
+<span style="color: #BC7A00">?&gt;</span>  </pre></div>
+
+      </div>
+      <fieldset>
+        <legend>Output:</legend>
+<pre>2
+a
+16</pre>
+      </fieldset>
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">
+            PHP Math: decoct() function
+            
+          </h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>The decoct() function converts decimal number into octal. It returns octal representation of given number as a string.
+          <br>
+          Syntax</p>
+        </div>
+      </div>
+      <div class="coding">
+        <div style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">string decoct ( int $number )  </pre></div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            Example
+          </p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me --><div style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #BC7A00">&lt;?php</span>  
+ <span style="color: #008000; font-weight: bold">echo</span> (<span style="color: #008000">decoct</span>(<span style="color: #666666">2</span>)<span style="color: #666666">.</span><span style="color: #BA2121">&quot;&lt;br/&gt;&quot;</span>);<span style="color: #408080; font-style: italic">// 2  </span>
+ <span style="color: #008000; font-weight: bold">echo</span> (<span style="color: #008000">decoct</span>(<span style="color: #666666">10</span>)<span style="color: #666666">.</span><span style="color: #BA2121">&quot;&lt;br/&gt;&quot;</span>);<span style="color: #408080; font-style: italic">// 12  </span>
+ <span style="color: #008000; font-weight: bold">echo</span> (<span style="color: #008000">decoct</span>(<span style="color: #666666">22</span>)<span style="color: #666666">.</span><span style="color: #BA2121">&quot;&lt;br/&gt;&quot;</span>);<span style="color: #408080; font-style: italic">// 26  </span>
+<span style="color: #BC7A00">?&gt;</span></pre></div>
+
+      </div>
+      <fieldset>
+        <legend>Output:</legend>
+<pre>2
+12
+26</pre>
+      </fieldset>
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">PHP Math: base_convert() function
+          </h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>The base_convert() function allows you to convert any base number to any base number. For example, you can convert
+          hexadecimal number to binary, hexadecimal to octal, binary to octal, octal to hexadecimal, binary to decimal etc.
+          <br>
+          Syntax</p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me --><div style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">string base_convert ( string $number , int $frombase , int $tobase )  </pre></div>
+
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            Example
+          </p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me --><div style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #BC7A00">&lt;?php</span>  
+ <span style="color: #19177C">$n1</span><span style="color: #666666">=10</span>;  
+ <span style="color: #008000; font-weight: bold">echo</span> (<span style="color: #008000">base_convert</span>(<span style="color: #19177C">$n1</span>,<span style="color: #666666">10</span>,<span style="color: #666666">2</span>)<span style="color: #666666">.</span><span style="color: #BA2121">&quot;&lt;br/&gt;&quot;</span>);<span style="color: #408080; font-style: italic">// 1010  </span>
+<span style="color: #BC7A00">?&gt;</span></pre></div>
+
+      </div>
+      <fieldset>
+        <legend>Output:</legend>
+<pre>1010</pre>
+      </fieldset>
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">PHP Math: bindec() function
+          </h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>The bindec() function converts binary number into decimal.
+          <br>
+          Syntax</p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me --><div style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">number bindec ( string $binary_string )  </pre></div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            Example
+          </p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me --><div style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #BC7A00">&lt;?php</span>  
+<span style="color: #008000; font-weight: bold">echo</span> (<span style="color: #008000">bindec</span>(<span style="color: #666666">10</span>)<span style="color: #666666">.</span><span style="color: #BA2121">&quot;&lt;br/&gt;&quot;</span>);<span style="color: #408080; font-style: italic">// 2  </span>
+<span style="color: #008000; font-weight: bold">echo</span> (<span style="color: #008000">bindec</span>(<span style="color: #666666">1010</span>)<span style="color: #666666">.</span><span style="color: #BA2121">&quot;&lt;br/&gt;&quot;</span>);<span style="color: #408080; font-style: italic">// 10  </span>
+<span style="color: #008000; font-weight: bold">echo</span> (<span style="color: #008000">bindec</span>(<span style="color: #666666">1011</span>)<span style="color: #666666">.</span><span style="color: #BA2121">&quot;&lt;br/&gt;&quot;</span>);<span style="color: #408080; font-style: italic">// 11  </span>
+<span style="color: #BC7A00">?&gt;</span></pre></div>
+
+      </div>
+      <fieldset>
+        <legend>Output:</legend>
+<pre>2
+10
+11</pre>
+      </fieldset>
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">PHP Math Functions
+          </h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>Let's see the list of important PHP math functions.</p>
+        </div>
+      </div>
+
+<table class="alt">
+  <tbody>
+    <tr>
+      <th>Function</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td> abs() </td>
+      <td>It is used to find the absolute (positive) value of a number.</td>
+    </tr>
+    <tr>
+      <td> sin() </td>
+      <td>It is used to return the sine of a number.</td>
+    </tr>
+    <tr>
+      <td> sinh() </td>
+      <td>It is used to return the hyperbolic sine of a number.</td>
+    </tr>
+    <tr>
+      <td> asin() </td>
+      <td>It is used to find the arc sine of a number.</td>
+    </tr>
+    <tr>
+      <td> asinh() </td>
+      <td>It is used to find the inverse hyperbolic sine of a number.</td>
+    </tr>
+    <tr>
+      <td> cos() </td>
+      <td>It is used to find the cosine of a number.</td>
+    </tr>
+    <tr>
+      <td> cosh() </td>
+      <td>It is used to return the cosh of a number.</td>
+    </tr>
+    <tr>
+      <td> acos() </td>
+      <td>It is used to return the arc cosine of a number.</td>
+    </tr>
+    <tr>
+      <td> acosh() </td>
+      <td>It is used to return the inverse hyperbolic cosine of a number.</td>
+    </tr>
+    <tr>
+      <td> tan() </td>
+      <td>It is used to return the tangent of a number.</td>
+    </tr>
+    <tr>
+      <td> tanh() </td>
+      <td>It is used to return the hyperbolic tangent of a number.</td>
+    </tr>
+    <tr>
+      <td> atan() </td>
+      <td>It is used to return the arc tangent of a number in radians.</td>
+    </tr>
+    <tr>
+      <td> atan2() </td>
+      <td>It is used to return the arc tangent of two variables x and y.</td>
+    </tr>
+    <tr>
+      <td> atanh() </td>
+      <td>It is used to return the inverse hyperbolic tangent of a number.</td>
+    </tr>
+    <tr>
+      <td> base_convert() </td>
+      <td>It is used to convert a number from one number base to another.</td>
+    </tr>
+    <tr>
+      <td> bindec() </td>
+      <td>It is used to convert a binary number to a decimal number.</td>
+    </tr>
+    <tr>
+      <td> ceil() </td>
+      <td>It is used to find round a number up to the nearest integer.</td>
+    </tr>
+    <tr>
+      <td> pi() </td>
+      <td>It returns the approximation value of PI.</td>
+    </tr>
+    <tr>
+      <td> decbin() </td>
+      <td>It converts a decimal number to a binary number.</td>
+    </tr>
+    <tr>
+      <td> dechex() </td>
+      <td>It converts a decimal number to a hexadecimal number.</td>
+    </tr>
+    <tr>
+      <td> decoct() </td>
+      <td>It converts a decimal number to an octal number</td>
+    </tr>
+    <tr>
+      <td> deg2rad() </td>
+      <td>It converts a degree value to a radian value.</td>
+    </tr>
+    <tr>
+      <td> rad2deg() </td>
+      <td>It converts a radian value to a degree value.</td>
+    </tr>
+    <tr>
+      <td> exp() </td>
+      <td>It is used to calculate the exponent of e.</td>
+    </tr>
+    <tr>
+      <td> expm1() </td>
+      <td>It is used to return exp(x) - 1.</td>
+    </tr>
+    <tr>
+      <td> floor() </td>
+      <td>It converts round a number down to the nearest integer.</td>
+    </tr>
+    <tr>
+      <td> fmod() </td>
+      <td>It returns the remainder of x/y.</td>
+    </tr>
+    <tr>
+      <td> getrandmax() </td>
+      <td>It returns the largest possible value returned by rand().</td>
+    </tr>
+    <tr>
+      <td> hexadec() </td>
+      <td>It is used to convert a hexadecimal number to a decimal number.</td>
+    </tr>
+    <tr>
+      <td> hypot() </td>
+      <td>It is used to calculate the hypotenuse of a right-angle triangle.</td>
+    </tr>
+    <tr>
+      <td> is_finite() </td>
+      <td>To check whether a value is finite or not.</td>
+    </tr>
+    <tr>
+      <td> is_infinite() </td>
+      <td>It is used to check whether a value is infinite or not.</td>
+    </tr>
+    <tr>
+      <td> is_nan() </td>
+      <td>It is used to check whether a value is 'not-a-number'.</td>
+    </tr>
+    <tr>
+      <td> lcg_value() </td>
+      <td>It is used to return a pseudo random number in a range between 0 and 1.</td>
+    </tr>
+    <tr>
+      <td> log() </td>
+      <td>It is used to return the natural logarithm of a number.</td>
+    </tr>
+    <tr>
+      <td> log10() </td>
+      <td>It is used to return the base-10 logarithm of a number.</td>
+    </tr>
+    <tr>
+      <td> log1p() </td>
+      <td>It is used to return log(1+number).</td>
+    </tr>
+    <tr>
+      <td> max() </td>
+      <td>It is used to return the highest value in an array, or the highest value of several specified values.</td>
+    </tr>
+    <tr>
+      <td> min() </td>
+      <td>It returns the lowest value in an array, or the lowest value of several specified values.</td>
+    </tr>
+    <tr>
+      <td> getrandmax() </td>
+      <td>It is used to return the maximum value by using rand().</td>
+    </tr>
+    <tr>
+      <td> mt_getrandmax() </td>
+      <td>Returns the largest possible value returned by mt_rand().</td>
+    </tr>
+    <tr>
+      <td> mt_rand() </td>
+      <td>Generates a random integer using Mersenne Twister algorithm.</td>
+    </tr>
+    <tr>
+      <td> mt_srand() </td>
+      <td>Seeds the Mersenne Twister random number generator.</td>
+    </tr>
+    <tr>
+      <td> octdec() </td>
+      <td>It is used to converts an octal number to a decimal number.</td>
+    </tr>
+    <tr>
+      <td> pow() </td>
+      <td>It is used to return x raised to the power of y.</td>
+    </tr>
+    <tr>
+      <td> intdiv </td>
+      <td>It returns the integer quotient of the division of dividend by divisor.</td>
+    </tr>
+    <tr>
+      <td> rand() </td>
+      <td>It is used to generates a random integer.</td>
+    </tr>
+    <tr>
+      <td> round() </td>
+      <td>It is used to round a floating-point number.</td>
+    </tr>
+    <tr>
+      <td> fmod() </td>
+      <td>It is used to return the floating point remainder of the division of the argument.</td>
+    </tr>
+    <tr>
+      <td> sqrt() </td>
+      <td>It is used to return the square root of a number.</td>
+    </tr>
+  </tbody>
+</table>
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html ng-app="">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/simple-grid.css" />
+</head>
+
+<body>
+  <nav id="navbar" style="padding:8px 15px">
+
+    <span id="back" onclick="window.history.back()">arrow_back</span>
+
+    <h3>PHP Tutorials</h3>
+  </nav>
+  <div class="container">
+    <div class="row">
+      <div class="col-12" style="margin-bottom: 0px;">
+        <h3 class="heading">PHP Echo</h3>
+        <hr />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12" style="margin-top: 0px;">
+        <p>
+          PHP echo is a language construct not a function, so you don't need
+          to use parenthesis with it. But if you want to use more than one
+          parameters, it is required to use parenthesis. <br />
+          The syntax of PHP echo is given below:
+        </p>
+      </div>
+    </div>
+    <div class="coding">
+      <!-- HTML generated using hilite.me -->
+      <div
+        style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+        <pre style="margin: 0; line-height: 125%">
+          void echo ( string $arg1[, string $... ] )</pre
+        >
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12" style="margin-top: 0px;">
+        <p>
+          PHP echo statement can be used to print string, multi line strings,
+          escaping characters, variable, array etc.
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12" style="margin-bottom: 0px;">
+        <h3 class="heading">PHP echo: printing string</h3>
+        <hr />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12" style="margin-top: 0px;">
+        <p>
+          File: echo1.php
+        </p>
+      </div>
+    </div>
+    <div class="coding">
+      <!-- HTML generated using hilite.me -->
+      <div
+        style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+        <pre
+          style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span>
+          <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;Hello by PHP echo&quot;</span>;
+          <span style="color: #BC7A00">?&gt;</span></pre>
+      </div>
+    </div>
+    <fieldset>
+      <legend>Output:</legend>
+      Hello by PHP echo
+    </fieldset>
+    <div class="row">
+      <div class="col-12" style="margin-bottom: 0px;">
+        <h3 class="heading">PHP echo: printing multi line string</h3>
+        <hr />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12" style="margin-top: 0px;">
+        <p>
+          File: echo2.php
+        </p>
+      </div>
+    </div>
+    <div class="coding">
+      <!-- HTML generated using hilite.me -->
+      <div
+        style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+        <pre
+          style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span>
+          <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;Hello by PHP echo  </span>
+          <span style="color: #BA2121">  this is multi line  </span>
+          <span style="color: #BA2121">  text printed by   </span>
+          <span style="color: #BA2121">  PHP echo statement  </span>
+          <span style="color: #BA2121">  &quot;</span>;
+          <span style="color: #BC7A00">?&gt;</span></pre>
+      </div>
+    </div>
+    <fieldset>
+      <legend>Output:</legend>
+      Hello by PHP echo this is multi line text printed by PHP echo statement
+    </fieldset>
+    <div class="row">
+      <div class="col-12" style="margin-bottom: 0px;">
+        <h3 class="heading">PHP echo: printing escaping characters</h3>
+        <hr />
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12" style="margin-top: 0px;">
+        <p>
+          File: echo3.php
+        </p>
+      </div>
+    </div>
+    <div class="coding">
+      <!-- HTML generated using hilite.me -->
+      <div
+        style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+        <pre
+          style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span>
+          <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;Hello escape </span><span style="color: #BB6622; font-weight: bold">\&quot;</span><span style="color: #BA2121">sequence</span><span style="color: #BB6622; font-weight: bold">\&quot;</span><span style="color: #BA2121"> characters&quot;</span>;
+          <span style="color: #BC7A00">?&gt;</span>  </pre>
+      </div>
+    </div>
+    <fieldset>
+      <legend>Output:</legend>
+      <pre>Hello escape "sequence" characters</pre>
+    </fieldset>
+    <div class="row">
+      <div class="col-12" style="margin-bottom: 0px;">
+        <h3 class="heading">PHP echo: printing variable value</h3>
+        <hr />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12" style="margin-top: 0px;">
+        <p>
+          File: echo4.php
+        </p>
+      </div>
+    </div>
+    <div class="coding">
+      <!-- HTML generated using hilite.me -->
+      <div
+        style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+        <pre
+          style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span>
+          <span style="color: #19177C">$msg</span><span style="color: #666666">=</span><span style="color: #BA2121">&quot;Hello PHP Developer&quot;</span>;
+          <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;Message is: </span><span style="color: #BB6688; font-weight: bold">$msg</span><span style="color: #BA2121">&quot;</span>;
+          <span style="color: #BC7A00">?&gt;</span> </pre>
+      </div>
+    </div>
+    <fieldset>
+      <legend>Output:</legend>
+      <pre>Message is: Hello PHP Developer</pre>
+    </fieldset>
+  </div>
+</body>
+</html>

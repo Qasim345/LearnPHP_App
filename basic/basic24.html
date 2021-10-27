@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html ng-app="">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/simple-grid.css" />
+  </head>
+
+  <body>
+    <nav id="navbar" style="padding:8px 15px">
+
+      <span id="back" onclick="window.history.back()">arrow_back</span>
+
+      <h3>PHP Tutorials</h3>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">PHP Switch</h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            PHP switch statement is used to execute one statement from multiple
+            conditions. It works like PHP if-else-if statement. <br />
+            Syntax
+          </p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #008000; font-weight: bold">switch</span>(expression){      
+ <span style="color: #008000; font-weight: bold">case</span> value1:      
+  <span style="color: #408080; font-style: italic">//code to be executed  </span>
+  <span style="color: #008000; font-weight: bold">break</span>;  
+ <span style="color: #008000; font-weight: bold">case</span> value2:      
+  <span style="color: #408080; font-style: italic">//code to be executed  </span>
+  <span style="color: #008000; font-weight: bold">break</span>;  
+  ......      
+ <span style="color: #008000; font-weight: bold">default</span><span style="color: #666666">:</span>       
+  code to be executed <span style="color: #008000; font-weight: bold">if</span> all cases are not 
+  matched;    
+}</pre>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>PHP Switch Example</p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span>    
+          <span style="color: #19177C">$num</span><span style="color: #666666">=20</span>;    
+          <span style="color: #008000; font-weight: bold">switch</span>(<span style="color: #19177C">$num</span>){    
+              <span style="color: #008000; font-weight: bold">case</span> <span style="color: #666666">10:</span>    
+               <span style="color: #008000; font-weight: bold">echo</span>(<span style="color: #BA2121">&quot;number is equals to 10&quot;</span>);    
+               <span style="color: #008000; font-weight: bold">break</span>;    
+              <span style="color: #008000; font-weight: bold">case</span> <span style="color: #666666">20:</span>    
+               <span style="color: #008000; font-weight: bold">echo</span>(<span style="color: #BA2121">&quot;number is equal to 20&quot;</span>);    
+              <span style="color: #008000; font-weight: bold">break</span>;    
+               <span style="color: #008000; font-weight: bold">case</span> <span style="color: #666666">30:</span>    
+               <span style="color: #008000; font-weight: bold">echo</span>(<span style="color: #BA2121">&quot;number is equal to 30&quot;</span>);    
+               <span style="color: #008000; font-weight: bold">break</span>;    
+              <span style="color: #008000; font-weight: bold">default</span><span style="color: #666666">:</span>    
+               <span style="color: #008000; font-weight: bold">echo</span>(<span style="color: #BA2121">&quot;number is not equal to 10, 20 or 30&quot;</span>);    
+          }   
+      <span style="color: #BC7A00">?&gt;</span>    
+      </pre>
+        </div>
+      </div>
+      <fieldset>
+        <legend>Output:</legend>
+        number is equal to 20
+      </fieldset>
+    </div>
+  </body>
+</html>

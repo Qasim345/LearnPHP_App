@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html ng-app="">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/simple-grid.css" />
+  </head>
+
+  <body>
+    <nav id="navbar" style="padding:8px 15px">
+
+      <span id="back" onclick="window.history.back()">arrow_back</span>
+
+      <h3>PHP Tutorials</h3>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">Magic Constants</h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            Magic constants are the predefined constants in PHP which get
+            changed on the basis of their use. They start with double underscore
+            (__) and ends with double underscore. <br />
+            They are similar to other predefined constants but as they change
+            their values with the context, they are called magic constants.
+            <br />
+            There are eight magical constants defined in the below table. They
+            are case-insensitive.
+          </p>
+        </div>
+      </div>
+      <table class="alt">
+        <tr>
+          <th>Name</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>__LINE__</td>
+          <td>Represents current line number where it is used.</td>
+        </tr>
+        <tr>
+          <td>__FILE__</td>
+          <td>
+            Represents full path and file name of the file. If it is used inside
+            an include, name of included file is returned.
+          </td>
+        </tr>
+        <tr>
+          <td>__DIR__</td>
+          <td>
+            Represents full directory path of the file. Equivalent to
+            dirname(__file__). It does not have a trailing slash unless it is a
+            root directory. It also resolves symbolic link.
+          </td>
+        </tr>
+        <tr>
+          <td>__FUNCTION__</td>
+          <td>
+            Represents the function name where it is used. If it is used outside
+            of any function, then it will return blank.
+          </td>
+        </tr>
+        <tr>
+          <td>__CLASS__</td>
+          <td>
+            Represents the class name where it is used. If it is used outside of
+            any function, then it will return blank.
+          </td>
+        </tr>
+        <tr>
+          <td>__TRAIT__</td>
+          <td>
+            Represents the trait name where it is used. If it is used outside of
+            any function, then it will return blank. It includes namespace it
+            was declared in.
+          </td>
+        </tr>
+        <tr>
+          <td>__METHOD__</td>
+          <td>
+            Represents the name of the class method where it is used. The method
+            name is returned as it was declared.
+          </td>
+        </tr>
+        <tr>
+          <td>__NAMESPACE__</td>
+          <td>Represents the name of the current namespace.</td>
+        </tr>
+      </table>
+
+      <div class="coding"></div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            <b>Example</b> Let's see an example for each of the above magical
+            constants. <br />
+            File Name: magic.php
+          </p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span>  
+    <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;&lt;h3&gt;Example for __LINE__&lt;/h3&gt;&quot;</span>;  
+    <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;You are at line number &quot;</span> <span style="color: #666666">.</span> <span style="color: #008000; font-weight: bold">__LINE__</span> <span style="color: #666666">.</span> <span style="color: #BA2121">&quot;&lt;br&gt;&lt;br&gt;&quot;</span>;<span style="color: #408080; font-style: italic">// print Your current line number i.e;3  </span>
+    <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;&lt;h3&gt;Example for __FILE__&lt;/h3&gt;&quot;</span>;  
+    <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #008000; font-weight: bold">__FILE__</span> <span style="color: #666666">.</span> <span style="color: #BA2121">&quot;&lt;br&gt;&lt;br&gt;&quot;</span>;<span style="color: #408080; font-style: italic">//print full path of file with .php extension  </span>
+    <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;&lt;h3&gt;Example for __DIR__&lt;/h3&gt;&quot;</span>;  
+    <span style="color: #008000; font-weight: bold">echo</span> __DIR__ <span style="color: #666666">.</span> <span style="color: #BA2121">&quot;&lt;br&gt;&lt;br&gt;&quot;</span>;<span style="color: #408080; font-style: italic">//print full path of directory where script will be placed  </span>
+    <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #008000">dirname</span>(<span style="color: #008000; font-weight: bold">__FILE__</span>) <span style="color: #666666">.</span> <span style="color: #BA2121">&quot;&lt;br&gt;&lt;br&gt;&quot;</span>; <span style="color: #408080; font-style: italic">//its output is equivalent to above one.  </span>
+    <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;&lt;h3&gt;Example for __FUNCTION__&lt;/h3&gt;&quot;</span>;  
+    <span style="color: #408080; font-style: italic">//Using magic constant inside function.  </span>
+    <span style="color: #008000; font-weight: bold">function</span> <span style="color: #0000FF">cash</span>(){  
+        <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&#39;the function name is &#39;</span><span style="color: #666666">.</span> __FUNCTION__ <span style="color: #666666">.</span> <span style="color: #BA2121">&quot;&lt;br&gt;&lt;br&gt;&quot;</span>;<span style="color: #408080; font-style: italic">//the function name is cash.  </span>
+    }  
+    cash();  
+    <span style="color: #408080; font-style: italic">//Using magic constant outside function gives the blank output.  </span>
+    <span style="color: #008000; font-weight: bold">function</span> <span style="color: #0000FF">test_function</span>(){  
+        <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&#39;HYIIII&#39;</span>;  
+    }  
+    test_function();  
+    <span style="color: #008000; font-weight: bold">echo</span>  __FUNCTION__ <span style="color: #666666">.</span> <span style="color: #BA2121">&quot;&lt;br&gt;&lt;br&gt;&quot;</span>;<span style="color: #408080; font-style: italic">//gives the blank output.  </span>
+    
+    <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;&lt;h3&gt;Example for __CLASS__&lt;/h3&gt;&quot;</span>;  
+    <span style="color: #008000; font-weight: bold">class</span> <span style="color: #0000FF; font-weight: bold">abc</span>  
+    {  
+        <span style="color: #008000; font-weight: bold">public</span> <span style="color: #008000; font-weight: bold">function</span> <span style="color: #0000FF">__construct</span>() {  
+    ;  
+    }  
+    <span style="color: #008000; font-weight: bold">function</span> <span style="color: #0000FF">abc_method</span>(){  
+        <span style="color: #008000; font-weight: bold">echo</span> __CLASS__ <span style="color: #666666">.</span> <span style="color: #BA2121">&quot;&lt;br&gt;&lt;br&gt;&quot;</span>;<span style="color: #408080; font-style: italic">//print name of the class abc.  </span>
+    }  
+    }  
+    <span style="color: #19177C">$t</span> <span style="color: #666666">=</span> <span style="color: #008000; font-weight: bold">new</span> abc;  
+    <span style="color: #19177C">$t</span><span style="color: #666666">-&gt;</span><span style="color: #7D9029">abc_method</span>();  
+    <span style="color: #008000; font-weight: bold">class</span> <span style="color: #0000FF; font-weight: bold">first</span>{  
+        <span style="color: #008000; font-weight: bold">function</span> <span style="color: #0000FF">test_first</span>(){  
+        <span style="color: #008000; font-weight: bold">echo</span> __CLASS__;<span style="color: #408080; font-style: italic">//will always print parent class which is first here.  </span>
+    }  
+    }  
+    <span style="color: #008000; font-weight: bold">class</span> <span style="color: #0000FF; font-weight: bold">second</span> <span style="color: #008000; font-weight: bold">extends</span> first  
+    {  
+        <span style="color: #008000; font-weight: bold">public</span> <span style="color: #008000; font-weight: bold">function</span> <span style="color: #0000FF">__construct</span>() {  
+        ;  
+    }  
+    }  
+    <span style="color: #19177C">$t</span> <span style="color: #666666">=</span> <span style="color: #008000; font-weight: bold">new</span> second;  
+    <span style="color: #19177C">$t</span><span style="color: #666666">-&gt;</span><span style="color: #7D9029">test_first</span>();  
+    <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;&lt;h3&gt;Example for __TRAIT__&lt;/h3&gt;&quot;</span>;  
+    <span style="color: #008000; font-weight: bold">trait</span> created_trait{  
+     <span style="color: #008000; font-weight: bold">function</span> <span style="color: #0000FF">abc</span>(){  
+        <span style="color: #008000; font-weight: bold">echo</span> __TRAIT__;<span style="color: #408080; font-style: italic">//will print name of the trait created_trait  </span>
+    }  
+    }  
+    <span style="color: #008000; font-weight: bold">class</span> <span style="color: #0000FF; font-weight: bold">anew</span>{  
+        <span style="color: #008000; font-weight: bold">use</span> created_trait;  
+    }  
+    <span style="color: #19177C">$a</span> <span style="color: #666666">=</span> <span style="color: #008000; font-weight: bold">new</span> anew;  
+    <span style="color: #19177C">$a</span><span style="color: #666666">-&gt;</span><span style="color: #7D9029">abc</span>();  
+    <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;&lt;h3&gt;Example for __METHOD__&lt;/h3&gt;&quot;</span>;  
+    <span style="color: #008000; font-weight: bold">class</span> <span style="color: #0000FF; font-weight: bold">meth</span>{  
+        <span style="color: #008000; font-weight: bold">public</span> <span style="color: #008000; font-weight: bold">function</span> <span style="color: #0000FF">__construct</span>() {  
+        <span style="color: #008000; font-weight: bold">echo</span> __METHOD__ <span style="color: #666666">.</span> <span style="color: #BA2121">&quot;&lt;br&gt;&lt;br&gt;&quot;</span>;<span style="color: #408080; font-style: italic">//print meth::__construct  </span>
+    }  
+    <span style="color: #008000; font-weight: bold">public</span> <span style="color: #008000; font-weight: bold">function</span> <span style="color: #0000FF">meth_fun</span>(){  
+        <span style="color: #008000; font-weight: bold">echo</span> __METHOD__;<span style="color: #408080; font-style: italic">//print meth::meth_fun  </span>
+    }  
+    }  
+    <span style="color: #19177C">$a</span> <span style="color: #666666">=</span> <span style="color: #008000; font-weight: bold">new</span> meth;  
+    <span style="color: #19177C">$a</span><span style="color: #666666">-&gt;</span><span style="color: #7D9029">meth_fun</span>();  
+    
+    <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;&lt;h3&gt;Example for __NAMESPACE__&lt;/h3&gt;&quot;</span>;  
+    <span style="color: #008000; font-weight: bold">class</span> <span style="color: #0000FF; font-weight: bold">name</span>{  
+        <span style="color: #008000; font-weight: bold">public</span> <span style="color: #008000; font-weight: bold">function</span> <span style="color: #0000FF">__construct</span>() {  
+            <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&#39;This line will be printed on calling namespace&#39;</span>;  
+        }     
+    }  
+    <span style="color: #19177C">$clas_name</span><span style="color: #666666">=</span> __NAMESPACE__ <span style="color: #666666">.</span><span style="color: #BA2121">&#39;\name&#39;</span>;  
+    <span style="color: #19177C">$a</span> <span style="color: #666666">=</span> <span style="color: #008000; font-weight: bold">new</span> <span style="color: #19177C">$clas_name</span>;  
+<span style="color: #BC7A00">?&gt;</span>  </pre>
+        </div>
+      </div>
+      <div class="coding"></div>
+      <fieldset>
+        <legend>Output:</legend>
+        <pre><h3>Example for __LINE__</h3>
+You are at line number 3
+<h3>Example for __FILE__</h3>
+C:\wamp\www\hitesh\blank.php
+<h3>Example for __DIR__</h3>
+C:\wamp\www\hitesh
+C:\wamp\www\hitesh
+<h3>Example for __FUNCTION__</h3>
+the function name is cash
+HYIIII
+<h3>Example for __CLASS__</h3>
+abc
+first
+<h3>Example for __TRAIT__</h3>
+created_trait
+<h3>Example for __METHOD__</h3>
+meth::__construct
+meth::meth_fun
+<h3>Example for __NAMESPACE__</h3>
+This line will be printed
+on calling namespace
+</pre>
+      </fieldset>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html ng-app="">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/simple-grid.css" />
+  </head>
+
+  <body>
+    <nav id="navbar" style="padding:8px 15px">
+    <span id="back" onclick="window.history.back()">arrow_back</span>
+    <h3>PHP Programs</h3>
+  </nav>
+    <div class="container">
+      <!--Heading-->
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">Reversing Number With strrev ()</h3>
+          <hr />
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p><b>Program</b></p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me --><div style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #BC7A00">&lt;?php</span>  
+<span style="color: #008000; font-weight: bold">function</span> <span style="color: #0000FF">reverse</span>(<span style="color: #19177C">$number</span>)  
+{  
+   <span style="color: #408080; font-style: italic">/* writes number into string. */</span>  
+    <span style="color: #19177C">$num</span> <span style="color: #666666">=</span> (string) <span style="color: #19177C">$number</span>;  
+    <span style="color: #408080; font-style: italic">/* Reverse the string. */</span>  
+    <span style="color: #19177C">$revstr</span> <span style="color: #666666">=</span> <span style="color: #008000">strrev</span>(<span style="color: #19177C">$num</span>);  
+    <span style="color: #408080; font-style: italic">/* writes string into int. */</span>  
+    <span style="color: #19177C">$reverse</span> <span style="color: #666666">=</span> (int) <span style="color: #19177C">$revstr</span>;   
+     <span style="color: #008000; font-weight: bold">return</span> <span style="color: #19177C">$reverse</span>;  
+}  
+ <span style="color: #008000; font-weight: bold">echo</span> reverse(<span style="color: #666666">1234</span>);  
+<span style="color: #BC7A00">?&gt;</span></pre></div>
+
+      </div>
+      <fieldset>
+        <legend>Output:</legend>
+        4321
+      </fieldset>
+    </div>
+  </body>
+</html>

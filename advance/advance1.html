@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html ng-app="">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/simple-grid.css" />
+  </head>
+
+  <body>
+    <nav id="navbar" style="padding:8px 15px">
+    <span id="back" onclick="window.history.back()">arrow_back</span>
+    <h3>Advance Tutorials</h3>
+  </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">PHP Functions</h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            PHP function is a piece of code that can be reused many times. It
+            can take input as argument list and return value. There are
+            thousands of built-in functions in PHP. <br />
+            In PHP, we can define Conditional function, Function within Function
+            and Recursive function also.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">Advantage of PHP Functions</h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <ul>
+            <li>
+              <b>Code Reusability:</b> PHP functions are defined only once and
+              can be invoked many times, like in other programming languages.
+            </li>
+            <li>
+              <b> Less Code:</b> It saves a lot of code because you don't need
+              to write the logic many times. By the use of function, you can
+              write the logic only once and reuse it.
+            </li>
+            <li>
+              <b>Easy to understand:</b> PHP functions separate the programming
+              logic. So it is easier to understand the flow of the application
+              because every logic is divided in the form of functions.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">PHP User-defined Functions</h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            We can declare and call user-defined functions easily. Let's see the
+            syntax to declare user-defined functions. <br />
+            Function name must be start with letter and underscore only like
+            other labels in PHP. It can't be start with numbers or special
+            symbols. <br />
+            Syntax
+          </p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre style="margin: 0; line-height: 125%">
+function functionname(){  
+ //code to be executed  
+}  </pre
+          >
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>PHP Functions Example</p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span>  
+       <span style="color: #008000; font-weight: bold">function</span> <span style="color: #0000FF">sayHello</span>(){  
+        <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;Hello PHP Function&quot;</span>;  
+       }  
+       sayHello();<span style="color: #408080; font-style: italic">//calling function  </span>
+      <span style="color: #BC7A00">?&gt;</span>  
+      </pre>
+        </div>
+      </div>
+      <fieldset>
+        <legend>Output:</legend>
+        Hello PHP Function
+      </fieldset>
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">PHP Function Arguments</h3>
+          <hr />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            We can pass the information in PHP function through arguments which
+            is separated by comma. <br />
+            PHP supports Call by Value (default), Call by Reference, Default
+            argument values and Variable-length argument list. <br />
+            Let's see the example to pass single argument in PHP function.
+            <br />
+            File: functionarg.php
+          </p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span>  
+<span style="color: #008000; font-weight: bold">function</span> <span style="color: #0000FF">sayHello</span>(<span style="color: #19177C">$name</span>){  
+<span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;Hello </span><span style="color: #BB6688; font-weight: bold">$name</span><span style="color: #BA2121">&lt;br/&gt;&quot;</span>;  
+}  
+sayHello(<span style="color: #BA2121">&quot;Arjun&quot;</span>);  
+sayHello(<span style="color: #BA2121">&quot;Krishna&quot;</span>);  
+sayHello(<span style="color: #BA2121">&quot;Radha&quot;</span>);  
+<span style="color: #BC7A00">?&gt;</span></pre>
+        </div>
+      </div>
+      <fieldset>
+        <legend>Output:</legend>
+        <pre>
+Arjun
+Krishna
+Radha
+        </pre>
+      </fieldset>
+
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>Let's see the example to pass two argument in PHP function.</p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span>  
+<span style="color: #008000; font-weight: bold">function</span> <span style="color: #0000FF">sayHello</span>(<span style="color: #19177C">$name</span>,<span style="color: #19177C">$age</span>){  
+<span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;Hello </span><span style="color: #BB6688; font-weight: bold">$name</span><span style="color: #BA2121">, you are </span><span style="color: #BB6688; font-weight: bold">$age</span><span style="color: #BA2121"> years old&lt;br/&gt;&quot;</span>;  
+}  
+sayHello(<span style="color: #BA2121">&quot;Arjun&quot;</span>,<span style="color: #666666">21</span>);  
+sayHello(<span style="color: #BA2121">&quot;Krishna&quot;</span>,<span style="color: #666666">29</span>);  
+sayHello(<span style="color: #BA2121">&quot;Radha&quot;</span>,<span style="color: #666666">23</span>);  
+<span style="color: #BC7A00">?&gt;</span></pre>
+        </div>
+      </div>
+      <fieldset>
+        <legend>Output:</legend>
+        <pre>
+Hello Arjun, you are 21 years old
+Hello Krishna, you are 29 years old
+Hello Radha, you are 23 years old</pre
+        >
+      </fieldset>
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">PHP Call By Reference</h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            Value passed to the function doesn't modify the actual value by
+            default (call by value). But we can do so by passing value as a
+            reference. By default, value passed to the function is call by
+            value. To pass value as a reference, you need to use ampersand (&)
+            symbol before the argument name. Let's see a simple example of call
+            by reference in PHP.
+          </p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span>  
+<span style="color: #008000; font-weight: bold">function</span> <span style="color: #0000FF">adder</span>(<span style="color: #666666">&amp;</span><span style="color: #19177C">$str2</span>)  
+{  
+    <span style="color: #19177C">$str2</span> <span style="color: #666666">.=</span> <span style="color: #BA2121">&#39;Call By Reference&#39;</span>;  
+}  
+<span style="color: #19177C">$str</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;Hello &#39;</span>;  
+adder(<span style="color: #19177C">$str</span>);  
+<span style="color: #008000; font-weight: bold">echo</span> <span style="color: #19177C">$str</span>;  
+<span style="color: #BC7A00">?&gt;</span></pre>
+        </div>
+      </div>
+      <fieldset>
+        <legend>Output:</legend>
+        Hello Call By Reference
+      </fieldset>
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">PHP Function: Default Argument Value</h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            We can specify a default argument value in function. While calling
+            PHP function if you don't specify any argument, it will take the
+            default argument. Let's see a simple example of using default
+            argument value in PHP function.
+          </p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span>  
+<span style="color: #008000; font-weight: bold">function</span> <span style="color: #0000FF">sayHello</span>(<span style="color: #19177C">$name</span><span style="color: #666666">=</span><span style="color: #BA2121">&quot;Krishna&quot;</span>){  
+<span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;Hello </span><span style="color: #BB6688; font-weight: bold">$name</span><span style="color: #BA2121">&lt;br/&gt;&quot;</span>;  
+}  
+sayHello(<span style="color: #BA2121">&quot;Arjun&quot;</span>);  
+sayHello();<span style="color: #408080; font-style: italic">//passing no value  </span>
+sayHello(<span style="color: #BA2121">&quot;Radha&quot;</span>);  
+<span style="color: #BC7A00">?&gt;</span></pre>
+        </div>
+      </div>
+      <fieldset>
+        <legend>Output:</legend>
+        <pre>
+Hello Arjun
+Hello Krishna
+Hello Radha
+      </pre
+        >
+      </fieldset>
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">PHP Function: Returning Value</h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>Let's see an example of PHP function that returns value.</p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span>  
+<span style="color: #008000; font-weight: bold">function</span> <span style="color: #0000FF">cube</span>(<span style="color: #19177C">$n</span>){  
+<span style="color: #008000; font-weight: bold">return</span> <span style="color: #19177C">$n</span><span style="color: #666666">*</span><span style="color: #19177C">$n</span><span style="color: #666666">*</span><span style="color: #19177C">$n</span>;  
+}  
+<span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;Cube of 3 is: &quot;</span><span style="color: #666666">.</span>cube(<span style="color: #666666">3</span>);  
+<span style="color: #BC7A00">?&gt;</span></pre>
+        </div>
+      </div>
+      <fieldset>
+        <legend>Output:</legend>
+        Cube of 3 is: 27
+      </fieldset>
+    </div>
+  </body>
+</html>

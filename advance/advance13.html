@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html ng-app="">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/simple-grid.css" />
+  </head>
+
+  <body>
+    <nav id="navbar" style="padding:8px 15px">
+    <span id="back" onclick="window.history.back()">arrow_back</span>
+    <h3>Advance Tutorials</h3>
+  </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">PHP String</h3>
+          <hr />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            A PHP string is a sequence of characters i.e. used to store and
+            manipulate text. There are 4 ways to specify string in PHP. single
+            quoted double quoted heredoc syntax newdoc syntax (since PHP 5.3)
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">Single Quoted PHP String</h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>
+            We can create a string in PHP by enclosing text in a single quote.
+            It is the easiest way to specify string in PHP.
+          </p>
+        </div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"
+        >
+          <pre
+            style="margin: 0; line-height: 125%"
+          ><span style="color: #BC7A00">&lt;?php</span>  
+ <span style="color: #19177C">$str</span><span style="color: #666666">=</span><span style="color: #BA2121">&#39;Hello text within single quote&#39;</span>;  
+ <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #19177C">$str</span>;  
+<span style="color: #BC7A00">?&gt;</span></pre>
+        </div>
+      </div>
+      <fieldset>
+        <legend>
+          Output
+        </legend>
+        Hello text within single quote
+      </fieldset>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;"><p>
+We can store multiple line text, special characters and escape sequences in a single quoted PHP string.
+        </p></div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me --><div style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #BC7A00">&lt;?php</span>  
+ <span style="color: #19177C">$str1</span><span style="color: #666666">=</span><span style="color: #BA2121">&#39;Hello text   </span>
+<span style="color: #BA2121"> multiple line  </span>
+<span style="color: #BA2121"> text within single quoted string&#39;</span>;  
+ <span style="color: #19177C">$str2</span><span style="color: #666666">=</span><span style="color: #BA2121">&#39;Using double &quot;quote&quot; directly inside single quoted string&#39;</span>;  
+ <span style="color: #19177C">$str3</span><span style="color: #666666">=</span><span style="color: #BA2121">&#39;Using escape sequences \n in single quoted string&#39;</span>;  
+ <span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;</span><span style="color: #BB6688; font-weight: bold">$str1</span><span style="color: #BA2121"> &lt;br/&gt; </span><span style="color: #BB6688; font-weight: bold">$str2</span><span style="color: #BA2121"> &lt;br/&gt; </span><span style="color: #BB6688; font-weight: bold">$str3</span><span style="color: #BA2121">&quot;</span>;  
+<span style="color: #BC7A00">?&gt;</span></pre></div>
+
+      </div>
+      <fieldset>
+        <legend>
+          Output
+        </legend>
+<pre>Hello text multiple line text within single quoted string
+Using double "quote" directly inside single quoted string
+Using escape sequences \n in single quoted string </pre>     </fieldset>
+      
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;"><p>
+          <b>Note:</b> In single quoted PHP strings, most escape sequences and variables will not be interpreted. But, we can use single
+          quote through \' and backslash through \\ inside single quoted PHP strings.
+        </p></div>
+      </div>
+      <div class="coding">
+        <!-- HTML generated using hilite.me --><div style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #BC7A00">&lt;?php</span>  
+<span style="color: #19177C">$num1</span><span style="color: #666666">=10</span>;   
+<span style="color: #19177C">$str1</span><span style="color: #666666">=</span><span style="color: #BA2121">&#39;trying variable $num1&#39;</span>;  
+<span style="color: #19177C">$str2</span><span style="color: #666666">=</span><span style="color: #BA2121">&#39;trying backslash n and backslash t inside single quoted string \n \t&#39;</span>;  
+<span style="color: #19177C">$str3</span><span style="color: #666666">=</span><span style="color: #BA2121">&#39;Using single quote \&#39;my quote\&#39; and \\backslash&#39;</span>;  
+<span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;</span><span style="color: #BB6688; font-weight: bold">$str1</span><span style="color: #BA2121"> &lt;br/&gt; </span><span style="color: #BB6688; font-weight: bold">$str2</span><span style="color: #BA2121"> &lt;br/&gt; </span><span style="color: #BB6688; font-weight: bold">$str3</span><span style="color: #BA2121">&quot;</span>;  
+<span style="color: #BC7A00">?&gt;</span></pre></div>
+
+      </div>
+      <fieldset><legend>Output:</legend>
+<pre>trying variable $num1 
+trying backslash n and backslash t inside single quoted string \n \t 
+Using single quote 'my quote' and \backslash</pre></fieldset>
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 0px;">
+          <h3 class="heading">Double Quoted PHP String</h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;"><p>
+          In PHP, we can specify string through enclosing text within double quote also. But escape sequences and variables will
+          be interpreted using double quote PHP strings.
+        </p></div>
+      </div>
+      <div class="coding"><!-- HTML generated using hilite.me --><div style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #BC7A00">&lt;?php</span>  
+<span style="color: #19177C">$str</span><span style="color: #666666">=</span><span style="color: #BA2121">&quot;Hello text within double quote&quot;</span>;  
+<span style="color: #008000; font-weight: bold">echo</span> <span style="color: #19177C">$str</span>;  
+<span style="color: #BC7A00">?&gt;</span></pre></div>
+</div>
+      <fieldset><legend>Output:</legend>
+      Hello text within double quote
+      </fieldset>
+      
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;"><p>Now, you can't use double quote directly inside double quoted string.
+</p></div>
+      </div>
+      <div class="coding"><!-- HTML generated using hilite.me --><div style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #BC7A00">&lt;?php</span>  
+<span style="color: #19177C">$str1</span><span style="color: #666666">=</span><span style="color: #BA2121">&quot;Using double &quot;</span>quote<span style="color: #BA2121">&quot; directly inside double quoted string&quot;</span>;  
+<span style="color: #008000; font-weight: bold">echo</span> <span style="color: #19177C">$str1</span>;  
+<span style="color: #BC7A00">?&gt;</span></pre></div>
+</div>
+      <fieldset>
+        <legend>Output:</legend>
+        Parse error: syntax error, unexpected 'quote' (T_STRING) in C:\wamp\www\string1.php on line 2
+      </fieldset>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;"><p>We can store multiple line text, special characters and escape sequences in a double quoted PHP string.</p></div>
+      </div>
+      
+      <div class="coding">
+        <!-- HTML generated using hilite.me --><div style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #BC7A00">&lt;?php</span>  
+<span style="color: #19177C">$str1</span><span style="color: #666666">=</span><span style="color: #BA2121">&quot;Hello text   </span>
+<span style="color: #BA2121">multiple line  </span>
+<span style="color: #BA2121">text within double quoted string&quot;</span>;  
+<span style="color: #19177C">$str2</span><span style="color: #666666">=</span><span style="color: #BA2121">&quot;Using double </span><span style="color: #BB6622; font-weight: bold">\&quot;</span><span style="color: #BA2121">quote</span><span style="color: #BB6622; font-weight: bold">\&quot;</span><span style="color: #BA2121"> with backslash inside double quoted string&quot;</span>;  
+<span style="color: #19177C">$str3</span><span style="color: #666666">=</span><span style="color: #BA2121">&quot;Using escape sequences </span><span style="color: #BB6622; font-weight: bold">\n</span><span style="color: #BA2121"> in double quoted string&quot;</span>;  
+<span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;</span><span style="color: #BB6688; font-weight: bold">$str1</span><span style="color: #BA2121"> &lt;br/&gt; </span><span style="color: #BB6688; font-weight: bold">$str2</span><span style="color: #BA2121"> &lt;br/&gt; </span><span style="color: #BB6688; font-weight: bold">$str3</span><span style="color: #BA2121">&quot;</span>;  
+<span style="color: #BC7A00">?&gt;</span></pre></div>
+      </div>
+      <fieldset>
+        <legend>Output:</legend>
+<pre>Hello text multiple line text within double quoted string
+Using double "quote" with backslash inside double quoted string
+Using escape sequences in double quoted string</pre>
+      </fieldset>
+      <div class="row">
+        <div class="col-12" style="margin-top: 0px;">
+          <p>In double quoted strings, variable will be interpreted.</p>
+        </div>
+      </div>
+      <div class="coding"><!-- HTML generated using hilite.me --><div style="background: #f8f8f8; overflow:auto;width:auto;border:solid #1565c0;border-width:.1em .1em .1em .4em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #BC7A00">&lt;?php</span>  
+<span style="color: #19177C">$num1</span><span style="color: #666666">=10</span>;   
+<span style="color: #008000; font-weight: bold">echo</span> <span style="color: #BA2121">&quot;Number is: </span><span style="color: #BB6688; font-weight: bold">$num1</span><span style="color: #BA2121">&quot;</span>;  
+<span style="color: #BC7A00">?&gt;</span> </pre></div>
+</div>
+      <fieldset>
+        <legend>Output:</legend>
+        Number is: 10
+      </fieldset>
+
+
+    </div>
+  </body>
+</html>
